@@ -95,7 +95,7 @@ def main():
                 s_label = escape_sql_string(s.get("label"))
                 s_url = escape_sql_string(s.get("url"))
                 sql_statements.append(
-                    f"INSERT INTO tender_source_urls (company_id, label, url) "
+                    f"INSERT OR IGNORE INTO tender_source_urls (company_id, label, url) "
                     f"VALUES ({cid}, {s_label}, {s_url});"
                 )
 

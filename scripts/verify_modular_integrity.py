@@ -32,7 +32,7 @@ def verify():
         seed_content = f.read()
     countries_count = len(re.findall(r"INSERT OR REPLACE INTO tender_countries", seed_content))
     companies_count = len(re.findall(r"INSERT OR REPLACE INTO tender_companies", seed_content))
-    sources_count = len(re.findall(r"INSERT INTO tender_source_urls", seed_content))
+    sources_count = len(re.findall(r"INSERT\s+(?:OR\s+IGNORE\s+)?INTO\s+tender_source_urls", seed_content))
     assert countries_count == 3, f"Expected 3 countries, got {countries_count}"
     assert companies_count == 113, f"Expected 113 companies, got {companies_count}"
     assert sources_count == 185, f"Expected 185 sources, got {sources_count}"

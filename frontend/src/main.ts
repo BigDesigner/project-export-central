@@ -45,7 +45,11 @@ class AppController {
   private currentUsernameOrName = '';
   private mapEngine: MapEngine | null = null;
   private tenderView: TenderViewController | null = null;
-  private activeModule: 'map' | 'tender' = 'map';
+  public activeModule: 'map' | 'tender' = 'map';
+
+  public getActiveModule(): 'map' | 'tender' {
+    return this.activeModule;
+  }
   
   // Cache lists
   private representatives: Representative[] = [];

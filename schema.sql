@@ -144,5 +144,6 @@ CREATE INDEX IF NOT EXISTS idx_tender_company_group ON tender_companies(group_na
 CREATE INDEX IF NOT EXISTS idx_tender_company_priority ON tender_companies(priority);
 CREATE INDEX IF NOT EXISTS idx_tender_company_deleted ON tender_companies(deleted_at) WHERE deleted_at IS NULL;
 CREATE INDEX IF NOT EXISTS idx_tender_source_company ON tender_source_urls(company_id);
+CREATE UNIQUE INDEX IF NOT EXISTS idx_tender_source_unique ON tender_source_urls(company_id, url);
 CREATE INDEX IF NOT EXISTS idx_tender_notes_company ON tender_crm_notes(company_id);
 
