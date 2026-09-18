@@ -46,6 +46,9 @@ export class TenderViewController {
 
   private async loadCountries() {
     this.countries = await TenderApi.getCountries();
+    if (this.activeCountry !== 'all' && !this.countries.some(c => c.id === this.activeCountry)) {
+      this.activeCountry = 'all';
+    }
   }
 
   private async loadCompanies() {
@@ -126,17 +129,17 @@ export class TenderViewController {
               <div class="flex items-center gap-2 overflow-x-auto no-scrollbar">
                 <select id="tender-group-select" class="h-10 pl-3 pr-8 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 hover:border-slate-300 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900 shadow-xs cursor-pointer shrink-0 transition">
                   <option value="all">Tüm Pazar Grupları</option>
-                  <option value="Kamu Su İdaresi" ${this.activeGroup.includes('Kamu') ? 'selected' : ''}>🏛️ Kamu Su İdareleri</option>
-                  <option value="Müteahhitlik (EPC)" ${this.activeGroup.includes('EPC') ? 'selected' : ''}>🏗️ EPC & Altyapı Müteahhitleri</option>
-                  <option value="Dağıtıcı" ${this.activeGroup.includes('Dağıtıcı') ? 'selected' : ''}>📦 Tiefbau Toptancı / Dağıtıcı</option>
-                  <option value="Üretici" ${this.activeGroup.includes('Üretici') ? 'selected' : ''}>🏭 Boru Üreticileri</option>
+                  <option value="Kamu Su İdaresi" ${this.activeGroup.includes('Kamu') ? 'selected' : ''}>Kamu Su İdareleri</option>
+                  <option value="Müteahhitlik (EPC)" ${this.activeGroup.includes('EPC') ? 'selected' : ''}>EPC & Altyapı Müteahhitleri</option>
+                  <option value="Dağıtıcı" ${this.activeGroup.includes('Dağıtıcı') ? 'selected' : ''}>Tiefbau Toptancı / Dağıtıcı</option>
+                  <option value="Üretici" ${this.activeGroup.includes('Üretici') ? 'selected' : ''}>Boru Üreticileri</option>
                 </select>
 
                 <select id="tender-priority-select" class="h-10 pl-3 pr-8 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 hover:border-slate-300 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900 shadow-xs cursor-pointer shrink-0 transition">
                   <option value="all">Tüm Öncelikler</option>
-                  <option value="A++" ${this.activePriority === 'A++' ? 'selected' : ''}>⭐ Kritik (A++)</option>
-                  <option value="A+" ${this.activePriority === 'A+' ? 'selected' : ''}>🔥 Yüksek (A+)</option>
-                  <option value="A" ${this.activePriority === 'A' ? 'selected' : ''}>🎯 Öncelikli (A)</option>
+                  <option value="A++" ${this.activePriority === 'A++' ? 'selected' : ''}>Kritik (A++)</option>
+                  <option value="A+" ${this.activePriority === 'A+' ? 'selected' : ''}>Yüksek (A+)</option>
+                  <option value="A" ${this.activePriority === 'A' ? 'selected' : ''}>Öncelikli (A)</option>
                 </select>
 
                 ${this.currentRole === 'admin' ? `
@@ -179,7 +182,13 @@ export class TenderViewController {
             ${this.isLoading ? '<span class="text-slate-400 animate-pulse">Filtreleniyor...</span>' : ''}
           </div>
 
-          ${this.companies.length === 0 ? `
+          ${this.countries.length === 0 ? `
+            <div class="w-full bg-white border border-slate-200 rounded-xl p-12 text-center shadow-xs">
+              <div class="w-12 h-12 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center mx-auto mb-3 text-xl">🗺️</div>
+              <h3 class="text-sm font-bold text-slate-900 mb-1">Henüz Size Atanmış Bir Ülke Bulunmuyor</h3>
+              <p class="text-xs text-slate-500 max-w-md mx-auto">Pazar Haritası üzerinden yöneticiniz tarafından size ülke atandığında, ilgili ülke ihale ve müşteri raporları otomatik olarak burada listelenecektir.</p>
+            </div>
+          ` : this.companies.length === 0 ? `
             <div class="w-full bg-white border border-slate-200 rounded-xl p-12 text-center shadow-xs">
               <div class="w-12 h-12 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center mx-auto mb-3 text-xl">🔍</div>
               <h3 class="text-sm font-bold text-slate-900 mb-1">Aramanızla Eşleşen Firma Bulunamadı</h3>
@@ -224,6 +233,35 @@ export class TenderViewController {
 
     const isBrevoSynced = !!comp.brevo_contact_id;
 
+    // Direct phone calling
+    const rawPhone = comp.phone ? comp.phone.trim() : '';
+    const cleanPhone = rawPhone.split('/')[0].split(';')[0].replace(/[^\d+]/g, '');
+
+    // Direct email client
+    const rawEmail = comp.email ? comp.email.trim() : '';
+    const firstEmail = rawEmail.split(';')[0].split(',')[0].trim();
+
+    // Map navigation logic (iOS opens Apple Maps, Desktop/Android opens Google Maps)
+    const addressParts: string[] = [];
+    if (comp.address && comp.address.trim() && comp.address.trim() !== '-') {
+      addressParts.push(comp.address.trim());
+    } else if (comp.name && comp.name.trim()) {
+      addressParts.push(comp.name.trim());
+    }
+    if (comp.city && comp.city.trim() && comp.city.trim() !== '-') {
+      addressParts.push(comp.city.trim());
+    }
+    if (comp.country_name || comp.country_id) {
+      addressParts.push(comp.country_name || comp.country_id);
+    }
+    const navQuery = addressParts.join(', ');
+    const encodedNavQuery = encodeURIComponent(navQuery);
+    const isAppleMobile = /iPhone|iPad|iPod/i.test(navigator.userAgent) || 
+      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    const navUrl = isAppleMobile
+      ? `https://maps.apple.com/?daddr=${encodedNavQuery}&dirflg=d`
+      : `https://www.google.com/maps/dir/?api=1&destination=${encodedNavQuery}`;
+
     return `
       <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-xs hover:border-slate-300 hover:shadow-md transition-all duration-200 flex flex-col justify-between">
         
@@ -266,35 +304,54 @@ export class TenderViewController {
         <div class="pt-2.5 border-t border-slate-100 flex items-center justify-between gap-2">
           
           <div class="flex items-center gap-1.5">
-            ${comp.phone ? `
-              <a href="tel:${escapeHtml(comp.phone)}" class="min-w-[36px] h-9 px-2.5 bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200 hover:border-slate-300 text-xs rounded-lg flex items-center justify-center transition shadow-2xs" title="Telefon: ${escapeHtml(comp.phone)}">
+            ${cleanPhone ? `
+              <a href="tel:${cleanPhone}" class="min-w-[36px] h-9 px-2.5 bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200 hover:border-slate-300 text-xs rounded-lg flex items-center justify-center transition shadow-2xs" title="Telefonla Ara: ${escapeHtml(rawPhone)}" onclick="event.stopPropagation();">
                 📞
               </a>
             ` : ''}
-            ${comp.email ? `
-              <a href="mailto:${escapeHtml(comp.email)}" class="min-w-[36px] h-9 px-2.5 bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200 hover:border-slate-300 text-xs rounded-lg flex items-center justify-center transition shadow-2xs" title="E-posta: ${escapeHtml(comp.email)}">
+            ${firstEmail ? `
+              <a href="mailto:${escapeHtml(firstEmail)}" class="min-w-[36px] h-9 px-2.5 bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200 hover:border-slate-300 text-xs rounded-lg flex items-center justify-center transition shadow-2xs" title="E-Posta Gönder: ${escapeHtml(rawEmail)}" onclick="event.stopPropagation();">
                 ✉️
               </a>
             ` : ''}
+            <a href="${navUrl}" target="_blank" rel="noopener noreferrer" class="min-w-[36px] h-9 px-2.5 bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200 hover:border-slate-300 text-xs rounded-lg flex items-center justify-center transition shadow-2xs" title="Haritada Aç / Yol Tarifi: ${escapeHtml(navQuery)}" onclick="event.stopPropagation();">
+              📍
+            </a>
             <button 
               type="button"
               class="tender-sync-brevo-btn h-9 px-2.5 ${isBrevoSynced ? 'bg-emerald-50 text-emerald-700 border border-emerald-200 hover:bg-emerald-100' : 'bg-slate-50 hover:bg-sky-50 hover:text-sky-700 hover:border-sky-300 text-slate-700 border border-slate-200'} text-xs font-semibold rounded-lg flex items-center gap-1 transition cursor-pointer shadow-2xs"
               data-id="${escapeHtml(comp.id)}"
               title="${isBrevoSynced ? 'Brevo CRM ile senkronize edildi' : 'Brevo CRM kontaktlarına aktar'}"
+              onclick="event.stopPropagation();"
             >
               <span>${isBrevoSynced ? '✓' : '⚡'}</span>
               <span class="hidden sm:inline">${isBrevoSynced ? 'Brevo' : 'Brevo\'ya Aktar'}</span>
             </button>
           </div>
 
-          <button 
-            type="button"
-            class="tender-view-detail-btn h-9 px-3.5 bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white text-xs font-semibold rounded-lg transition flex items-center gap-1.5 cursor-pointer shadow-2xs"
-            data-id="${escapeHtml(comp.id)}"
-          >
-            <span>Detay</span>
-            <span>→</span>
-          </button>
+          <div class="flex items-center gap-1.5">
+            ${this.currentRole === 'admin' ? `
+              <button 
+                type="button" 
+                class="tender-edit-company-btn h-9 px-2.5 bg-slate-100 hover:bg-slate-200 active:bg-slate-300 text-slate-800 border border-slate-200 hover:border-slate-300 text-xs font-semibold rounded-lg flex items-center gap-1 transition cursor-pointer shadow-2xs"
+                data-id="${escapeHtml(comp.id)}"
+                title="Firmayı Düzenle"
+                onclick="event.stopPropagation();"
+              >
+                <span>✏️</span>
+                <span class="hidden sm:inline">Düzenle</span>
+              </button>
+            ` : ''}
+
+            <button 
+              type="button"
+              class="tender-view-detail-btn h-9 px-3.5 bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white text-xs font-semibold rounded-lg transition flex items-center gap-1.5 cursor-pointer shadow-2xs"
+              data-id="${escapeHtml(comp.id)}"
+            >
+              <span>Detay</span>
+              <span>→</span>
+            </button>
+          </div>
 
         </div>
 
@@ -387,6 +444,16 @@ export class TenderViewController {
       });
     });
 
+    // Edit company triggers (Admin)
+    const editButtons = this.container.querySelectorAll('.tender-edit-company-btn');
+    editButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const id = (e.currentTarget as HTMLElement).getAttribute('data-id');
+        if (id) this.openEditCompanyModal(id);
+      });
+    });
+
     // Add company button
     const addBtn = document.getElementById('tender-add-company-btn');
     if (addBtn) {
@@ -404,6 +471,35 @@ export class TenderViewController {
     const { company, sources, notes } = data;
     const modalRoot = document.getElementById('tender-modal-root');
     if (!modalRoot) return;
+
+    // Direct phone calling
+    const rawPhone = company.phone ? company.phone.trim() : '';
+    const cleanPhone = rawPhone.split('/')[0].split(';')[0].replace(/[^\d+]/g, '');
+
+    // Direct email client
+    const rawEmail = company.email ? company.email.trim() : '';
+    const firstEmail = rawEmail.split(';')[0].split(',')[0].trim();
+
+    // Map navigation logic (iOS opens Apple Maps, Desktop/Android opens Google Maps)
+    const addressParts: string[] = [];
+    if (company.address && company.address.trim() && company.address.trim() !== '-') {
+      addressParts.push(company.address.trim());
+    } else if (company.name && company.name.trim()) {
+      addressParts.push(company.name.trim());
+    }
+    if (company.city && company.city.trim() && company.city.trim() !== '-') {
+      addressParts.push(company.city.trim());
+    }
+    if (company.country_name || company.country_id) {
+      addressParts.push(company.country_name || company.country_id);
+    }
+    const navQuery = addressParts.join(', ');
+    const encodedNavQuery = encodeURIComponent(navQuery);
+    const isAppleMobile = /iPhone|iPad|iPod/i.test(navigator.userAgent) || 
+      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    const modalNavUrl = isAppleMobile
+      ? `https://maps.apple.com/?daddr=${encodedNavQuery}&dirflg=d`
+      : `https://www.google.com/maps/dir/?api=1&destination=${encodedNavQuery}`;
 
     modalRoot.innerHTML = `
       <div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-xs font-sans">
@@ -440,13 +536,16 @@ export class TenderViewController {
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
               <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
                 <div class="text-[10px] text-slate-400 font-bold uppercase mb-1">İletişim Bilgileri</div>
-                ${company.phone ? `<div>📞 <strong>Tel:</strong> ${escapeHtml(company.phone)}</div>` : ''}
-                ${company.email ? `<div>✉️ <strong>Email:</strong> ${escapeHtml(company.email)}</div>` : ''}
-                ${company.email_alt ? `<div>✉️ <strong>Alt Email:</strong> ${escapeHtml(company.email_alt)}</div>` : ''}
+                ${cleanPhone ? `<div>📞 <strong>Tel:</strong> <a href="tel:${cleanPhone}" class="text-sky-700 hover:underline font-semibold" title="Aramak için tıklayın">${escapeHtml(company.phone)}</a></div>` : ''}
+                ${firstEmail ? `<div>✉️ <strong>Email:</strong> <a href="mailto:${escapeHtml(firstEmail)}" class="text-sky-700 hover:underline font-semibold" title="E-posta göndermek için tıklayın">${escapeHtml(company.email)}</a></div>` : ''}
+                ${company.email_alt ? `<div>✉️ <strong>Alt Email:</strong> <a href="mailto:${escapeHtml(company.email_alt.trim())}" class="text-sky-700 hover:underline font-semibold">${escapeHtml(company.email_alt)}</a></div>` : ''}
               </div>
               <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
-                <div class="text-[10px] text-slate-400 font-bold uppercase mb-1">Açık Adres</div>
-                <div class="text-slate-700">${escapeHtml(company.address || 'Kayıtlı adres bulunmuyor.')}</div>
+                <div class="text-[10px] text-slate-400 font-bold uppercase mb-1">Açık Adres & Konum</div>
+                <div class="text-slate-700 mb-2">${escapeHtml(company.address || 'Kayıtlı adres bulunmuyor.')}</div>
+                <a href="${modalNavUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-bold text-sky-700 hover:text-sky-800 hover:underline" title="Haritada Aç / Yol Tarifi: ${escapeHtml(navQuery)}">
+                  <span>📍</span> Haritada Aç / Yol Tarifi
+                </a>
               </div>
             </div>
 
@@ -500,7 +599,7 @@ export class TenderViewController {
                   class="flex-1 h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900"
                 />
                 <button 
-                  type="button"
+                  type="button" 
                   id="tender-save-note-btn" 
                   class="h-9 px-3.5 bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white font-semibold rounded-lg text-xs transition cursor-pointer shrink-0 shadow-2xs"
                 >
@@ -530,6 +629,10 @@ export class TenderViewController {
             </div>
             <div class="flex items-center gap-2">
               ${this.currentRole === 'admin' ? `
+                <button type="button" id="tender-modal-edit-btn" class="px-3.5 py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-300 rounded-lg text-xs font-semibold transition cursor-pointer shadow-2xs flex items-center gap-1">
+                  <span>✏️</span>
+                  <span>Düzenle</span>
+                </button>
                 <button type="button" id="tender-modal-delete-btn" class="px-3.5 py-2 bg-rose-50 text-rose-700 border border-rose-200 hover:bg-rose-100 hover:border-rose-300 rounded-lg text-xs font-semibold transition cursor-pointer shadow-2xs">
                   Firmayı Sil
                 </button>
@@ -548,6 +651,12 @@ export class TenderViewController {
     const closeModal = () => { modalRoot.innerHTML = ''; };
     document.getElementById('tender-modal-close')?.addEventListener('click', closeModal);
     document.getElementById('tender-modal-footer-close')?.addEventListener('click', closeModal);
+
+    // Edit Company (Admin)
+    document.getElementById('tender-modal-edit-btn')?.addEventListener('click', () => {
+      closeModal();
+      this.openEditCompanyModal(id);
+    });
 
     // Save Note
     document.getElementById('tender-save-note-btn')?.addEventListener('click', async () => {
@@ -572,6 +681,196 @@ export class TenderViewController {
         this.render();
       } else {
         alert('Hata: ' + (res.error || 'Firma silinemedi.'));
+      }
+    });
+  }
+
+  private async openEditCompanyModal(id: string) {
+    if (this.currentRole !== 'admin') {
+      alert('Firma düzenleme yetkisi sadece yöneticilere aittir.');
+      return;
+    }
+
+    // Fetch fresh detail data for full fields
+    let comp = this.companies.find(c => c.id === id);
+    const detailData = await TenderApi.getCompanyDetail(id);
+    if (detailData?.company) {
+      comp = detailData.company;
+    }
+
+    if (!comp) {
+      alert('Firma bilgileri bulunamadı.');
+      return;
+    }
+
+    const modalRoot = document.getElementById('tender-modal-root');
+    if (!modalRoot) return;
+
+    modalRoot.innerHTML = `
+      <div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-xs font-sans">
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-2xl max-w-xl w-full max-h-[90vh] flex flex-col overflow-hidden animate-in fade-in duration-200">
+          
+          <div class="p-4 border-b border-slate-100 flex items-center justify-between bg-slate-50/50">
+            <div class="flex items-center gap-2">
+              <span class="text-base">✏️</span>
+              <div>
+                <h3 class="text-sm font-bold text-slate-900">Firmayı Düzenle</h3>
+                <p class="text-[11px] text-slate-500">${escapeHtml(comp.name)}</p>
+              </div>
+            </div>
+            <button type="button" id="tender-edit-close" class="w-8 h-8 rounded-lg bg-white border border-slate-200 text-slate-400 hover:text-slate-700 hover:bg-slate-100 hover:border-slate-300 flex items-center justify-center font-bold text-base transition cursor-pointer">✕</button>
+          </div>
+
+          <form id="tender-edit-form" class="p-4 overflow-y-auto space-y-3 text-xs">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">Ülke</label>
+                <select id="edit-country" required class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900">
+                  ${this.countries.map(c => `
+                    <option value="${escapeHtml(c.id)}" ${c.id === comp!.country_id ? 'selected' : ''}>
+                      ${escapeHtml(c.flag)} ${escapeHtml(c.name)}
+                    </option>
+                  `).join('')}
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">Pazar Grubu</label>
+                <select id="edit-group" required class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900">
+                  <option value="Müteahhitlik (EPC)" ${comp.group_name.includes('EPC') ? 'selected' : ''}>Müteahhitlik (EPC)</option>
+                  <option value="Kamu Su İdaresi (BÖLGESEL)" ${comp.group_name.includes('Kamu') ? 'selected' : ''}>Kamu Su İdaresi (BÖLGESEL)</option>
+                  <option value="Dağıtıcı (TİEFBAU)" ${comp.group_name.includes('Dağıtıcı') ? 'selected' : ''}>Dağıtıcı (TİEFBAU)</option>
+                  <option value="Üretici (ÜRETİCİ)" ${comp.group_name.includes('Üretici') ? 'selected' : ''}>Üretici (ÜRETİCİ)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div class="sm:col-span-2">
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">Firma / Kurum Adı *</label>
+                <input type="text" id="edit-name" value="${escapeHtml(comp.name)}" required class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">Öncelik Seviyesi</label>
+                <select id="edit-priority" class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900">
+                  <option value="Öncelikli (A)" ${comp.priority === 'Öncelikli (A)' ? 'selected' : ''}>Öncelikli (A)</option>
+                  <option value="Yüksek (A+)" ${comp.priority === 'Yüksek (A+)' ? 'selected' : ''}>Yüksek (A+)</option>
+                  <option value="Kritik (A++)" ${comp.priority === 'Kritik (A++)' ? 'selected' : ''}>Kritik (A++)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">Şehir</label>
+                <input type="text" id="edit-city" value="${escapeHtml(comp.city || '')}" placeholder="Örn. Milano" class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">Telefon</label>
+                <input type="text" id="edit-phone" value="${escapeHtml(comp.phone || '')}" placeholder="+39 ..." class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">E-Posta</label>
+                <input type="email" id="edit-email" value="${escapeHtml(comp.email || '')}" placeholder="info@company.com" class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">Alternatif E-Posta</label>
+                <input type="text" id="edit-email-alt" value="${escapeHtml(comp.email_alt || '')}" placeholder="satinlama@company.com" class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-700 mb-1">Boru İhtiyacı / Faaliyet Alanı</label>
+              <input type="text" id="edit-category" value="${escapeHtml(comp.category || '')}" placeholder="Örn. PE100 / PVC Altyapı Boruları" class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900" />
+            </div>
+
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-700 mb-1">Açık Adres</label>
+              <textarea id="edit-address" rows="2" placeholder="Firma açık adresi..." class="w-full p-2.5 bg-white border border-slate-200 rounded-lg text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900">${escapeHtml(comp.address || '')}</textarea>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">CEO / Genel Müdür</label>
+                <input type="text" id="edit-ceo" value="${escapeHtml(comp.ceo || '')}" placeholder="Örn. Pietro Salini" class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-700 mb-1">CPO / Satın Alma Başkanı</label>
+                <input type="text" id="edit-cpo" value="${escapeHtml(comp.cpo || '')}" placeholder="Örn. Marco Rossi" class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-700 mb-1">Strateji / İhale Notu</label>
+              <textarea id="edit-strategy-note" rows="2" placeholder="Örn. Doğrudan fabrika teslim veya Tiefbau bayisi üzerinden tedarik tercih ediyor..." class="w-full p-2.5 bg-white border border-slate-200 rounded-lg text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900">${escapeHtml(comp.strategy_note || '')}</textarea>
+            </div>
+
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-end gap-2">
+              <button type="button" id="tender-edit-cancel" class="px-3.5 py-2 bg-white border border-slate-200 hover:bg-slate-50 hover:border-slate-300 text-slate-700 rounded-lg text-xs font-semibold transition cursor-pointer shadow-2xs">İptal</button>
+              <button type="submit" id="tender-edit-submit-btn" class="px-4 py-2 bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white rounded-lg text-xs font-semibold transition cursor-pointer shadow-2xs">Değişiklikleri Kaydet</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    `;
+
+    const closeModal = () => { modalRoot.innerHTML = ''; };
+    document.getElementById('tender-edit-close')?.addEventListener('click', closeModal);
+    document.getElementById('tender-edit-cancel')?.addEventListener('click', closeModal);
+
+    document.getElementById('tender-edit-form')?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const submitBtn = document.getElementById('tender-edit-submit-btn') as HTMLButtonElement;
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerText = 'Kaydediliyor...';
+      }
+
+      const country_id = (document.getElementById('edit-country') as HTMLSelectElement).value;
+      const group_name = (document.getElementById('edit-group') as HTMLSelectElement).value;
+      const name = (document.getElementById('edit-name') as HTMLInputElement).value.trim();
+      const priority = (document.getElementById('edit-priority') as HTMLSelectElement).value;
+      const city = (document.getElementById('edit-city') as HTMLInputElement).value.trim();
+      const phone = (document.getElementById('edit-phone') as HTMLInputElement).value.trim();
+      const email = (document.getElementById('edit-email') as HTMLInputElement).value.trim();
+      const email_alt = (document.getElementById('edit-email-alt') as HTMLInputElement).value.trim();
+      const category = (document.getElementById('edit-category') as HTMLInputElement).value.trim();
+      const address = (document.getElementById('edit-address') as HTMLTextAreaElement).value.trim();
+      const ceo = (document.getElementById('edit-ceo') as HTMLInputElement).value.trim();
+      const cpo = (document.getElementById('edit-cpo') as HTMLInputElement).value.trim();
+      const strategy_note = (document.getElementById('edit-strategy-note') as HTMLTextAreaElement).value.trim();
+
+      const res = await TenderApi.updateCompany(id, {
+        country_id,
+        name,
+        group_name,
+        category,
+        city,
+        priority,
+        phone,
+        email,
+        email_alt,
+        address,
+        ceo,
+        cpo,
+        strategy_note
+      });
+
+      if (res.success) {
+        closeModal();
+        await this.loadCompanies();
+        this.render();
+      } else {
+        alert('Hata: ' + (res.error || 'Firma güncellenemedi.'));
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerText = 'Değişiklikleri Kaydet';
+        }
       }
     });
   }

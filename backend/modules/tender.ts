@@ -14,6 +14,92 @@ function jsonResponse(data: any, status = 200, headers?: Headers): Response {
   return new Response(JSON.stringify(data), { status, headers: resHeaders });
 }
 
+async function getAllowedCountryIdsForSession(
+  env: TenderEnv,
+  session: SessionData | null
+): Promise<{ isAll: boolean; allowedIds: string[] }> {
+  if (!session) {
+    return { isAll: false, allowedIds: [] };
+  }
+
+  // Admin has access to all countries
+  if (session.role === 'admin') {
+    return { isAll: true, allowedIds: [] };
+  }
+
+  // Representative: only countries assigned in Pazar Haritası (country_assignments)
+  if (session.role === 'representative' && session.id) {
+    const assignStmt = env.DB.prepare(
+      'SELECT country_code FROM country_assignments WHERE representative_id = ?'
+    ).bind(session.id);
+    const { results: assignRows } = await assignStmt.all();
+    const assignedCodes = (assignRows || []).map((r: any) =>
+      String(r.country_code || '').trim().toLowerCase()
+    );
+
+    if (assignedCodes.length === 0) {
+      return { isAll: false, allowedIds: [] };
+    }
+
+    // Active tender countries
+    const tcStmt = env.DB.prepare('SELECT id, name FROM tender_countries WHERE active = 1');
+    const { results: tcRows } = await tcStmt.all();
+
+    // Map of country names from master countries table
+    const cStmt = env.DB.prepare('SELECT code, name FROM countries');
+    const { results: cRows } = await cStmt.all();
+
+    const codeToName: Record<string, string> = {};
+    (cRows || []).forEach((r: any) => {
+      if (r.code && r.name) {
+        codeToName[String(r.code).toLowerCase()] = String(r.name).toLowerCase();
+      }
+    });
+
+    const KNOWN_CODE_TO_ID: Record<string, string> = {
+      ro: 'romania',
+      de: 'germany',
+      it: 'italy',
+      tr: 'turkey',
+      fr: 'france',
+      es: 'spain',
+      gb: 'united-kingdom',
+      uk: 'united-kingdom',
+      us: 'united-states',
+      nl: 'netherlands',
+      be: 'belgium',
+      pl: 'poland'
+    };
+
+    const allowedIds = new Set<string>();
+
+    for (const code of assignedCodes) {
+      if (KNOWN_CODE_TO_ID[code]) {
+        allowedIds.add(KNOWN_CODE_TO_ID[code]);
+      }
+      const directMatch = (tcRows || []).find(
+        (tc: any) => String(tc.id).toLowerCase() === code
+      );
+      if (directMatch) {
+        allowedIds.add(directMatch.id);
+      }
+      const countryName = codeToName[code];
+      if (countryName) {
+        const nameMatch = (tcRows || []).find(
+          (tc: any) => String(tc.name).toLowerCase() === countryName
+        );
+        if (nameMatch) {
+          allowedIds.add(nameMatch.id);
+        }
+      }
+    }
+
+    return { isAll: false, allowedIds: Array.from(allowedIds) };
+  }
+
+  return { isAll: false, allowedIds: [] };
+}
+
 export async function handleTenderRoute(
   request: Request,
   env: TenderEnv,
@@ -26,16 +112,37 @@ export async function handleTenderRoute(
 
   // 1. GET /api/tender/countries
   if (path === '/api/tender/countries' && method === 'GET') {
+    if (!session) {
+      return jsonResponse({ error: 'Oturum açmanız gerekmektedir.' }, 401, corsHeaders);
+    }
+
     try {
-      const stmt = env.DB.prepare(`
+      const { isAll, allowedIds } = await getAllowedCountryIdsForSession(env, session);
+      if (!isAll && allowedIds.length === 0) {
+        return jsonResponse({ countries: [] }, 200, corsHeaders);
+      }
+
+      let query = `
         SELECT c.id, c.name, c.flag, 
                COUNT(comp.id) as count, c.active
         FROM tender_countries c
         LEFT JOIN tender_companies comp ON comp.country_id = c.id AND comp.deleted_at IS NULL
         WHERE c.active = 1
+      `;
+      const bindings: any[] = [];
+
+      if (!isAll) {
+        const placeholders = allowedIds.map(() => '?').join(',');
+        query += ` AND c.id IN (${placeholders})`;
+        bindings.push(...allowedIds);
+      }
+
+      query += `
         GROUP BY c.id, c.name, c.flag, c.active
         ORDER BY count DESC, c.name ASC
-      `);
+      `;
+
+      const stmt = env.DB.prepare(query).bind(...bindings);
       const { results } = await stmt.all();
       return jsonResponse({ countries: results || [] }, 200, corsHeaders);
     } catch (err: any) {
@@ -46,7 +153,16 @@ export async function handleTenderRoute(
 
   // 2. GET /api/tender/companies
   if (path === '/api/tender/companies' && method === 'GET') {
+    if (!session) {
+      return jsonResponse({ error: 'Oturum açmanız gerekmektedir.' }, 401, corsHeaders);
+    }
+
     try {
+      const { isAll, allowedIds } = await getAllowedCountryIdsForSession(env, session);
+      if (!isAll && allowedIds.length === 0) {
+        return jsonResponse({ companies: [], total: 0, limit: 100, offset: 0 }, 200, corsHeaders);
+      }
+
       const country = url.searchParams.get('country') || '';
       const group = url.searchParams.get('group') || '';
       const priority = url.searchParams.get('priority') || '';
@@ -54,78 +170,70 @@ export async function handleTenderRoute(
       const limit = Math.min(Math.max(parseInt(url.searchParams.get('limit') || '100', 10), 1), 200);
       const offset = Math.max(parseInt(url.searchParams.get('offset') || '0', 10), 0);
 
-      let query = `
+      const whereConditions: string[] = ['c.deleted_at IS NULL'];
+      const filterBindings: any[] = [];
+
+      // Enforce representative country isolation
+      if (!isAll) {
+        if (country && country !== 'all') {
+          if (!allowedIds.includes(country)) {
+            // Representative trying to view an unassigned country
+            return jsonResponse({ companies: [], total: 0, limit, offset }, 200, corsHeaders);
+          }
+          whereConditions.push('c.country_id = ?');
+          filterBindings.push(country);
+        } else {
+          const placeholders = allowedIds.map(() => '?').join(',');
+          whereConditions.push(`c.country_id IN (${placeholders})`);
+          filterBindings.push(...allowedIds);
+        }
+      } else {
+        // Admin
+        if (country && country !== 'all') {
+          whereConditions.push('c.country_id = ?');
+          filterBindings.push(country);
+        }
+      }
+
+      if (group && group !== 'all') {
+        whereConditions.push('c.group_name = ?');
+        filterBindings.push(group);
+      }
+
+      if (priority && priority !== 'all') {
+        whereConditions.push('c.priority = ?');
+        filterBindings.push(priority);
+      }
+
+      if (search) {
+        whereConditions.push(`(
+          LOWER(c.name) LIKE ? OR 
+          LOWER(c.city) LIKE ? OR 
+          LOWER(c.category) LIKE ? OR 
+          LOWER(c.ceo) LIKE ? OR 
+          LOWER(c.cpo) LIKE ? OR 
+          LOWER(c.project_reference) LIKE ?
+        )`);
+        const searchPattern = `%${search}%`;
+        filterBindings.push(searchPattern, searchPattern, searchPattern, searchPattern, searchPattern, searchPattern);
+      }
+
+      const whereClause = `WHERE ${whereConditions.join(' AND ')}`;
+
+      const query = `
         SELECT c.*, 
                (SELECT COUNT(*) FROM tender_crm_notes n WHERE n.company_id = c.id) as notes_count
         FROM tender_companies c
-        WHERE c.deleted_at IS NULL
+        ${whereClause}
+        ORDER BY c.created_at DESC LIMIT ? OFFSET ?
       `;
-      const bindings: any[] = [];
 
-      if (country && country !== 'all') {
-        query += ` AND c.country_id = ?`;
-        bindings.push(country);
-      }
-
-      if (group && group !== 'all') {
-        query += ` AND c.group_name = ?`;
-        bindings.push(group);
-      }
-
-      if (priority && priority !== 'all') {
-        query += ` AND c.priority = ?`;
-        bindings.push(priority);
-      }
-
-      if (search) {
-        query += ` AND (
-          LOWER(c.name) LIKE ? OR 
-          LOWER(c.city) LIKE ? OR 
-          LOWER(c.category) LIKE ? OR 
-          LOWER(c.ceo) LIKE ? OR 
-          LOWER(c.cpo) LIKE ? OR 
-          LOWER(c.project_reference) LIKE ?
-        )`;
-        const searchPattern = `%${search}%`;
-        bindings.push(searchPattern, searchPattern, searchPattern, searchPattern, searchPattern, searchPattern);
-      }
-
-      query += ` ORDER BY c.created_at DESC LIMIT ? OFFSET ?`;
-      bindings.push(limit, offset);
-
-      const stmt = env.DB.prepare(query).bind(...bindings);
+      const stmt = env.DB.prepare(query).bind(...filterBindings, limit, offset);
       const { results } = await stmt.all();
 
       // Total count query with same filters
-      let countQuery = `SELECT COUNT(*) as total FROM tender_companies c WHERE c.deleted_at IS NULL`;
-      const countBindings: any[] = [];
-
-      if (country && country !== 'all') {
-        countQuery += ` AND c.country_id = ?`;
-        countBindings.push(country);
-      }
-      if (group && group !== 'all') {
-        countQuery += ` AND c.group_name = ?`;
-        countBindings.push(group);
-      }
-      if (priority && priority !== 'all') {
-        countQuery += ` AND c.priority = ?`;
-        countBindings.push(priority);
-      }
-      if (search) {
-        countQuery += ` AND (
-          LOWER(c.name) LIKE ? OR 
-          LOWER(c.city) LIKE ? OR 
-          LOWER(c.category) LIKE ? OR 
-          LOWER(c.ceo) LIKE ? OR 
-          LOWER(c.cpo) LIKE ? OR 
-          LOWER(c.project_reference) LIKE ?
-        )`;
-        const searchPattern = `%${search}%`;
-        countBindings.push(searchPattern, searchPattern, searchPattern, searchPattern, searchPattern, searchPattern);
-      }
-
-      const countStmt = env.DB.prepare(countQuery).bind(...countBindings);
+      const countQuery = `SELECT COUNT(*) as total FROM tender_companies c ${whereClause}`;
+      const countStmt = env.DB.prepare(countQuery).bind(...filterBindings);
       const countRes: any = await countStmt.first();
       const total = countRes ? countRes.total : (results?.length || 0);
 
@@ -144,6 +252,10 @@ export async function handleTenderRoute(
   // 3. GET /api/tender/companies/:id
   const companyDetailMatch = path.match(/^\/api\/tender\/companies\/([a-zA-Z0-9_-]+)$/);
   if (companyDetailMatch && method === 'GET') {
+    if (!session) {
+      return jsonResponse({ error: 'Oturum açmanız gerekmektedir.' }, 401, corsHeaders);
+    }
+
     const id = companyDetailMatch[1];
     try {
       const compStmt = env.DB.prepare(`
@@ -156,6 +268,12 @@ export async function handleTenderRoute(
 
       if (!company) {
         return jsonResponse({ error: 'Firma bulunamadı.' }, 404, corsHeaders);
+      }
+
+      // Check permission for representative
+      const { isAll, allowedIds } = await getAllowedCountryIdsForSession(env, session);
+      if (!isAll && !allowedIds.includes(company.country_id)) {
+        return jsonResponse({ error: 'Bu firmanın raporunu görüntüleme yetkiniz bulunmamaktadır.' }, 403, corsHeaders);
       }
 
       // Sources
@@ -253,7 +371,7 @@ export async function handleTenderRoute(
     try {
       const body: any = await request.json();
       const {
-        name, group_name, category, city, priority,
+        country_id, name, group_name, category, city, priority,
         phone, email, email_alt, address, project_officer,
         owner_group, ceo, cpo, cfo, strategy_note, project_reference, source_text
       } = body;
@@ -264,12 +382,14 @@ export async function handleTenderRoute(
 
       await env.DB.prepare(`
         UPDATE tender_companies SET
+          country_id = COALESCE(?, country_id),
           name = ?, group_name = ?, category = ?, city = ?, priority = ?,
           phone = ?, email = ?, email_alt = ?, address = ?, project_officer = ?,
           owner_group = ?, ceo = ?, cpo = ?, cfo = ?, strategy_note = ?,
           project_reference = ?, source_text = ?, updated_at = CURRENT_TIMESTAMP
         WHERE id = ? AND deleted_at IS NULL
       `).bind(
+        country_id || null,
         name, group_name, category || '', city || '', priority || '',
         phone || '', email || '', email_alt || '', address || '', project_officer || '',
         owner_group || '', ceo || '', cpo || '', cfo || '', strategy_note || '',
@@ -309,6 +429,14 @@ export async function handleTenderRoute(
   if (notesMatch && method === 'POST') {
     const id = notesMatch[1];
     try {
+      const { isAll, allowedIds } = await getAllowedCountryIdsForSession(env, session);
+      if (!isAll) {
+        const comp: any = await env.DB.prepare('SELECT country_id FROM tender_companies WHERE id = ? AND deleted_at IS NULL').bind(id).first();
+        if (!comp || !allowedIds.includes(comp.country_id)) {
+          return jsonResponse({ error: 'Bu firmaya not ekleme yetkiniz bulunmamaktadır.' }, 403, corsHeaders);
+        }
+      }
+
       const body: any = await request.json();
       const noteText = (body.note || '').trim();
 
@@ -343,6 +471,11 @@ export async function handleTenderRoute(
 
       if (!company) {
         return jsonResponse({ error: 'Firma bulunamadı.' }, 404, corsHeaders);
+      }
+
+      const { isAll, allowedIds } = await getAllowedCountryIdsForSession(env, session);
+      if (!isAll && !allowedIds.includes(company.country_id)) {
+        return jsonResponse({ error: 'Bu firmayı senkronize etme yetkiniz bulunmamaktadır.' }, 403, corsHeaders);
       }
 
       const targetEmail = (company.email || company.email_alt || '').trim();
