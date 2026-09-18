@@ -20,11 +20,6 @@ binding = "DB"
 database_name = "tenderpulse-db"
 database_id = "45b35dbd-5a27-4311-bae3-83080fef900d"
 
-[[d1_databases]]
-binding = "OLD_DB"
-database_name = "mapassign"
-database_id = "535e995a-3ac8-4cbd-b2f1-0be4fca3c224"
-
 # ==============================================================================
 # DO NOT REMOVE OR OVERWRITE EXISTING ENVIRONMENT VARIABLES
 # ==============================================================================
