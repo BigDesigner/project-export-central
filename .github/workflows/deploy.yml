@@ -16,11 +16,35 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-level: 20
+          node-version: 20
           cache: 'npm'
 
       - name: Install Root Dependencies
         run: npm ci
+
+      # --- 0. Export Old D1 Database (mapassign) ---
+      - name: Export Old D1 Database
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: '.'
+          command: d1 export mapassign --remote --output=./old_db_dump.sql
+        continue-on-error: true
+
+      # --- 0.1 Clean and Prepare Migration Dump ---
+      - name: Clean Migration Dump
+        run: python3 scripts/prepare_migration_dump.py
+
+      # --- 0.2 Import Old Data into New D1 (tenderpulse-db) ---
+      - name: Import Migrated Data into New D1
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: '.'
+          command: d1 execute DB --remote --file=./clean_migration.sql
+        continue-on-error: true
 
       # --- 1. Migrate Production Database ---
       - name: Migrate Database (D1)
@@ -49,8 +73,6 @@ jobs:
           workingDirectory: '.'
           command: deploy
 
-
-
       - name: Build Frontend
         run: npm run frontend:build
 
@@ -59,6 +81,6 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: 'mapassign' # Update this to match your Cloudflare Pages project name
+          projectName: 'tenderpulse-frontend'
           directory: 'frontend/dist'
-          gitBranch: 'main'
+          branch: 'main'

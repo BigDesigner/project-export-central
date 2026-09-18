@@ -15,6 +15,7 @@ export interface Env {
   ALLOWED_ORIGIN?: string;
   TURNSTILE_SITE_KEY?: string;
   TURNSTILE_SECRET_KEY?: string;
+  OLD_DB?: D1Database;
   BREVO_API_KEY?: string;
   BREVO_LIST_ID?: string;
 }
@@ -25,6 +26,7 @@ function getAllowedOrigins(env: Env): string[] {
     'http://127.0.0.1:5173',
     'https://tenderpulse.akansu.com',
     'https://tenderpulse.pages.dev',
+    'https://tenderpulse-frontend.pages.dev',
     'https://map.akansu.com',
     'https://mapassign.pages.dev'
   ];

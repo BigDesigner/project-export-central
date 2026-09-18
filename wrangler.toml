@@ -4,7 +4,7 @@
 # DO NOT DELETE BINDINGS OR ENVIRONMENT VARIABLES WITHOUT EXPLICIT USER CONFIRMATION.
 # ==============================================================================
 
-name = "mapassign-api"
+name = "tenderpulse-api"
 main = "backend/index.ts"
 compatibility_date = "2024-01-01"
 
@@ -17,8 +17,12 @@ id = "7bfd440028df45759033598e67b28647"
 
 [[d1_databases]]
 binding = "DB"
+database_name = "tenderpulse-db"
+database_id = "45b35dbd-5a27-4311-bae3-83080fef900d"
+
+[[d1_databases]]
+binding = "OLD_DB"
 database_name = "mapassign"
-# You must create this database using: wrangler d1 create map-assign-db
 database_id = "535e995a-3ac8-4cbd-b2f1-0be4fca3c224"
 
 # ==============================================================================
@@ -26,5 +30,5 @@ database_id = "535e995a-3ac8-4cbd-b2f1-0be4fca3c224"
 # ==============================================================================
 [vars]
 ADMIN_USERNAME = "admin"
-ALLOWED_ORIGIN = "https://map.akansu.com"
+ALLOWED_ORIGIN = "https://tenderpulse.akansu.com"
 TURNSTILE_SITE_KEY = "0x4AAAAAADkZu0g18QHwPnno"

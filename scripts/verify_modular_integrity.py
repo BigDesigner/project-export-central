@@ -10,10 +10,11 @@ def verify():
     with open(wrangler_path, "r", encoding="utf-8") as f:
         wrangler_content = f.read()
     assert "ADMIN_USERNAME = \"admin\"" in wrangler_content, "ADMIN_USERNAME missing"
-    assert "ALLOWED_ORIGIN = \"https://map.akansu.com\"" in wrangler_content, "ALLOWED_ORIGIN missing"
+    assert "ALLOWED_ORIGIN = \"https://tenderpulse.akansu.com\"" in wrangler_content, "ALLOWED_ORIGIN missing"
     assert "TURNSTILE_SITE_KEY = \"0x4AAAAAADkZu0g18QHwPnno\"" in wrangler_content, "TURNSTILE_SITE_KEY missing"
     assert "binding = \"DB\"" in wrangler_content, "DB binding missing"
-    print("✓ wrangler.toml [vars] and D1 DB binding 100% preserved.")
+    assert "45b35dbd-5a27-4311-bae3-83080fef900d" in wrangler_content, "New DB ID missing"
+    print("✓ wrangler.toml [vars], tenderpulse DB binding and ID 100% preserved.")
 
     # 2. Check schema.sql
     schema_path = os.path.join(base_dir, "schema.sql")
