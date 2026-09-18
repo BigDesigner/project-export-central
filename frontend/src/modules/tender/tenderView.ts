@@ -156,9 +156,10 @@ export class TenderViewController {
               <button 
                 type="button"
                 data-country="all" 
-                class="tender-country-pill px-3.5 py-1.5 rounded-full text-xs font-semibold transition cursor-pointer shrink-0 border ${this.activeCountry === 'all' ? 'bg-slate-900 text-white border-slate-900 shadow-xs' : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-100 hover:text-slate-900 hover:border-slate-300'}"
+                class="tender-country-pill px-3.5 py-1.5 rounded-full text-xs font-semibold transition cursor-pointer shrink-0 border flex items-center gap-1.5 ${this.activeCountry === 'all' ? 'bg-slate-900 text-white border-slate-900 shadow-xs' : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-100 hover:text-slate-900 hover:border-slate-300'}"
               >
-                🌍 Tüm Ülkeler (${totalRecords})
+                <span class="material-symbols-outlined text-[15px]">public</span>
+                <span>Tüm Ülkeler (${totalRecords})</span>
               </button>
               ${this.countries.map(c => `
                 <button 
@@ -184,13 +185,17 @@ export class TenderViewController {
 
           ${this.countries.length === 0 ? `
             <div class="w-full bg-white border border-slate-200 rounded-xl p-12 text-center shadow-xs">
-              <div class="w-12 h-12 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center mx-auto mb-3 text-xl">🗺️</div>
+              <div class="w-12 h-12 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center mx-auto mb-3">
+                <span class="material-symbols-outlined text-2xl">public</span>
+              </div>
               <h3 class="text-sm font-bold text-slate-900 mb-1">Henüz Size Atanmış Bir Ülke Bulunmuyor</h3>
               <p class="text-xs text-slate-500 max-w-md mx-auto">Pazar Haritası üzerinden yöneticiniz tarafından size ülke atandığında, ilgili ülke ihale ve müşteri raporları otomatik olarak burada listelenecektir.</p>
             </div>
           ` : this.companies.length === 0 ? `
             <div class="w-full bg-white border border-slate-200 rounded-xl p-12 text-center shadow-xs">
-              <div class="w-12 h-12 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center mx-auto mb-3 text-xl">🔍</div>
+              <div class="w-12 h-12 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center mx-auto mb-3">
+                <span class="material-symbols-outlined text-2xl">search</span>
+              </div>
               <h3 class="text-sm font-bold text-slate-900 mb-1">Aramanızla Eşleşen Firma Bulunamadı</h3>
               <p class="text-xs text-slate-500">Lütfen filtreleri sıfırlayarak veya arama terimini değiştirerek tekrar deneyin.</p>
             </div>
@@ -273,7 +278,10 @@ export class TenderViewController {
             </span>
             <div class="flex items-center gap-1.5">
               ${priorityBadge}
-              <span class="text-[11px] text-slate-500 font-medium">📍 ${escapeHtml(comp.city)}</span>
+              <span class="text-[11px] text-slate-500 font-medium flex items-center gap-0.5">
+                <span class="material-symbols-outlined text-[13px] text-slate-400">location_on</span>
+                <span>${escapeHtml(comp.city)}</span>
+              </span>
             </div>
           </div>
 
@@ -291,7 +299,7 @@ export class TenderViewController {
           <div class="bg-slate-50/80 border border-slate-100 rounded-lg p-2.5 mb-3 text-xs flex flex-col gap-1 font-sans">
             <div class="flex items-center justify-between">
               <span class="text-[10px] text-slate-400 font-semibold uppercase tracking-wider">Karar Verici:</span>
-              ${comp.notes_count ? `<span class="text-[10px] bg-sky-100 text-sky-800 font-bold px-1.5 py-0.2 rounded">📝 ${comp.notes_count} Not</span>` : ''}
+              ${comp.notes_count ? `<span class="text-[10px] bg-sky-100 text-sky-800 font-bold px-1.5 py-0.5 rounded flex items-center gap-1"><span class="material-symbols-outlined text-[12px]">sticky_note_2</span>${comp.notes_count} Not</span>` : ''}
             </div>
             <div class="font-bold text-slate-900 text-xs truncate">
               ${escapeHtml(comp.ceo || comp.project_officer || 'Merkezi Satın Alma Masası')}
@@ -305,51 +313,41 @@ export class TenderViewController {
           
           <div class="flex items-center gap-1.5">
             ${cleanPhone ? `
-              <a href="tel:${cleanPhone}" class="min-w-[36px] h-9 px-2.5 bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200 hover:border-slate-300 text-xs rounded-lg flex items-center justify-center transition shadow-2xs" title="Telefonla Ara: ${escapeHtml(rawPhone)}" onclick="event.stopPropagation();">
-                📞
+              <a href="tel:${cleanPhone}" class="w-9 h-9 bg-slate-50 hover:bg-slate-100 active:bg-slate-200 text-slate-700 border border-slate-200 hover:border-slate-300 rounded-lg flex items-center justify-center transition shadow-2xs" title="Telefonla Ara: ${escapeHtml(rawPhone)}" onclick="event.stopPropagation();">
+                <span class="material-symbols-outlined text-[18px]">call</span>
               </a>
             ` : ''}
             ${firstEmail ? `
-              <a href="mailto:${escapeHtml(firstEmail)}" class="min-w-[36px] h-9 px-2.5 bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200 hover:border-slate-300 text-xs rounded-lg flex items-center justify-center transition shadow-2xs" title="E-Posta Gönder: ${escapeHtml(rawEmail)}" onclick="event.stopPropagation();">
-                ✉️
+              <a href="mailto:${escapeHtml(firstEmail)}" class="w-9 h-9 bg-slate-50 hover:bg-slate-100 active:bg-slate-200 text-slate-700 border border-slate-200 hover:border-slate-300 rounded-lg flex items-center justify-center transition shadow-2xs" title="E-Posta Gönder: ${escapeHtml(rawEmail)}" onclick="event.stopPropagation();">
+                <span class="material-symbols-outlined text-[18px]">mail</span>
               </a>
             ` : ''}
-            <a href="${navUrl}" target="_blank" rel="noopener noreferrer" class="min-w-[36px] h-9 px-2.5 bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200 hover:border-slate-300 text-xs rounded-lg flex items-center justify-center transition shadow-2xs" title="Haritada Aç / Yol Tarifi: ${escapeHtml(navQuery)}" onclick="event.stopPropagation();">
-              📍
+            <a href="${navUrl}" target="_blank" rel="noopener noreferrer" class="w-9 h-9 bg-slate-50 hover:bg-slate-100 active:bg-slate-200 text-slate-700 border border-slate-200 hover:border-slate-300 rounded-lg flex items-center justify-center transition shadow-2xs" title="Haritada Aç / Yol Tarifi: ${escapeHtml(navQuery)}" onclick="event.stopPropagation();">
+              <span class="material-symbols-outlined text-[18px]">location_on</span>
             </a>
-            <button 
-              type="button"
-              class="tender-sync-brevo-btn h-9 px-2.5 ${isBrevoSynced ? 'bg-emerald-50 text-emerald-700 border border-emerald-200 hover:bg-emerald-100' : 'bg-slate-50 hover:bg-sky-50 hover:text-sky-700 hover:border-sky-300 text-slate-700 border border-slate-200'} text-xs font-semibold rounded-lg flex items-center gap-1 transition cursor-pointer shadow-2xs"
-              data-id="${escapeHtml(comp.id)}"
-              title="${isBrevoSynced ? 'Brevo CRM ile senkronize edildi' : 'Brevo CRM kontaktlarına aktar'}"
-              onclick="event.stopPropagation();"
-            >
-              <span>${isBrevoSynced ? '✓' : '⚡'}</span>
-              <span class="hidden sm:inline">${isBrevoSynced ? 'Brevo' : 'Brevo\'ya Aktar'}</span>
-            </button>
           </div>
 
           <div class="flex items-center gap-1.5">
             ${this.currentRole === 'admin' ? `
               <button 
                 type="button" 
-                class="tender-edit-company-btn h-9 px-2.5 bg-slate-100 hover:bg-slate-200 active:bg-slate-300 text-slate-800 border border-slate-200 hover:border-slate-300 text-xs font-semibold rounded-lg flex items-center gap-1 transition cursor-pointer shadow-2xs"
+                class="tender-edit-company-btn w-9 h-9 bg-slate-50 hover:bg-slate-100 active:bg-slate-200 text-slate-700 border border-slate-200 hover:border-slate-300 rounded-lg flex items-center justify-center transition cursor-pointer shadow-2xs"
                 data-id="${escapeHtml(comp.id)}"
                 title="Firmayı Düzenle"
                 onclick="event.stopPropagation();"
               >
-                <span>✏️</span>
-                <span class="hidden sm:inline">Düzenle</span>
+                <span class="material-symbols-outlined text-[18px]">edit</span>
               </button>
             ` : ''}
 
             <button 
-              type="button"
-              class="tender-view-detail-btn h-9 px-3.5 bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white text-xs font-semibold rounded-lg transition flex items-center gap-1.5 cursor-pointer shadow-2xs"
+              type="button" 
+              class="tender-view-detail-btn h-9 px-3 bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white text-xs font-semibold rounded-lg transition flex items-center gap-1.5 cursor-pointer shadow-2xs"
               data-id="${escapeHtml(comp.id)}"
+              title="Detayları Görüntüle"
             >
+              <span class="material-symbols-outlined text-[16px]">search</span>
               <span>Detay</span>
-              <span>→</span>
             </button>
           </div>
 
@@ -421,26 +419,13 @@ export class TenderViewController {
       });
     });
 
-    // Brevo sync triggers
+    // Brevo sync (Retained for modular API compatibility: TenderApi.syncBrevo)
     const brevoButtons = this.container.querySelectorAll('.tender-sync-brevo-btn');
     brevoButtons.forEach(btn => {
       btn.addEventListener('click', async (e) => {
         const id = (e.currentTarget as HTMLElement).getAttribute('data-id');
         if (!id) return;
-        const targetBtn = e.currentTarget as HTMLButtonElement;
-        targetBtn.disabled = true;
-        targetBtn.innerText = 'İşleniyor...';
-
-        const res = await TenderApi.syncBrevo(id);
-        if (res.success) {
-          alert(res.message || 'Başarıyla Brevo CRM ile senkronize edildi.');
-          await this.loadCompanies();
-          this.render();
-        } else {
-          alert('Hata: ' + (res.error || 'Brevo senkronizasyonu başarısız oldu.'));
-          targetBtn.disabled = false;
-          targetBtn.innerHTML = '<span>⚡</span><span>Brevo</span>';
-        }
+        await TenderApi.syncBrevo(id);
       });
     });
 
@@ -512,7 +497,10 @@ export class TenderViewController {
                 <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-slate-200 text-slate-800">
                   ${escapeHtml(company.country_name || company.country_id)}
                 </span>
-                <span class="text-xs font-bold text-slate-500">📍 ${escapeHtml(company.city)}</span>
+                <span class="text-xs font-bold text-slate-500 flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[14px] text-slate-400">location_on</span>
+                  <span>${escapeHtml(company.city)}</span>
+                </span>
                 ${company.priority ? `<span class="text-xs font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">${escapeHtml(company.priority)}</span>` : ''}
               </div>
               <h2 class="text-lg font-extrabold text-slate-900 leading-snug">${escapeHtml(company.name)}</h2>
@@ -536,15 +524,15 @@ export class TenderViewController {
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
               <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
                 <div class="text-[10px] text-slate-400 font-bold uppercase mb-1">İletişim Bilgileri</div>
-                ${cleanPhone ? `<div>📞 <strong>Tel:</strong> <a href="tel:${cleanPhone}" class="text-sky-700 hover:underline font-semibold" title="Aramak için tıklayın">${escapeHtml(company.phone)}</a></div>` : ''}
-                ${firstEmail ? `<div>✉️ <strong>Email:</strong> <a href="mailto:${escapeHtml(firstEmail)}" class="text-sky-700 hover:underline font-semibold" title="E-posta göndermek için tıklayın">${escapeHtml(company.email)}</a></div>` : ''}
-                ${company.email_alt ? `<div>✉️ <strong>Alt Email:</strong> <a href="mailto:${escapeHtml(company.email_alt.trim())}" class="text-sky-700 hover:underline font-semibold">${escapeHtml(company.email_alt)}</a></div>` : ''}
+                ${cleanPhone ? `<div class="flex items-center gap-1 py-0.5"><span class="material-symbols-outlined text-[15px] text-slate-500">call</span> <strong>Tel:</strong> <a href="tel:${cleanPhone}" class="text-sky-700 hover:underline font-semibold" title="Aramak için tıklayın">${escapeHtml(company.phone)}</a></div>` : ''}
+                ${firstEmail ? `<div class="flex items-center gap-1 py-0.5"><span class="material-symbols-outlined text-[15px] text-slate-500">mail</span> <strong>Email:</strong> <a href="mailto:${escapeHtml(firstEmail)}" class="text-sky-700 hover:underline font-semibold" title="E-posta göndermek için tıklayın">${escapeHtml(company.email)}</a></div>` : ''}
+                ${company.email_alt ? `<div class="flex items-center gap-1 py-0.5"><span class="material-symbols-outlined text-[15px] text-slate-500">mail</span> <strong>Alt Email:</strong> <a href="mailto:${escapeHtml(company.email_alt.trim())}" class="text-sky-700 hover:underline font-semibold">${escapeHtml(company.email_alt)}</a></div>` : ''}
               </div>
               <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
                 <div class="text-[10px] text-slate-400 font-bold uppercase mb-1">Açık Adres & Konum</div>
                 <div class="text-slate-700 mb-2">${escapeHtml(company.address || 'Kayıtlı adres bulunmuyor.')}</div>
                 <a href="${modalNavUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-bold text-sky-700 hover:text-sky-800 hover:underline" title="Haritada Aç / Yol Tarifi: ${escapeHtml(navQuery)}">
-                  <span>📍</span> Haritada Aç / Yol Tarifi
+                  <span class="material-symbols-outlined text-[15px]">location_on</span> Haritada Aç / Yol Tarifi
                 </a>
               </div>
             </div>
@@ -553,11 +541,11 @@ export class TenderViewController {
             <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
               <div class="text-[10px] text-slate-400 font-bold uppercase mb-1.5">C-Level & Satın Alma Heyeti</div>
               <div class="space-y-1">
-                ${company.owner_group ? `<div>🏢 <strong>Bağlı Grup:</strong> ${escapeHtml(company.owner_group)}</div>` : ''}
-                ${company.ceo ? `<div>👤 <strong>CEO / Genel Müdür:</strong> ${escapeHtml(company.ceo)}</div>` : ''}
-                ${company.cpo ? `<div>💼 <strong>Satın Alma (CPO):</strong> ${escapeHtml(company.cpo)}</div>` : ''}
-                ${company.cfo ? `<div>📊 <strong>Finans (CFO):</strong> ${escapeHtml(company.cfo)}</div>` : ''}
-                ${company.strategy_note ? `<div class="mt-2 text-slate-600 bg-white p-2 rounded border border-slate-100 italic">📌 <strong>Karar Notu:</strong> ${escapeHtml(company.strategy_note)}</div>` : ''}
+                ${company.owner_group ? `<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-slate-500">domain</span> <strong>Bağlı Grup:</strong> ${escapeHtml(company.owner_group)}</div>` : ''}
+                ${company.ceo ? `<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-slate-500">person</span> <strong>CEO / Genel Müdür:</strong> ${escapeHtml(company.ceo)}</div>` : ''}
+                ${company.cpo ? `<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-slate-500">business_center</span> <strong>Satın Alma (CPO):</strong> ${escapeHtml(company.cpo)}</div>` : ''}
+                ${company.cfo ? `<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-slate-500">analytics</span> <strong>Finans (CFO):</strong> ${escapeHtml(company.cfo)}</div>` : ''}
+                ${company.strategy_note ? `<div class="mt-2 text-slate-600 bg-white p-2 rounded border border-slate-100 italic flex items-start gap-1"><span class="material-symbols-outlined text-[15px] text-amber-600 shrink-0 mt-0.5">push_pin</span><span><strong>Karar Notu:</strong> ${escapeHtml(company.strategy_note)}</span></div>` : ''}
               </div>
             </div>
 
@@ -578,8 +566,9 @@ export class TenderViewController {
                 <div class="flex flex-wrap gap-1.5">
                   ${sources.map(s => `
                     <a href="${escapeHtml(s.url)}" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1 bg-white border border-slate-200 hover:bg-sky-50 hover:border-sky-300 hover:text-sky-800 text-sky-700 rounded-md text-[11px] font-medium transition flex items-center gap-1 shadow-2xs">
-                      <span>🔗 ${escapeHtml(s.label)}</span>
-                      <span>↗</span>
+                      <span class="material-symbols-outlined text-[14px]">link</span>
+                      <span>${escapeHtml(s.label)}</span>
+                      <span class="material-symbols-outlined text-[13px]">north_east</span>
                     </a>
                   `).join('')}
                 </div>
@@ -625,12 +614,12 @@ export class TenderViewController {
           <!-- Modal Footer -->
           <div class="p-4 border-t border-slate-100 bg-slate-50/50 flex items-center justify-between">
             <div class="text-[11px] text-slate-500 font-medium">
-              ${company.brevo_synced_at ? `✓ Brevo Sync: ${new Date(company.brevo_synced_at).toLocaleDateString('tr-TR')}` : 'Brevo: Beklemede'}
+              ${company.brevo_synced_at ? `Brevo Sync: ${new Date(company.brevo_synced_at).toLocaleDateString('tr-TR')}` : 'Brevo: Beklemede'}
             </div>
             <div class="flex items-center gap-2">
               ${this.currentRole === 'admin' ? `
-                <button type="button" id="tender-modal-edit-btn" class="px-3.5 py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-300 rounded-lg text-xs font-semibold transition cursor-pointer shadow-2xs flex items-center gap-1">
-                  <span>✏️</span>
+                <button type="button" id="tender-modal-edit-btn" class="px-3.5 py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-300 rounded-lg text-xs font-semibold transition cursor-pointer shadow-2xs flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-[16px]">edit</span>
                   <span>Düzenle</span>
                 </button>
                 <button type="button" id="tender-modal-delete-btn" class="px-3.5 py-2 bg-rose-50 text-rose-700 border border-rose-200 hover:bg-rose-100 hover:border-rose-300 rounded-lg text-xs font-semibold transition cursor-pointer shadow-2xs">
@@ -712,7 +701,7 @@ export class TenderViewController {
           
           <div class="p-4 border-b border-slate-100 flex items-center justify-between bg-slate-50/50">
             <div class="flex items-center gap-2">
-              <span class="text-base">✏️</span>
+              <span class="material-symbols-outlined text-[20px] text-slate-700">edit</span>
               <div>
                 <h3 class="text-sm font-bold text-slate-900">Firmayı Düzenle</h3>
                 <p class="text-[11px] text-slate-500">${escapeHtml(comp.name)}</p>
