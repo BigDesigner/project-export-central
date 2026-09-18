@@ -383,8 +383,11 @@ export default {
           return jsonResponse({ error: 'Invalid country code format.' }, 400, headers);
         }
 
-        if (representativeId !== null && (typeof representativeId !== 'number' || representativeId <= 0)) {
-          return jsonResponse({ error: 'Invalid representative ID format.' }, 400, headers);
+        // Validate representativeId: null or 0 (unassign/clear), or positive integer (valid rep id)
+        if (representativeId !== null && representativeId !== 0) {
+          if (typeof representativeId !== 'number' || !Number.isInteger(representativeId) || representativeId < 1) {
+            return jsonResponse({ error: 'Invalid representative ID format.' }, 400, headers);
+          }
         }
 
         if (representativeId === null || representativeId === 0) {
@@ -393,8 +396,12 @@ export default {
             .bind(countryCode.toLowerCase())
             .run();
           
-          await enqueueJob(env, 'move_country_folders', { country_code: countryCode.toLowerCase(), new_representative_id: null });
-          ctx.waitUntil(processQueue(env).catch(console.error));
+          try {
+            await enqueueJob(env, 'move_country_folders', { country_code: countryCode.toLowerCase(), new_representative_id: null });
+            ctx.waitUntil(processQueue(env).catch(console.error));
+          } catch (qErr) {
+            console.warn('Queue non-fatal warning on unassign:', qErr);
+          }
           
           return jsonResponse({ success: true, message: 'Assignment cleared.' }, 200, headers);
         } else {
@@ -407,6 +414,17 @@ export default {
             return jsonResponse({ error: 'Representative not found.' }, 404, headers);
           }
 
+          // Ensure country exists in master countries table to avoid FOREIGN KEY constraint error
+          try {
+            await env.DB.prepare(
+              `INSERT OR IGNORE INTO countries (code, name, region) VALUES (?, ?, 'Global')`
+            )
+              .bind(countryCode.toLowerCase(), countryCode.toUpperCase())
+              .run();
+          } catch (cErr) {
+            console.warn('Insert master country non-fatal warning:', cErr);
+          }
+
           // Idempotent Upsert
           await env.DB.prepare(
             `INSERT INTO country_assignments (country_code, representative_id) 
@@ -417,8 +435,12 @@ export default {
             .bind(countryCode.toLowerCase(), representativeId)
             .run();
 
-          await enqueueJob(env, 'move_country_folders', { country_code: countryCode.toLowerCase(), new_representative_id: representativeId });
-          ctx.waitUntil(processQueue(env).catch(console.error));
+          try {
+            await enqueueJob(env, 'move_country_folders', { country_code: countryCode.toLowerCase(), new_representative_id: representativeId });
+            ctx.waitUntil(processQueue(env).catch(console.error));
+          } catch (qErr) {
+            console.warn('Queue non-fatal warning on assign:', qErr);
+          }
 
           return jsonResponse({ success: true, message: 'Assignment updated.' }, 200, headers);
         }

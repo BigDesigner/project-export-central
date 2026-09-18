@@ -495,7 +495,10 @@ class AppController {
     // Handle assign country to representative
     this.adminAddCountryBtn.addEventListener('click', async () => {
       const repId = parseInt(this.adminRepSelect.value, 10);
-      if (!repId || isNaN(repId)) return;
+      if (!repId || isNaN(repId)) {
+        alert('Lütfen atanacak bir temsilci seçin.');
+        return;
+      }
 
       const countryCode = this.adminAddCountrySelect.value;
       if (!countryCode) {
@@ -1048,7 +1051,8 @@ class AppController {
                   this.mapEngine?.updateSingleCountryColor(c.code, null);
                   this.populateRepresentativeEditForm(repId);
                 } else {
-                  alert('Ülke ataması kaldırılamadı.');
+                  const errData = await assignRes.json().catch(() => ({}));
+                  alert(errData.error || 'Ülke ataması kaldırılamadı.');
                 }
               } catch (err) {
                 console.error(err);
