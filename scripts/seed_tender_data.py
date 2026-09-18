@@ -10,7 +10,9 @@ def escape_sql_string(val):
 
 def main():
     root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    deep_data_dir = os.path.join(os.path.dirname(root_dir), "data")
+    deep_data_dir = os.path.join(root_dir, "data")
+    if not os.path.exists(os.path.join(deep_data_dir, "countries.json")):
+        deep_data_dir = os.path.join(os.path.dirname(root_dir), "data")
     out_sql_file = os.path.join(root_dir, "tender_seed.sql")
 
     countries_file = os.path.join(deep_data_dir, "countries.json")
@@ -46,7 +48,11 @@ def main():
         country_id = c.get("id")
         data_file = os.path.join(deep_data_dir, f"{country_id}.json")
         if not os.path.exists(data_file):
-            continue
+            fallback_file = os.path.join(os.path.dirname(root_dir), "data", f"{country_id}.json")
+            if os.path.exists(fallback_file):
+                data_file = fallback_file
+            else:
+                continue
 
         with open(data_file, "r", encoding="utf-8") as f:
             companies = json.load(f)

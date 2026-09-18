@@ -22,30 +22,6 @@ jobs:
       - name: Install Root Dependencies
         run: npm ci
 
-      # --- 0. Export Old D1 Database (mapassign) ---
-      - name: Export Old D1 Database
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          workingDirectory: '.'
-          command: d1 export mapassign --remote --output=./old_db_dump.sql
-        continue-on-error: true
-
-      # --- 0.1 Clean and Prepare Migration Dump ---
-      - name: Clean Migration Dump
-        run: python3 scripts/prepare_migration_dump.py
-
-      # --- 0.2 Import Old Data into New D1 (tenderpulse-db) ---
-      - name: Import Migrated Data into New D1
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          workingDirectory: '.'
-          command: d1 execute DB --remote --file=./clean_migration.sql
-        continue-on-error: true
-
       # --- 1. Migrate Production Database ---
       - name: Migrate Database (D1)
         uses: cloudflare/wrangler-action@v3

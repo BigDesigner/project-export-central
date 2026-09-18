@@ -1,0 +1,837 @@
+[
+  {
+    "id": "de-001",
+    "name": "STRABAG AG Deutschland",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Müteahhitlik (EPC)",
+    "category": "İçme Suyu / Kanalizasyon / WWTP / Tiefbau",
+    "city": "Köln",
+    "priority": "Kritik (A++)",
+    "phone": "+49 221 824 01",
+    "email": "direktion.tiefbau@strabag.com",
+    "email_alt": "einkauf@strabag.com",
+    "address": "Siegburger Straße 241, 50679 Köln, Almanya",
+    "project_officer": "Direktion Großprojekte / Tiefbau & Rohrbau",
+    "executive": {
+      "owner_group": "STRABAG SE (Avusturya Çok Uluslu Grup)",
+      "ceo": "Klemens Haselsteiner (Vorstandsvorsitzender STRABAG SE)",
+      "cpo": "Zentrale Beschaffung / Head of Procurement | einkauf@strabag.com",
+      "cfo": "Christian Harder (CFO)",
+      "strategy_note": "Almanya genelinde altyapı boru, isale ve kanalizasyon ihalelerinde merkezi satın alma birimi ve yerel şantiye direktörlükleri ortak karar verir. PE100 içme suyu ve U-PVC kanalizasyon borularında onaylı çerçeve tedarikçi listesi uygulanır."
+    },
+    "project_reference": "Köln & NRW Kentsel Altyapı, Ren Nehri Geçiş Hatları ve Kanalizasyon Şebeke Yenilemeleri (PE100 & PVC-U)",
+    "source_urls": [
+      {
+        "label": "STRABAG DE",
+        "url": "https://www.strabag.de"
+      },
+      {
+        "label": "Tiefbau",
+        "url": "https://www.strabag.de/leistungen/tiefbau"
+      }
+    ],
+    "source_text": "https://www.strabag.de | Handelsregister Köln HRB 10700",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-002",
+    "name": "PORR GmbH & Co. KGaA",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Müteahhitlik (EPC)",
+    "category": "İçme Suyu / Kanalizasyon / Tünel & Boru Hatları / Tiefbau",
+    "city": "München",
+    "priority": "Kritik (A++)",
+    "phone": "+49 89 71001-0",
+    "email": "info@porr.de",
+    "email_alt": "einkauf@porr.de",
+    "address": "Walter-Gropius-Straße 23, 80807 München, Almanya",
+    "project_officer": "Michael Zapf (Leiter Zentraleinkauf) & Zentrale Vergabe",
+    "executive": {
+      "owner_group": "PORR AG (Avusturya Çok Uluslu İnşaat Grubu)",
+      "ceo": "Marko Lehmann (Vorsitzender der Geschäftsführung)",
+      "cpo": "Michael Zapf (Leiter Zentraleinkauf Deutschland) | einkauf@porr.de",
+      "cfo": "Christian Rinke (Geschäftsführer Finanzen)",
+      "strategy_note": "Almanya'daki tüm büyük altyapı ve boru hattı projelerinde satın alma onayları Münih merkezli Zentraleinkauf masası üzerinden yürütülür; onaylı tedarikçi havuzundaki üreticilerden doğrudan teklif toplanır."
+    },
+    "project_reference": "Bavyera & Baden-Württemberg Bölgesel Su İletim Hatları, Frankfurt Havalimanı Terminal 3 Altyapı Şebekeleri (PE100 & PVC-U)",
+    "source_urls": [
+      {
+        "label": "PORR DE",
+        "url": "https://www.porr.de"
+      },
+      {
+        "label": "Einkauf Portal",
+        "url": "https://porr.de/einkauf"
+      }
+    ],
+    "source_text": "https://www.porr.de | Handelsregister München HRB 205624",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-003",
+    "name": "Ed. Züblin AG",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Büyük Altyapı / Tünel / Su & Kanalizasyon Mühendisliği",
+    "city": "Stuttgart",
+    "priority": "Kritik (A++)",
+    "phone": "+49 711 7883-0",
+    "email": "info@zueblin.de",
+    "email_alt": "einkauf@zueblin.de",
+    "address": "Albstadtweg 3, 70567 Stuttgart, Almanya",
+    "project_officer": "Bereich Ingenieurbau & Infrastruktur / Zentrale Beschaffung",
+    "executive": {
+      "owner_group": "STRABAG SE Grubu",
+      "ceo": "Jens Borgschulte & Niels Dürr (Vorstandsvorsitz)",
+      "cpo": "Zentrale Beschaffung / SPS Lieferantenportal Masası | einkauf@zueblin.de",
+      "cfo": "Stephan Keinath (Vorstand Finanzen)",
+      "strategy_note": "Züblin'in karmaşık zemin ve tünel altyapı projelerinde kullanılan yüksek basınçlı PE100 ve atıksu U-PVC boru sistemleri, şirketin SPS (Subcontractor & Procurement System) portalı üzerinden lisanslı onay süreçleriyle temin edilir."
+    },
+    "project_reference": "Stuttgart 21 Altyapı Deplasman Hatları, Münih & Stuttgart Kentsel Su Kollektör Projeleri (PE100 & PVC-U)",
+    "source_urls": [
+      {
+        "label": "Züblin AG",
+        "url": "https://www.zueblin.de"
+      },
+      {
+        "label": "Lieferantenportal",
+        "url": "https://zueblin.de/einkauf"
+      }
+    ],
+    "source_text": "https://www.zueblin.de | Handelsregister Stuttgart HRB 110",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-004",
+    "name": "Friedrich Vorwerk Group SE",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Doğal Gaz & Hidrojen / Su İletim Hatları / Enerji & Su Altyapısı",
+    "city": "Tostedt",
+    "priority": "Kritik (A++)",
+    "phone": "+49 4182 2947-0",
+    "email": "tostedt@friedrich-vorwerk.de",
+    "email_alt": "einkauf@friedrich-vorwerk.de",
+    "address": "Harburger Straße 19, 21255 Tostedt, Almanya",
+    "project_officer": "Torben Kleinfeldt (CEO) / Rohrleitungsbau Direktörlüğü",
+    "executive": {
+      "owner_group": "MBB SE & Vorwerk Ailesi Ortaklığı (Halka Açık - SDAX)",
+      "ceo": "Torben Kleinfeldt (Vorstandsvorsitzender / CEO)",
+      "cpo": "Zentraler Einkauf Rohrsysteme | tostedt@friedrich-vorwerk.de",
+      "cfo": "Tim Hameister (Vorstand Finanzen / CFO)",
+      "strategy_note": "Almanya'nın en kritik boru hattı (pipeline) EPC yüklenicisidir. Doğal gaz, hidrojen koridorları ve içme suyu ana isale hatlarında büyük çaplı PE100 ve PE100-RC boruların ana alıcısıdır; satın almalar Tostedt genel merkezinden yönlendirilir."
+    },
+    "project_reference": "Kuzey Denizi LNG & Gaz Bağlantı Hatları, Wilhelmshaven Boru Koridoru, Hamburg & Aşağı Saksonya Bölgesel İçme Suyu İsale Hatları (PE100 / PE100-RC)",
+    "source_urls": [
+      {
+        "label": "Friedrich Vorwerk",
+        "url": "https://www.friedrich-vorwerk-group.de"
+      }
+    ],
+    "source_text": "https://www.friedrich-vorwerk-group.de | Handelsregister Tostedt HRB 208341",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-005",
+    "name": "Eiffage Infra-Bau SE",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Müteahhitlik (EPC)",
+    "category": "İçme Suyu / Kanalizasyon / Tiefbau / Büyük Altyapı",
+    "city": "Düsseldorf",
+    "priority": "Kritik (A++)",
+    "phone": "+49 211 95750-0",
+    "email": "info@eiffage.de",
+    "email_alt": "einkauf@eiffage.de",
+    "address": "Wahlerstraße 28, 40472 Düsseldorf, Almanya",
+    "project_officer": "Direktion Infrastruktur & Tiefbau / Zentrale Beschaffung",
+    "executive": {
+      "owner_group": "Eiffage S.A. (Fransa Menşeili Avrupa İnşaat Devi)",
+      "ceo": "Daniel Strücker (Geschäftsführender Direktor Eiffage Infra-Bau)",
+      "cpo": "Zentraler Einkauf Deutschland | einkauf@eiffage.de",
+      "cfo": "Eiffage Infra-Bau Finans Direktörlüğü",
+      "strategy_note": "Almanya çapında Eiffage Infra-Süd, Infra-West ve Infra-Nord iştirakleri üzerinden otoyol drenajı, kentsel su şebekeleri ve kanalizasyon projeleri üstlenir. Boru tedarikinde onaylı üretici listesi esastır."
+    },
+    "project_reference": "A1 & A3 Otoyol Genişletme Drenaj ve Yağmursuyu Şebekeleri, Ren-Ruhr Bölgesi Kentsel Altyapı Yenilemeleri (PE100 & PVC-U)",
+    "source_urls": [
+      {
+        "label": "Eiffage DE",
+        "url": "https://eiffage-infra.de"
+      }
+    ],
+    "source_text": "https://eiffage-infra.de | Handelsregister Düsseldorf HRB 65421",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-006",
+    "name": "Ludwig Freytag GmbH & Co. KG",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Boru Hatları (Rohrleitungsbau) / Yatay Sondaj / Su & Gaz Şebekeleri",
+    "city": "Oldenburg",
+    "priority": "Yüksek (A+)",
+    "phone": "+49 441 9704-0",
+    "email": "info@ludwig-freytag.de",
+    "email_alt": "einkauf@ludwig-freytag.de",
+    "address": "Ammerländer Heerstraße 368, 26129 Oldenburg, Almanya",
+    "project_officer": "Geschäftsbereich Rohrleitungsbau & Versorgungsnetze",
+    "executive": {
+      "owner_group": "Freytag & van der Linde Aileleri",
+      "ceo": "Bernd van der Linde & Johannes van der Linde (Geschäftsführung)",
+      "cpo": "Zentraler Einkauf & Materialwirtschaft | einkauf@ludwig-freytag.de",
+      "cfo": "Stefan Kalvelage (Geschäftsleitung Finanzen)",
+      "strategy_note": "Almanya'nın en köklü boru hattı ve altyapı gruplarındandır. Bünyesindeki LMR Drilling ve RMT firmaları ile birlikte nehir geçişleri ve hendeksiz boru döşeme (HDD) projelerinde yüksek mukavemetli PE100-RC boruları tercih eder."
+    },
+    "project_reference": "Aşağı Saksonya Su Birliği İçme Suyu Ana İletim Hattı, Weser Nehri Boru Geçişi ve Bremen Gaz Şebekesi Entegrasyonu (PE100-RC)",
+    "source_urls": [
+      {
+        "label": "Ludwig Freytag",
+        "url": "https://www.ludwig-freytag.de"
+      }
+    ],
+    "source_text": "https://www.ludwig-freytag.de | Handelsregister Oldenburg HRA 1526",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-007",
+    "name": "Wayss & Freytag Ingenieurbau AG",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Tünel / Su Mühendisliği / Derin Altyapı / Kanalizasyon Kollektörleri",
+    "city": "Frankfurt am Main",
+    "priority": "Yüksek (A+)",
+    "phone": "+49 69 7929-0",
+    "email": "info@wf-ib.de",
+    "email_alt": "einkauf@wf-ib.de",
+    "address": "Eschborner Landstraße 130-132, 60489 Frankfurt am Main, Almanya",
+    "project_officer": "Zentralbereich Einkauf & Vergabeplattform",
+    "executive": {
+      "owner_group": "ZECH Group SE (Bremen)",
+      "ceo": "Prof. Dr.-Ing. Michael Blaschko (Vorstandsvorsitzender / CEO)",
+      "cpo": "Zentralbereich Einkauf & Nachunternehmermanagement | einkauf@wf-ib.de",
+      "cfo": "Ingo Rojczyk (Finanzvorstand / CFO)",
+      "strategy_note": "Metro tünelleri, mikro tünel hatları ve devasa atıksu kolektörlerinde kullanılan basınçlı PE100 ve ağır hizmet U-PVC boru sistemlerinin temini merkezi Zech Group satın alma omurgasıyla entegre yürütülür."
+    },
+    "project_reference": "Frankfurt Kanalizasyon Ana Kollektör Deplasmanı, Münih 2. Ana Banliyö Tüneli Altyapı Deplasman Hatları (PE100 & PVC-U)",
+    "source_urls": [
+      {
+        "label": "Wayss & Freytag",
+        "url": "https://www.wf-ib.de"
+      },
+      {
+        "label": "Einkauf",
+        "url": "https://wf-ib.de/einkauf"
+      }
+    ],
+    "source_text": "https://www.wf-ib.de | Handelsregister Frankfurt am Main HRB 47413",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-008",
+    "name": "Diringer & Scheidel Bauunternehmung GmbH & Co. KG",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Boru Hatları (Rohrleitungsbau) / Kanal Yenileme / Kentsel Altyapı",
+    "city": "Mannheim",
+    "priority": "Yüksek (A+)",
+    "phone": "+49 621 8607-0",
+    "email": "info@dus.de",
+    "email_alt": "einkauf@dus.de",
+    "address": "Wilhelm-Wundt-Straße 19, 68199 Mannheim, Almanya",
+    "project_officer": "Sparte Tief- und Rohrleitungsbau / Einkauf",
+    "executive": {
+      "owner_group": "Diringer & Scheidel Aile Şirketi (1921 Kuruluşlu Grup)",
+      "ceo": "Heinz Scheidel (Vorsitzender der Geschäftsleitung)",
+      "cpo": "Karlheinz Heffner (Geschäftsleitung Technik & Einkauf) | einkauf@dus.de",
+      "cfo": "Tobias Volckmann (Geschäftsleitung Finanzen)",
+      "strategy_note": "Güneybatı Almanya ve Ren-Neckar bölgesinin en büyük boru hattı ve kanal yapımcısıdır. Hem açık kazı hem hendeksiz boru montajında PE100 basınçlı su ve PVC-U atıksu borularını doğrudan üreticiden veya ihtisas toptancısından çeker."
+    },
+    "project_reference": "Mannheim & Heidelberg Kentsel İçme Suyu Ana Boru Hatları Yenilemesi, Ludwigshafen Kanalizasyon Şebekesi (PE100 & PVC-U)",
+    "source_urls": [
+      {
+        "label": "Diringer & Scheidel",
+        "url": "https://www.dus.de"
+      },
+      {
+        "label": "Rohrleitungsbau",
+        "url": "https://www.dus-bau.de"
+      }
+    ],
+    "source_text": "https://www.dus.de | Handelsregister Mannheim HRA 1891",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-009",
+    "name": "Johann Bunte Bauunternehmung SE & Co. KG",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Otoyol & Altyapı Drenajı / Su İletim Şebekeleri / Tiefbau",
+    "city": "Papenburg",
+    "priority": "Yüksek (A+)",
+    "phone": "+49 4961 895-0",
+    "email": "papenburg@johann-bunte.de",
+    "email_alt": "einkauf@johann-bunte.de",
+    "address": "Hauptkanal links 88, 26871 Papenburg, Almanya",
+    "project_officer": "Zentraler Einkauf Bau- und Rohrmaterialien",
+    "executive": {
+      "owner_group": "Bunte Vakfı ve Hissedarlar",
+      "ceo": "Frank Schreiber (Vorstandsvorsitzender)",
+      "cpo": "Helmut Bohse (Vorstand Technik & Beschaffung) | einkauf@johann-bunte.de",
+      "cfo": "Helmut Renze (Stellv. Vorstandsvorsitzender Finanzen)",
+      "strategy_note": "Almanya geneline yayılmış 20'den fazla şubesiyle otoyol, demiryolu ve su mühendisliği projelerini yürütür. Karayolu drenaj hatlarında ve su geçişlerinde yüksek metrajlı U-PVC ve PE100 boru tedarikini merkezi anlaşmalarla sağlar."
+    },
+    "project_reference": "A1 & A33 Otoyolu Yağmursuyu Kollektörleri, Emsland Bölgesel Su Dağıtım Şebekesi Genişletmesi (PE100 & PVC-U)",
+    "source_urls": [
+      {
+        "label": "Johann Bunte",
+        "url": "https://www.johann-bunte.de"
+      }
+    ],
+    "source_text": "https://www.johann-bunte.de | Handelsregister Osnabrück HRA 120536",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-010",
+    "name": "Max Bögl Bauservice GmbH & Co. KG",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Büyük Altyapı / Tünel Mühendisliği / Su & Arıtma Tesisleri",
+    "city": "Sengenthal",
+    "priority": "Kritik (A++)",
+    "phone": "+49 9181 909-0",
+    "email": "info@max-boegl.de",
+    "email_alt": "einkauf@max-boegl.de",
+    "address": "Max-Bögl-Straße 1, 92369 Sengenthal, Almanya",
+    "project_officer": "Zentraleinkauf Materialwirtschaft / Tiefbausysteme",
+    "executive": {
+      "owner_group": "Bögl Ailesi (Almanya'nın En Büyük Özel İnşaat Grubu)",
+      "ceo": "Stefan Bögl (Vorstandsvorsitzender)",
+      "cpo": "Johann Braun (Vorstand Infrastruktur & Beschaffung) | einkauf@max-boegl.de",
+      "cfo": "Michael Bögl (Vorstand Finanzen)",
+      "strategy_note": "6.500'den fazla çalışanı olan dev grup, endüstriyel tesisler, yenilenebilir enerji altyapıları ve kentsel şebekelerde PE100 soğutma suyu ve U-PVC kanalizasyon boruları için büyük hacimli ihaleler açar."
+    },
+    "project_reference": "Nürnberg & Fürth Kentsel Altyapı Şebekeleri, Bavyera Rüzgar Parkları Altyapı Kablo ve Drenaj Koridorları (PE100 & PVC-U)",
+    "source_urls": [
+      {
+        "label": "Max Bögl",
+        "url": "https://www.max-boegl.de"
+      },
+      {
+        "label": "Einkauf",
+        "url": "https://max-boegl.de/unternehmen/einkauf"
+      }
+    ],
+    "source_text": "https://www.max-boegl.de | Handelsregister Nürnberg HRA 13915",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-011",
+    "name": "Sonntag Baugesellschaft mbH & Co. KG",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Rohrvortrieb / Microtunnelling / Kanalbau / Basınçlı Su Boruları",
+    "city": "Dörth",
+    "priority": "Yüksek (A)",
+    "phone": "+49 6747 9309-0",
+    "email": "doerth@sonntag-bau.de",
+    "email_alt": "einkauf@sonntag-bau.de",
+    "address": "Trinkbornstraße 21, 56281 Dörth, Almanya",
+    "project_officer": "Robert Himmel (Geschäftsführung Technik) / Einkauf",
+    "executive": {
+      "owner_group": "Sonntag Ailesi (4. Kuşak Aile Şirketi)",
+      "ceo": "Marion Sonntag & Charlotte Hermes (Geschäftsführung)",
+      "cpo": "Robert Himmel (Technik & Materialbeschaffung) | doerth@sonntag-bau.de",
+      "cfo": "Kaufmännische Leitung Sonntag Bau",
+      "strategy_note": "Özellikle Rohrvortrieb (mikrotünel ve boru itme) ile kazısız boru döşeme konusunda Almanya'nın lider ihtisas müteahhitlerindendir. Yüksek basınca ve çekme yüklerine dayanıklı PE100 ve rijit PVC-U boruların sürekli alıcısıdır."
+    },
+    "project_reference": "Ren Vadisi Demiryolu Geçişi Kanalizasyon Deplasmanı, Koblenz ve Mainz Bölgesel Basınçlı Su Hatları (PE100 & PVC-U)",
+    "source_urls": [
+      {
+        "label": "Sonntag Bau",
+        "url": "https://www.sonntag-bau.com"
+      }
+    ],
+    "source_text": "https://www.sonntag-bau.com | Handelsregister Bad Kreuznach HRA 3331",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-012",
+    "name": "HTI DITEC GmbH (GC-GRUPPE)",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Boru Tedarikçisi",
+    "category": "B2B Altyapı Boru Toptancısı / Tiefbau Dağıtım Devi",
+    "city": "Bremen",
+    "priority": "Dağıtıcı (DAĞITICI)",
+    "phone": "+49 421 800 00",
+    "email": "info@hti-ditec.de",
+    "email_alt": "tiefbau@gc-gruppe.de",
+    "address": "Parkallee 301, 28213 Bremen, Almanya",
+    "project_officer": "Bereichsleitung Tiefbau & Industrietechnik / Zentraleinkauf",
+    "executive": {
+      "owner_group": "GC-GRUPPE (Almanya'nın En Büyük B2B Altyapı ve Tesisat Toptancısı)",
+      "ceo": "Thomas Werner (Geschäftsführung GC-Gruppe)",
+      "cpo": "Bereichsleitung Tiefbau Rohrsysteme | tiefbau@gc-gruppe.de",
+      "cfo": "Zentralfinanzen GC-Gruppe",
+      "strategy_note": "Almanya genelinde 70'ten fazla lojistik merkez ve deposuyla binlerce müteahhide tır bazında şantiyeye PE100 içme suyu, gaz ve U-PVC kanalizasyon borusu teslim eden 1 numaralı B2B boru stoğu tutucusudur. Fabrika bazlı doğrudan tedarik anlaşmaları yapar."
+    },
+    "project_reference": "Almanya geneli otoyol drenaj, kamu su idareleri ve kentsel şebekelere yıllık yüz binlerce metre PE100 ve PVC-U boru stok sevkiyatı",
+    "source_urls": [
+      {
+        "label": "GC Gruppe",
+        "url": "https://www.gc-gruppe.de"
+      },
+      {
+        "label": "HTI Ditec",
+        "url": "https://www.hti-ditec.de"
+      }
+    ],
+    "source_text": "https://www.gc-gruppe.de | https://www.hti-ditec.de | Handelsregister Bremen HRB 2145",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-013",
+    "name": "Richter+Frenzel TBU GmbH + Co. KG (R+F TBU)",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Boru Tedarikçisi",
+    "category": "B2B Altyapı & Çevre Teknolojileri Toptancısı / Tiefbau Distribütörü",
+    "city": "Würzburg",
+    "priority": "Dağıtıcı (DAĞITICI)",
+    "phone": "+49 931 6108-0",
+    "email": "info.wuerzburg@rf-tbu.de",
+    "email_alt": "info@rf-tbu.de",
+    "address": "Leitenäckerweg 6, 97084 Würzburg, Almanya",
+    "project_officer": "Christian Willsch (Verkaufsleitung R+F TBU) / Zentraleinkauf",
+    "executive": {
+      "owner_group": "Richter+Frenzel Grubu",
+      "ceo": "Wilhelm Schuster (CEO Richter+Frenzel) & Thomas Christl (GF R+F TBU)",
+      "cpo": "Zentraleinkauf Tiefbau & Umwelttechnik | info@rf-tbu.de",
+      "cfo": "Finanzdirektion Richter+Frenzel",
+      "strategy_note": "Bavyera, Baden-Württemberg, Hessen ve doğu eyaletlerinde güçlü altyapı şube ağına sahip ihtisas toptancısıdır. Basınçlı PE100 su hatları, gaz boruları ve KG U-PVC kanalizasyon borularını geniş depolama sahalarında stoklar."
+    },
+    "project_reference": "Güney Almanya Kentsel Su İdareleri, Endüstriyel Tesis Altyapıları ve Toplu Konut Şebekeleri Boru Dağıtımı (PE100 & PVC-U)",
+    "source_urls": [
+      {
+        "label": "Richter+Frenzel",
+        "url": "https://www.richter-frenzel.de"
+      },
+      {
+        "label": "R+F TBU",
+        "url": "https://www.rf-tbu.de"
+      }
+    ],
+    "source_text": "https://www.rf-tbu.de | Handelsregister Würzburg HRA 3899",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-014",
+    "name": "STARK Deutschland GmbH (Raab Karcher Tiefbau)",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Boru Tedarikçisi",
+    "category": "B2B Altyapı ve Boru Sistemleri Dağıtıcısı / Muffenrohr Tiefbauhandel",
+    "city": "Offenbach am Main",
+    "priority": "Dağıtıcı (DAĞITICI)",
+    "phone": "+49 69 66532-0",
+    "email": "kontakt@stark-deutschland.de",
+    "email_alt": "info@raabkarcher.de",
+    "address": "Hafeninsel 9, 63067 Offenbach am Main, Almanya",
+    "project_officer": "Zentraler Einkauf Tiefbau & Versorgung / STARK Sourcing",
+    "executive": {
+      "owner_group": "STARK Group (Kopenhag, Danimarka)",
+      "ceo": "Dr. Marc Baumgartner (Vorsitzender der Geschäftsführung / CEO)",
+      "cpo": "Michael Knüppel (Head of STARK Sourcing) & Einkauf Tiefbau | kontakt@stark-deutschland.de",
+      "cfo": "Frans G. Theeuwes (CFO / Geschäftsführer Finanzen)",
+      "strategy_note": "Bünyesindeki Raab Karcher ve Muffenrohr Tiefbauhandel markaları ile Almanya genelinde 220'den fazla şubeye sahiptir. Tiefbau alanında en büyük PE100 ve PVC-U boru alıcılarından biridir; üreticilerle merkezi yıllık çerçeve kotaları üzerinden çalışır."
+    },
+    "project_reference": "Federal Almanya Geneli Altyapı Müteahhitlerine Yıllık Yüz Binlerce Tonluk PE100 ve U-PVC Boru Dağıtımı ve Şantiye Teslimi",
+    "source_urls": [
+      {
+        "label": "STARK DE",
+        "url": "https://www.stark-deutschland.de"
+      },
+      {
+        "label": "Raab Karcher",
+        "url": "https://www.raabkarcher.de"
+      }
+    ],
+    "source_text": "https://www.stark-deutschland.de | Handelsregister Offenbach am Main HRB 51634",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-015",
+    "name": "Gebr. Ostendorf Kunststoffe GmbH",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Boru Tedarikçisi",
+    "category": "Boru İmalatı / Yerleşik Üretici (Polyethylene & U-PVC)",
+    "city": "Vechta",
+    "priority": "Üretici (ÜRETİCİ)",
+    "phone": "+49 4441 874 0",
+    "email": "verkauf@ostendorf-kunststoffe.com",
+    "email_alt": "info@ostendorf-kunststoffe.com",
+    "address": "Rudolf-Diesel-Straße 6-8, 49377 Vechta, Almanya",
+    "project_officer": "Ludger Ostendorf (Geschäftsführer) / Vertrieb Europa",
+    "executive": {
+      "owner_group": "Ostendorf Ailesi (Yerleşik Alman Sanayi Kuruluşu)",
+      "ceo": "Ludger Ostendorf (Geschäftsführer)",
+      "cpo": "Vertriebsleitung Europa / Satış Direktörlüğü",
+      "cfo": "Holger Buescher (Finans Direktörü)",
+      "strategy_note": "Almanya ve Avrupa'da U-PVC kanalizasyon boruları (KG PVC-U, KG2000 PP) ve PE boru sistemlerinde pazar lideri üreticilerdendir. Vechta merkez fabrikasında devasa üretim kapasitesine sahiptir."
+    },
+    "project_reference": "Avrupa Çapında KG U-PVC Kanalizasyon Boruları, Skolan Safe Ses Yalıtımlı Bina Atıksu ve Dış Kanalizasyon Sistemleri Üretimi",
+    "source_urls": [
+      {
+        "label": "Ostendorf",
+        "url": "https://www.ostendorf-kunststoffe.com"
+      }
+    ],
+    "source_text": "https://www.ostendorf-kunststoffe.com | Handelsregister Oldenburg HRB 110298",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-016",
+    "name": "egeplast international GmbH",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Boru Tedarikçisi",
+    "category": "Boru İmalatı / Yerleşik Üretici (PE100 & PE100-RC Yüksek Basınç Boruları)",
+    "city": "Greven",
+    "priority": "Üretici (ÜRETİCİ)",
+    "phone": "+49 2575 9710-0",
+    "email": "info@egeplast.de",
+    "email_alt": "verkauf@egeplast.de",
+    "address": "Robert-Bosch-Straße 7, 48268 Greven, Almanya",
+    "project_officer": "Dr. Ansgar Strumann (Geschäftsführender Gesellschafter)",
+    "executive": {
+      "owner_group": "Strumann Ailesi",
+      "ceo": "Dr. Ansgar Strumann & Torsten Ratzmann (Geschäftsführung)",
+      "cpo": "Zentraler Einkauf Rohstoffe & Komponenten | info@egeplast.de",
+      "cfo": "Steffen M. Saur (Geschäftsleitung Finanzen)",
+      "strategy_note": "Avrupa'nın yüksek teknoloji PE100 ve PE100-RC basınçlı içme suyu ve gaz borusu üretiminde referans fabrikasıdır. Grabenlos (kazısız) döşemeye uygun koruyucu kılıflı PE100-RC boruların ana geliştiricisi ve üreticisidir."
+    },
+    "project_reference": "Almanya ve Global Piyasada Kazısız Hatlar İçin SLA Barrier Pipe, SLM 3.0 PE100-RC Basınçlı Su ve Gaz Boru Sistemleri",
+    "source_urls": [
+      {
+        "label": "egeplast",
+        "url": "https://www.egeplast.de"
+      }
+    ],
+    "source_text": "https://www.egeplast.de | Handelsregister Steinfurt HRB 6799",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-017",
+    "name": "SIMONA AG",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Boru Tedarikçisi",
+    "category": "Boru İmalatı / Yerleşik Üretici (PE100, PE100-RC, PP & PVC)",
+    "city": "Kirn",
+    "priority": "Üretici (ÜRETİCİ)",
+    "phone": "+49 6752 14-0",
+    "email": "mail@simona-group.com",
+    "email_alt": "einkauf@simona.de",
+    "address": "Teichweg 16, 55606 Kirn, Almanya",
+    "project_officer": "Geschäftsbereich Rohr- und Formteilsysteme",
+    "executive": {
+      "owner_group": "SIMONA AG Hissedarları (Frankfurt Borsası - General Standard)",
+      "ceo": "Matthias Schönberg (Vorstandsvorsitzender / CEO)",
+      "cpo": "Michael Schmitz (CFO - Beschaffung & Einkauf Ressortverantwortung) | einkauf@simona.de",
+      "cfo": "Michael Schmitz (Finanzvorstand / CFO)",
+      "strategy_note": "Almanya'nın Kirn ve Ringsheim tesislerinde PE100 / PE100-RC basınçlı borular, elektrofüzyon ek parçaları ve endüstriyel termoplastik boru sistemleri üreten uluslararası sanayi devidir. Satın alma ve hammadde operasyonları CFO Michael Schmitz masasında yönetilir."
+    },
+    "project_reference": "Avrupa ve Almanya Genelinde Su İletimi, Maden Drenajı, WWTP ve Kimyasal Proses Hatları İçin PE100 Boru ve Fittings Üretimi",
+    "source_urls": [
+      {
+        "label": "SIMONA AG",
+        "url": "https://www.simona.de"
+      },
+      {
+        "label": "Rohrsysteme",
+        "url": "https://www.simona.de/produkte/rohre"
+      }
+    ],
+    "source_text": "https://www.simona.de | Handelsregister Bad Kreuznach HRB 1391",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-018",
+    "name": "Wavin GmbH Deutschland",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Boru Tedarikçisi",
+    "category": "Boru İmalatı / Çok Uluslu Üretici (PE100 & U-PVC Boru Sistemleri)",
+    "city": "Twist",
+    "priority": "Üretici (ÜRETİCİ)",
+    "phone": "+49 5936 12-0",
+    "email": "info@wavin.de",
+    "email_alt": "verkauf@wavin.de",
+    "address": "Industriestraße 20, 49767 Twist, Almanya",
+    "project_officer": "Maximilian Lingenthal & Jan Zelezny (Geschäftsführung)",
+    "executive": {
+      "owner_group": "Orbia (Küresel Polimer & Altyapı Çözümleri Grubu)",
+      "ceo": "Maximilian Lingenthal (Geschäftsführer Wavin Deutschland)",
+      "cpo": "Zentraleinkauf Wavin DACH | info@wavin.de",
+      "cfo": "Orbia Global Finance Masası",
+      "strategy_note": "Twist'te yerleşik dev fabrikasında hem basınçlı PE100 içme suyu sistemleri hem de bina/altyapı U-PVC boru sistemleri üreten çok uluslu üreticidir. Şantiye tedariklerinde büyük B2B toptancıları ile stratejik partnerlik yürütür."
+    },
+    "project_reference": "Almanya ve Orta Avrupa Kentsel Yağmursuyu, İçme Suyu Şebekeleri ve Atıksu Hatları İçin Wavin PE100 & PVC-U Sistemleri Üretimi",
+    "source_urls": [
+      {
+        "label": "Wavin DE",
+        "url": "https://www.wavin.de"
+      }
+    ],
+    "source_text": "https://www.wavin.de | Handelsregister Osnabrück HRB 120257",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-019",
+    "name": "Frank GmbH",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Boru Tedarikçisi",
+    "category": "Boru İmalatı / Yerleşik Üretici (PE100 & PE100-RC Boru ve Elektrofüzyon)",
+    "city": "Mörfelden-Walldorf",
+    "priority": "Üretici (ÜRETİCİ)",
+    "phone": "+49 6105 408-0",
+    "email": "info@frank-gmbh.de",
+    "email_alt": "vertrieb@frank-gmbh.de",
+    "address": "Starkenburgstraße 1, 64546 Mörfelden-Walldorf, Almanya",
+    "project_officer": "Thomas Frank & Dr. Christian Habedank (Geschäftsführung)",
+    "executive": {
+      "owner_group": "Frank Ailesi (Frank Group)",
+      "ceo": "Thomas Frank (Geschäftsführender Gesellschafter)",
+      "cpo": "Zentraler Einkauf Rohrsysteme | info@frank-gmbh.de",
+      "cfo": "Dr. Christian Habedank (Geschäftsführer Finanzen & Vertrieb)",
+      "strategy_note": "Geniş çaplı PE100 basınçlı içme suyu ve gaz boruları, elektrofüzyon bağlantı elemanları ve biyogaz borulamalarında uzmanlaşmış yerleşik Alman üreticisidir. Wölfersheim ve Mörfelden tesislerinde üretim yapar."
+    },
+    "project_reference": "Almanya Geneli Gaz ve Su Dağıtım Şebekeleri, Jeotermal ve Çevre Teknolojileri İçin PE100 Basınçlı Boru ve Ek Parça Tedariki",
+    "source_urls": [
+      {
+        "label": "Frank GmbH",
+        "url": "https://www.frank-gmbh.de"
+      }
+    ],
+    "source_text": "https://www.frank-gmbh.de | Handelsregister Darmstadt HRB 52402",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-020",
+    "name": "Pipelife Deutschland GmbH & Co. KG",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Boru Tedarikçisi",
+    "category": "Boru İmalatı / Çok Uluslu Üretici (PE100 & U-PVC Altyapı Sistemleri)",
+    "city": "Bad Zwischenahn",
+    "priority": "Üretici (ÜRETİCİ)",
+    "phone": "+49 4403 932-0",
+    "email": "info@pipelife.de",
+    "email_alt": "verkauf@pipelife.de",
+    "address": "Steinfeld 40, 26160 Bad Zwischenahn, Almanya",
+    "project_officer": "Ulrich Horn (Geschäftsführung Wienerberger Piping Solutions Germany)",
+    "executive": {
+      "owner_group": "Wienerberger AG (Avusturya - Viyana Borsası)",
+      "ceo": "Ulrich Horn (Geschäftsführer WPS Deutschland)",
+      "cpo": "Zentraler Einkauf Wienerberger Piping Solutions | info@pipelife.de",
+      "cfo": "Wienerberger Corporate Finance",
+      "strategy_note": "Wienerberger Piping Solutions bünyesinde Almanya altyapı pazarına PE100 basınçlı içme suyu boruları ve U-PVC atıksu/drenaj boru sistemleri sunan çok uluslu üreticidir. Büyük kamu ihalelerine distribütörleri ve doğrudan ana müteahhitler üzerinden teklif verir."
+    },
+    "project_reference": "Kuzey ve Batı Almanya Kentsel Su Dağıtım Projeleri, Tarımsal Drenaj ve Kanalizasyon Şebekesi Boru Tedariki (PE100 & PVC-U)",
+    "source_urls": [
+      {
+        "label": "Pipelife DE",
+        "url": "https://www.pipelife.de"
+      }
+    ],
+    "source_text": "https://www.pipelife.de | Handelsregister Oldenburg HRA 120563",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-021",
+    "name": "Berliner Wasserbetriebe (AöR)",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Kamu İdaresi",
+    "category": "İçme Suyu & Kanalizasyon İdaresi / Kamu İhalesi Açan Kurum",
+    "city": "Berlin",
+    "priority": "Kamu (KAMU)",
+    "phone": "+49 30 8644-0",
+    "email": "service@bwb.de",
+    "email_alt": "einkauf@bwb.de",
+    "address": "Neue Jüdenstraße 1, 10179 Berlin, Almanya",
+    "project_officer": "Zentraler Einkauf & Vergabe (Vergabekooperation Berlin: +49 30 8644-54600)",
+    "executive": {
+      "owner_group": "Berlin Eyaleti (Körperschaft des öffentlichen Rechts)",
+      "ceo": "Frank Bruckmann (Vorstandsvorsitzender & Finanzen)",
+      "cpo": "Zentralbereich Beschaffung & Materialwirtschaft | einkauf@bwb.de",
+      "cfo": "Frank Bruckmann (Vorstand Finanzen)",
+      "strategy_note": "Almanya'nın en büyük su ve kanalizasyon idaresidir. 3.7 milyonluk metropolün 7.800 km içme suyu ve 9.600 km kanalizasyon şebekesini yönetir. Yıllık on milyonlarca Euro tutarında PE100 ve PVC-U boru yenileme ihaleleri açar. İhaleler Vergabekooperation Berlin platformundan yayımlanır."
+    },
+    "project_reference": "Berlin Metropolü Kentsel Su ve Kanalizasyon Şebeke Rehabilitasyon Programı, Klärwerk Waßmannsdorf & Schönerlinde Bağlantı Hatları (PE100 & PVC-U)",
+    "source_urls": [
+      {
+        "label": "BWB",
+        "url": "https://www.bwb.de"
+      },
+      {
+        "label": "Vergabekooperation",
+        "url": "https://vergabekooperation.berlin"
+      }
+    ],
+    "source_text": "https://www.bwb.de | Handelsregister Berlin (Charlottenburg) HRA 25580",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-022",
+    "name": "HAMBURG WASSER (Hamburger Wasserwerke GmbH)",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Kamu İdaresi",
+    "category": "İçme Suyu & Atıksu İdaresi / Kamu İhalesi Açan Kurum",
+    "city": "Hamburg",
+    "priority": "Kamu (KAMU)",
+    "phone": "+49 40 7888-0",
+    "email": "info@hamburgwasser.de",
+    "email_alt": "einkauf@hamburgwasser.de",
+    "address": "Billhorner Deich 2, 20539 Hamburg, Almanya",
+    "project_officer": "Strategischer Projekteinkauf & Bauvergabe (vergabe.hamburgwasser.de)",
+    "executive": {
+      "owner_group": "Hamburg Serbest ve Hansa Şehri Eyaleti",
+      "ceo": "Martin Gerhardt (Technischer Geschäftsführer) & Dr. Frank Herzog (Kaufmännischer GF)",
+      "cpo": "Bereichsleitung Strategischer Einkauf & Materialwirtschaft | einkauf@hamburgwasser.de",
+      "cfo": "Dr. Frank Herzog (Kaufmännischer Geschäftsführer)",
+      "strategy_note": "Hamburg metropol alanında 5.500 km içme suyu ve 6.000 km atıksu şebekesini yöneten dev kamu idaresidir. Satın alma ve ihale süreçleri SAP Ariba tabanlı vergabe.hamburgwasser.de portalından yürütülür; PE100 içme suyu hatları ve U-PVC kanalizasyon boruları yüksek metrajlı ihalelerle yenilenir."
+    },
+    "project_reference": "Hamburg Limanı ve Metropol Alanı Su Şebekesi Modernizasyonu, Elbe Nehri Koruma ve Yağmursuyu Tahliye Kollektörleri (PE100 & PVC-U)",
+    "source_urls": [
+      {
+        "label": "HAMBURG WASSER",
+        "url": "https://www.hamburgwasser.de"
+      },
+      {
+        "label": "Vergabeportal",
+        "url": "https://vergabe.hamburgwasser.de"
+      }
+    ],
+    "source_text": "https://www.hamburgwasser.de | Handelsregister Hamburg HRB 475",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-023",
+    "name": "GELSENWASSER AG",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Kamu İdaresi",
+    "category": "Bölgesel Su & Gaz Şebeke İdaresi / Kamu Altyapı Yatırımcısı",
+    "city": "Gelsenkirchen",
+    "priority": "Kamu (KAMU)",
+    "phone": "+49 209 708-0",
+    "email": "info@gelsenwasser.de",
+    "email_alt": "einkauf@gelsenwasser.de",
+    "address": "Willy-Brandt-Allee 26, 45891 Gelsenkirchen, Almanya",
+    "project_officer": "Bernd Ruttert (Leiter Bauverträge & Tiefbau) & Simon Band (Kaufverträge)",
+    "executive": {
+      "owner_group": "Stadtwerke Bochum & Dortmunder Stadtwerke (DSW21) Konsorsiyumu",
+      "ceo": "Henning R. Deters (Vorstandsvorsitzender)",
+      "cpo": "Zentraler Einkauf & Vergabe / Bernd Ruttert (+49 209 708-1702) | einkauf@gelsenwasser.de",
+      "cfo": "Dr. Agnes Janda (Vorstand Finanzen)",
+      "strategy_note": "Kuzey Ren-Vestfalya (NRW) başta olmak üzere Almanya'nın 50'den fazla belediyesine su ve gaz sağlayan en büyük bölgesel altyapı şirketidir. 6.000 km'yi aşkın su iletim hattını işletir. PE100 basınçlı içme suyu boruları için yıllık büyük çerçeve sözleşmeleri açar."
+    },
+    "project_reference": "Ruhr Bölgesi Bölgesel Su İletim Ağı Yenilemesi, Haltern ve Essen Su Arıtma Tesisleri Ana İsale Hatları (PE100)",
+    "source_urls": [
+      {
+        "label": "Gelsenwasser",
+        "url": "https://www.gelsenwasser.de"
+      },
+      {
+        "label": "Einkauf",
+        "url": "https://www.gelsenwasser.de/einkauf"
+      }
+    ],
+    "source_text": "https://www.gelsenwasser.de | Handelsregister Gelsenkirchen HRB 246",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-024",
+    "name": "Stadtwerke München GmbH (SWM Infrastruktur)",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Kamu İdaresi",
+    "category": "Kentsel Su & Gaz Şebeke İdaresi / Kamu İhalesi Açan Kurum",
+    "city": "München",
+    "priority": "Kamu (KAMU)",
+    "phone": "+49 89 2361-0",
+    "email": "einkauf.sam@swm.de",
+    "email_alt": "info@swm.de",
+    "address": "Emmy-Noether-Straße 2, 80992 München, Almanya",
+    "project_officer": "Einkauf & Logistik SWM (Lieferantenportal: swm.de/einkauf)",
+    "executive": {
+      "owner_group": "Münih Büyükşehir Belediyesi (Landeshauptstadt München)",
+      "ceo": "Stefan Dworschak & Thomas Schmidt (Geschäftsführung SWM Infrastruktur)",
+      "cpo": "Bereichsleitung Zentraleinkauf SWM | einkauf.sam@swm.de",
+      "cfo": "SWM Konzernfinanzen",
+      "strategy_note": "Almanya'nın 3. büyük metropolü Münih'in 3.200 km içme suyu ve kentsel altyapı hatlarını yönetir. İhale ve satın almalar swm.de/einkauf tedarikçi portalı ve einkauf.sam@swm.de üzerinden yönetilir. PE100 içme suyu ve U-PVC hatları için düzenli AB bülteni (TED) ihaleleri açılır."
+    },
+    "project_reference": "Münih Güneyi Mangfalltal Su Toplama ve İsale Hattı Yenilemesi, Münih Kentsel Dağıtım Ağı Modernizasyonu (PE100 & PVC-U)",
+    "source_urls": [
+      {
+        "label": "SWM",
+        "url": "https://www.swm.de"
+      },
+      {
+        "label": "SWM Einkauf",
+        "url": "https://www.swm.de/einkauf"
+      }
+    ],
+    "source_text": "https://www.swm.de | Handelsregister München HRB 121920",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "de-025",
+    "name": "Emschergenossenschaft und Lippeverband (EGLV)",
+    "country": "Almanya",
+    "country_id": "germany",
+    "group": "Kamu İdaresi",
+    "category": "Bölgesel Su & Atıksu Birliği / Kamu Altyapı İhalesi Açan Kurum",
+    "city": "Essen",
+    "priority": "Kamu (KAMU)",
+    "phone": "+49 201 104-0",
+    "email": "info@eglv.de",
+    "email_alt": "vergabe@eglv.de",
+    "address": "Kronprinzenstraße 24, 45128 Essen, Almanya",
+    "project_officer": "Geschäftsbereich Vergabe und Einkauf (UVRL-EGLV Online-Vergaben)",
+    "executive": {
+      "owner_group": "Körperschaft des öffentlichen Rechts (Kuzey Ren-Vestfalya Eyaleti Ortaklığı)",
+      "ceo": "Prof. Dr. Uli Paetzel (Vorstandsvorsitzender)",
+      "cpo": "Prof. Dr. Frank Obenaus (Vorstand Technik & Vergabe) | vergabe@eglv.de",
+      "cfo": "Liana Weismüller (Vorständin Finanzen)",
+      "strategy_note": "Avrupa'nın gelmiş geçmiş en büyük çevre ve atıksu dönüşüm projesi olan Emscher-Umbau'yu yöneten kamu su birliğidir. Milyarlarca Euro bütçeli nehir ıslahı, yer altı kanalizasyon tünelleri ve yağmursuyu ayrıştırma projelerinde devasa metrajlarda PE100 ve rijit U-PVC boru ihaleleri açar."
+    },
+    "project_reference": "Generationenprojekt Emscher-Umbau, Ren-Ruhr Bölgesi Yeraltı Kanalizasyon Kollektörleri ve Dortmund-Duisburg Bağlantı Hatları (PE100 & PVC-U)",
+    "source_urls": [
+      {
+        "label": "EGLV",
+        "url": "https://www.eglv.de"
+      },
+      {
+        "label": "Online Vergaben",
+        "url": "https://www.eglv.de/ueber-uns/ausschreibungen/"
+      }
+    ],
+    "source_text": "https://www.eglv.de | Körperschaft des öffentlichen Rechts Essen",
+    "updated_at": "2025-2026"
+  }
+]

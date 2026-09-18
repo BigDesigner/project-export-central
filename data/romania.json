@@ -1,0 +1,1432 @@
+[
+  {
+    "id": "ro-001",
+    "name": "STRABAG SRL (STRABAG Water Technologies)",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "İçme Suyu / Kanalizasyon / WWTP / Büyük Altyapı",
+    "city": "Bükreş",
+    "priority": "En Yüksek (A++)",
+    "phone": "+40 21 403 4200",
+    "email": "office.romania@strabag.com",
+    "email_alt": "watertechnologies@strabag.com",
+    "address": "Calea 13 Septembrie Nr. 90, The Grand Offices, Sector 5, Bükreş",
+    "project_officer": "STRABAG Water Technologies / Satın Alma Departmanı",
+    "executive": {
+      "owner_group": "STRABAG SE (Avusturya Çok Uluslu Grup)",
+      "ceo": "Johann Poelzl (Director General STRABAG Romania)",
+      "cpo": "Gerhard Gindl & Radu Călin (Water Technologies Satın Alma ve Teknik Masası) | watertechnologies@strabag.com",
+      "cfo": "Markus Kaller (Director Financiar)",
+      "strategy_note": "Arıtma tesisi ve şebeke boru alımları STRABAG Water Technologies birimince onaylanır."
+    },
+    "project_reference": "Bacău Gherăiești Su Arıtma & İsale Hatları, Dâmbovița (Lucieni, Nucet) Su/Kanalizasyon Şebekesi, Medieșu Aurit & Făgăraș WWTP",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://strabag.ro"
+      },
+      {
+        "label": "Su Bölümü",
+        "url": "https://strabag.ro/water-technologies/"
+      },
+      {
+        "label": "Grup",
+        "url": "https://strabag.com"
+      }
+    ],
+    "source_text": "https://strabag.ro | Su Bölümü: https://strabag.ro/water-technologies/ | Grup: https://strabag.com",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-002",
+    "name": "TANCRAD SRL",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Tarımsal Sulama (ANIF) / Su / Kanalizasyon",
+    "city": "Galați",
+    "priority": "En Yüksek (A+)",
+    "phone": "+40 236 470 511",
+    "email": "office@tancrad.ro",
+    "email_alt": "licitatii@tancrad.ro",
+    "address": "Str. Brăilei Nr. 169J, Galați",
+    "project_officer": "Cristian Stăncic (Genel Müdür) / İhale & Satın Alma Departmanı",
+    "executive": {
+      "owner_group": "Traian Stăncic & Elena Stăncic (Kurucu ve Asıl Hissedarlar)",
+      "ceo": "Cristian Stăncic (Director General)",
+      "cpo": "Marian Munteanu (Satın Alma ve Teklif Direktörü) | licitatii@tancrad.ro",
+      "cfo": "Mirela Stăncic (Director Economic)",
+      "strategy_note": "ANIF sulama ve altyapı boru tedarik kararları Cristian Stăncic onayındadır."
+    },
+    "project_reference": "ANIF Tarımsal Sulama Rehabilitasyonu (Câmpia Covurluiului ana iletim hatları, Sifonul Lozova, Brăila ve Dolj terfi istasyonları), Su/Kanalizasyon Şebekeleri",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://tancrad.com"
+      },
+      {
+        "label": "ANIF Projeleri",
+        "url": "https://anif.ro"
+      }
+    ],
+    "source_text": "https://tancrad.com | ANIF Projeleri: https://anif.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-003",
+    "name": "MIS Grup SRL",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "İçme Suyu / Kanalizasyon / Kazısız Borulama",
+    "city": "Bistrița-Năsăud",
+    "priority": "Yüksek (A)",
+    "phone": "+40 263 377 682",
+    "email": "office@misgrup.ro",
+    "email_alt": "licitatii@misgrup.ro",
+    "address": "Str. Principală Nr. 23, Anieș, Bistrița-Năsăud",
+    "project_officer": "Satın Alma Departmanı / Petru Farcaș",
+    "executive": {
+      "owner_group": "Emil Iugan & Petru Farcaș (Kurucu Ortaklar)",
+      "ceo": "Petru Farcaș (Director General & Yönetici Ortak)",
+      "cpo": "Iustin Scurtu (Satın Alma ve Ekipman Direktörü) | office@misgrup.ro",
+      "cfo": "Virginia Farcaș (Director Financiar)",
+      "strategy_note": "Transilvanya su şebekesi projelerinde toplu boru alımını Petru Farcaș ve Iustin Scurtu yürütür."
+    },
+    "project_reference": "Aquabis Bistrița Masterplan Su/Kanalizasyon İletim Hatları, Brașov Prejmer Su Şebekesi Genişletmesi, Kazısız Relining",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://misgrup.ro"
+      },
+      {
+        "label": "Su İdaresi",
+        "url": "https://aquabis.ro"
+      }
+    ],
+    "source_text": "https://misgrup.ro | Su İdaresi: https://aquabis.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-004",
+    "name": "PORR Construct SRL (PORR Group)",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "İçme Suyu / Kanalizasyon / WWTP / Büyük Altyapı",
+    "city": "Bükreş",
+    "priority": "En Yüksek (A++)",
+    "phone": "+40 21 312 6500",
+    "email": "achizitii@porr.ro",
+    "email_alt": "construct@porr.ro",
+    "address": "Bd. Dimitrie Pompeiu 5-7, Metroffice Building, Sector 2, Bükreş",
+    "project_officer": "Departament Achiziții (Satın Alma Direktörlüğü - Altyapı ve Su Projeleri)",
+    "executive": {
+      "owner_group": "PORR AG (Avusturya Çok Uluslu Grup)",
+      "ceo": "Mario Proell (Director General) / Klaus Bleckenwegner (Yönetim Kurulu Üyesi)",
+      "cpo": "Călin Istrate (Satın Alma Direktörü / Head of Procurement) | achizitii@porr.ro",
+      "cfo": "Gerhard Mayr (Director Financiar)",
+      "strategy_note": "Tüm altyapı boru alımları merkezi Departament Achiziții tarafından yönetilir."
+    },
+    "project_reference": "Timișoara Nord Su/Kanalizasyon (22.5 km PE/Duktil), Vrancea Panciu-Mărășești Su Genişletmesi, Giurgiu ve Cosoba Altyapı Paketleri",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://porr.ro"
+      },
+      {
+        "label": "Tedarik",
+        "url": "https://porr.ro/en/contact/contact-addresses/"
+      },
+      {
+        "label": "Grup",
+        "url": "https://porr-group.com"
+      }
+    ],
+    "source_text": "https://porr.ro | Tedarik: https://porr.ro/en/contact/contact-addresses/ | Grup: https://porr-group.com",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-005",
+    "name": "Construcții Erbașu SA",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "İçme Suyu / Kanalizasyon / WWTP",
+    "city": "Bükreş",
+    "priority": "Yüksek (A+)",
+    "phone": "+40 21 232 3545",
+    "email": "secretariat@erbasu.ro",
+    "email_alt": "ofertare@erbasu.ro",
+    "address": "Str. Nicolae G. Caramfil Nr. 72, Sector 1, Bükreş",
+    "project_officer": "Satın Alma Departmanı / Cristian Erbașu",
+    "executive": {
+      "owner_group": "Cristian Romeo Erbașu (Asıl Hissedar & Yönetim Kurulu Başkanı)",
+      "ceo": "Cristian Romeo Erbașu (CEO) / Ionuț Erbașu (Director General Adjunct)",
+      "cpo": "Cătălin Vișan (Satın Alma Direktörü / CPO) | achizitii@erbasu.ro",
+      "cfo": "Mihaela Erbașu (Director Financiar)",
+      "strategy_note": "Romanya inşaat sektörünün en güçlü yerli ailesi; boru alımlarında Cătălin Vișan doğrudan karar vericidir."
+    },
+    "project_reference": "Craiova Isvarna Fir II İçme Suyu İletim Hattı (DN1200 PE/Çelik), PDD Su Altyapı Paketleri",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://erbasu.ro"
+      },
+      {
+        "label": "Proje",
+        "url": "https://apaoltenia.ro"
+      }
+    ],
+    "source_text": "https://erbasu.ro | Proje: https://apaoltenia.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-006",
+    "name": "ACVATOT SRL (Veolia / SADE Grubu)",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "İçme Suyu / Kanalizasyon / Gaz",
+    "city": "Bükreş",
+    "priority": "Yüksek (A+)",
+    "phone": "+40 21 256 9403",
+    "email": "acvatot@acvatot.ro",
+    "email_alt": "achizitii@acvatot.ro",
+    "address": "Str. Abandonului Nr. 12-18, Sector 1, Bükreş",
+    "project_officer": "Satın Alma Müdürü / Călin Bichel (Genel Müdür)",
+    "executive": {
+      "owner_group": "SADE CGTH / Veolia Grubu (Fransız Çok Uluslu Grup)",
+      "ceo": "Călin Bichel (Director General)",
+      "cpo": "Moise Fluture (Teknik & Satın Alma Direktörü) | achizitii@acvatot.ro",
+      "cfo": "Laurentiu Popa (Director Financiar)",
+      "strategy_note": "Kentsel su ve gaz boru alımları Bükreş merkezli merkezi satın alma masasında karara bağlanır."
+    },
+    "project_reference": "Călărași ve Ilfov İçme Suyu ve Kanalizasyon Şebekeleri Yenileme, Bükreş Altyapı Paketleri",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://acvatot.ro"
+      },
+      {
+        "label": "Grup",
+        "url": "https://sade-cgth.com"
+      }
+    ],
+    "source_text": "https://acvatot.ro | Grup: https://sade-cgth.com",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-007",
+    "name": "Concelex SRL",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Arıtma Tesisleri (WWTP) / Altyapı",
+    "city": "Bükreş",
+    "priority": "Yüksek (A+)",
+    "phone": "+40 21 318 5320",
+    "email": "office@concelex.ro",
+    "email_alt": "achizitii@concelex.ro",
+    "address": "Str. Aeroportului Nr. 120-130, Sector 1, Bükreş",
+    "project_officer": "Satın Alma ve Teklif Departmanı (Departament Licitatii)",
+    "executive": {
+      "owner_group": "Daniel Pițurlea (Firma Sahibi & Yönetim Kurulu Başkanı)",
+      "ceo": "Cătălin Vișan (Director General) / Daniel Pițurlea",
+      "cpo": "Mihai Bălțat (Satın Alma Direktörü) | achizitii@concelex.ro",
+      "cfo": "Alina Marinescu (Director Financiar)",
+      "strategy_note": "Atıksu arıtma tesisi proses ve kolektör borulamalarında Daniel Pițurlea ve Mihai Bălțat yetkilidir."
+    },
+    "project_reference": "Kentsel Atıksu Arıtma Tesisleri (WWTP), Bölgesel Atıksu Kollektör Hatları",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://concelex.ro"
+      }
+    ],
+    "source_text": "https://concelex.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-008",
+    "name": "DIMEX-2000 Company SRL",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "İçme Suyu / Kanalizasyon",
+    "city": "Bistrița-Năsăud",
+    "priority": "Yüksek (A)",
+    "phone": "+40 263 238 043",
+    "email": "office@dimex2000.ro",
+    "email_alt": "licitatii@dimex2000.ro",
+    "address": "Str. Principală Nr. 191A, Reteag, Bistrița-Năsăud",
+    "project_officer": "Satın Alma Departmanı / Ioan Scurtu",
+    "executive": {
+      "owner_group": "Ioan Scurtu & Neluța Scurtu (Kurucu Hissedarlar)",
+      "ceo": "Ioan Scurtu (Director General)",
+      "cpo": "Iustin Scurtu (Operasyon ve Satın Alma Direktörü) | licitatii@dimex2000.ro",
+      "cfo": "Neluța Scurtu (Director Economic)",
+      "strategy_note": "Kazısız borulama ve PE100 içme suyu alımlarında Ioan ve Iustin Scurtu tek yetkilidir."
+    },
+    "project_reference": "PDD Bistrița-Năsăud ve Cluj Su/Kanalizasyon Şebekesi, UV CIPP Kazısız Yenileme",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://dimex2000.ro"
+      },
+      {
+        "label": "Su İdaresi",
+        "url": "https://aquabis.ro"
+      }
+    ],
+    "source_text": "https://dimex2000.ro | Su İdaresi: https://aquabis.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-009",
+    "name": "SOCOT SA",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Enerji / Hidroteknik / Baraj",
+    "city": "Târgu Mureș",
+    "priority": "Yüksek (A)",
+    "phone": "+40 265 264 450",
+    "email": "socot@socot.ro",
+    "email_alt": "",
+    "address": "Str. Lăpușna Nr. 4, Târgu Mureș, Mureș",
+    "project_officer": "Satın Alma Departmanı (Serviciul Aprovizionare)",
+    "executive": {
+      "owner_group": "Eugen Popa (Președinte Consiliu de Administrație & Asıl Hissedar)",
+      "ceo": "Mircea Rusu (Director General)",
+      "cpo": "Ioan Cotoi (Șef Serviciu Aprovizionare / Satın Alma Şefi) | socot@socot.ro",
+      "cfo": "Maria Moldovan (Director Economic)",
+      "strategy_note": "Baraj drenaj ve hidroteknik boru alımlarında Eugen Popa ve Ioan Cotoi onay mercidir."
+    },
+    "project_reference": "Mihăileni ve Runcu Barajı Gövde Drenaj ve Su Tahliye Sistemleri, Su İletim Hatları",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://socot.ro"
+      },
+      {
+        "label": "Barajlar",
+        "url": "https://rowater.ro"
+      }
+    ],
+    "source_text": "https://socot.ro | Barajlar: https://rowater.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-010",
+    "name": "Elsaco Electronic SRL",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Sulama / İçme Suyu / Enerji",
+    "city": "Botoșani",
+    "priority": "Yüksek (A+)",
+    "phone": "+40 231 507 060",
+    "email": "office@elsaco.com",
+    "email_alt": "ofertare@elsaco.com",
+    "address": "Str. Păun Pincio Nr. 11, Botoșani",
+    "project_officer": "Andreea Govna (Teklif & İhale Departmanı) / Valeriu Iftime",
+    "executive": {
+      "owner_group": "Valeriu Iftime (Kurucu Ortak & Yönetim Kurulu Başkanı / Elsaco Holding)",
+      "ceo": "Ovidiu Jitaru (Director General Elsaco Electronic)",
+      "cpo": "Dorin Burlacu (Grup Satın Alma Direktörü / CPO) | ofertare@elsaco.com",
+      "cfo": "Petru Călinescu (Director Financiar)",
+      "strategy_note": "ANIF basınçlı sulama boruları ve SCADA ekipmanlarında Valeriu Iftime ve Dorin Burlacu kilit isimlerdir."
+    },
+    "project_reference": "ANIF Basınçlı Tarımsal Sulama Rehabilitasyonu, SCADA ve Su Dağıtım Şebekeleri",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://elsaco.com"
+      },
+      {
+        "label": "ANIF",
+        "url": "https://anif.ro"
+      }
+    ],
+    "source_text": "https://elsaco.com | ANIF: https://anif.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-011",
+    "name": "Terra Gaz Construct SRL",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Gaz / İçme Suyu",
+    "city": "Ilfov / Otopeni",
+    "priority": "Yüksek (A+)",
+    "phone": "+40 21 350 4040",
+    "email": "office@terragaz.ro",
+    "email_alt": "ofertare@terragaz.ro",
+    "address": "Calea Bucureștilor Nr. 80, Otopeni, Ilfov",
+    "project_officer": "Satın Alma Departmanı / Dan Ursăchescu",
+    "executive": {
+      "owner_group": "Traian Bica (Firma Sahibi & Kurucu)",
+      "ceo": "Alexandru Bica (Director General)",
+      "cpo": "Gabriel Ilie (Satın Alma Müdürü) | office@terragaz.ro",
+      "cfo": "Elena Bica (Director Financiar)",
+      "strategy_note": "Delgaz ve Anghel Saligny PE doğal gaz/su şebekesi boru siparişleri Gabriel Ilie kontrolündedir."
+    },
+    "project_reference": "Delgaz Grid PE100 SDR11 Doğal Gaz Dağıtım Hatları, Anghel Saligny Su/Gaz Şebekeleri",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://terragaz.ro"
+      },
+      {
+        "label": "Delgaz",
+        "url": "https://delgaz.ro"
+      }
+    ],
+    "source_text": "https://terragaz.ro | Delgaz: https://delgaz.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-012",
+    "name": "CIS GAZ SA",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Gaz / Enerji",
+    "city": "Mureș",
+    "priority": "Yüksek (A)",
+    "phone": "+40 265 314 911",
+    "email": "office@cisgaz.ro",
+    "email_alt": "",
+    "address": "Str. Voinicenilor Nr. 120, Sântana de Mureș, Mureș",
+    "project_officer": "Satın Alma ve Lojistik Departmanı / Sebastian Călugăr",
+    "executive": {
+      "owner_group": "Sebastian Călugăr (Firma Sahibi & İcra Kurulu Başkanı)",
+      "ceo": "Sebastian Călugăr (CEO)",
+      "cpo": "Marius Căpățână (Head of Supply Chain & Achiziții) | office@cisgaz.ro",
+      "cfo": "Horațiu Călugăr (Director Financiar / CFO)",
+      "strategy_note": "Gaz iletim ve dağıtım PE boru tedariklerinde Călugăr ailesi ve Marius Căpățână nihai karar vericidir."
+    },
+    "project_reference": "Transgaz Gaz İletim ve Bölgesel Dağıtım PE Şebeke Hatları, İstasyon Bağlantıları",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://cisgaz.ro"
+      },
+      {
+        "label": "Transgaz",
+        "url": "https://transgaz.ro"
+      }
+    ],
+    "source_text": "https://cisgaz.ro | Transgaz: https://transgaz.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-013",
+    "name": "HABAU România SRL (HABAU Group)",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Gaz / Enerji / Altyapı",
+    "city": "Ploiești",
+    "priority": "Yüksek (A)",
+    "phone": "+40 244 595 100",
+    "email": "office@habau.ro",
+    "email_alt": "",
+    "address": "Str. Gheorghe Grigore Cantacuzino Nr. 348, Ploiești, Prahova",
+    "project_officer": "Satın Alma Departmanı (Procurement Department)",
+    "executive": {
+      "owner_group": "HABAU Group (Avusturya Merkezli Altyapı Devi)",
+      "ceo": "Karl Singer (Director General HABAU Romania)",
+      "cpo": "Florin Păunescu (Head of Procurement & Logistica) | office@habau.ro",
+      "cfo": "Christian Priesner (Director Financiar)",
+      "strategy_note": "Boru hattı ve enerji altyapı malzemelerinde Karl Singer ve Florin Păunescu karar verir."
+    },
+    "project_reference": "BRUA Uluslararası Boru Hattı, Transgaz Doğal Gaz İletim ve Bölgesel PE Dağıtım Hatları",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://habau.ro"
+      },
+      {
+        "label": "BRUA",
+        "url": "https://transgaz.ro"
+      }
+    ],
+    "source_text": "https://habau.ro | BRUA: https://transgaz.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-014",
+    "name": "Inoveco SRL",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Maden Drenajı / Çevre Altyapısı",
+    "city": "Ilfov / Voluntari",
+    "priority": "Orta (B+)",
+    "phone": "+40 21 242 1775",
+    "email": "office@inoveco.ro",
+    "email_alt": "",
+    "address": "B-dul Pipera Nr. 1/IA, Adora Off. Park, Voluntari, Ilfov",
+    "project_officer": "Satın Alma ve Mühendislik Departmanı",
+    "executive": {
+      "owner_group": "Gheorghe Tache (Firma Sahibi & Kurucu)",
+      "ceo": "Gheorghe Tache (Director General)",
+      "cpo": "Andrei Tache (Satın Alma & Teknik Direktör) | office@inoveco.ro",
+      "cfo": "Monica Tache (Director Financiar)",
+      "strategy_note": "Maden drenajı ve jeomembran / PE-PVC boru seçimlerinde Tache ailesi doğrudan yetkilidir."
+    },
+    "project_reference": "Roșia Poieni Maden Sahası Asidik Sızıntı Suyu Drenajı, Katı Atık Depolama Alanı HDPE Hatları",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://inoveco.ro"
+      },
+      {
+        "label": "Maden",
+        "url": "https://cupmin.ro"
+      }
+    ],
+    "source_text": "https://inoveco.ro | Maden: https://cupmin.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-015",
+    "name": "Hightech Marina SRL",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Balık Çiftliği / Akuakültür",
+    "city": "Craiova",
+    "priority": "Orta (B)",
+    "phone": "+40 722 555 930",
+    "email": "contact@hightechmarina.ro",
+    "email_alt": "",
+    "address": "Str. Calea Severinului Nr. 38, Craiova, Dolj",
+    "project_officer": "Proje ve Satın Alma Departmanı / Marius Popescu",
+    "executive": {
+      "owner_group": "Marius Popescu (Kurucu Ortak & Firma Sahibi)",
+      "ceo": "Marius Popescu (Director General)",
+      "cpo": "Marius Popescu (Tedarik ve Proje Yönetimi) | contact@hightechmarina.ro",
+      "cfo": "Daniela Popescu (Director Economic)",
+      "strategy_note": "Yüzer balık kafesi PE boru ve ekleme parçası alımları doğrudan Marius Popescu tarafından yapılır."
+    },
+    "project_reference": "Karadeniz ve İç Su Baraj Gölleri Açık Su Yüzer HDPE Balık Kafesleri (Viviere Flotante)",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://hightechmarina.ro"
+      },
+      {
+        "label": "Balıkçılık Otoritesi",
+        "url": "https://anpa.ro"
+      }
+    ],
+    "source_text": "https://hightechmarina.ro | Balıkçılık Otoritesi: https://anpa.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-016",
+    "name": "Citadina 98 SA",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "İçme Suyu / Kanalizasyon",
+    "city": "Galați",
+    "priority": "Yüksek (A)",
+    "phone": "+40 236 414 115",
+    "email": "secretariat@citadina98.ro",
+    "email_alt": "citadina98@yahoo.com",
+    "address": "Str. George Coșbuc Nr. 20, Galați",
+    "project_officer": "Satın Alma Departmanı / Dan Dobrea",
+    "executive": {
+      "owner_group": "Galați Yerel Konsorsiyum Hissedarları",
+      "ceo": "Dan Dobrea (Director General)",
+      "cpo": "Cornel Tăbăcaru (Șef Serviciu Achiziții / Satın Alma Şefi) | citadina98@yahoo.com",
+      "cfo": "Viorica Rusu (Director Financiar)",
+      "strategy_note": "Vrancea ve Galați su altyapı boru alımlarında Dan Dobrea ve Cornel Tăbăcaru onay merciidir."
+    },
+    "project_reference": "Vrancea Bölgesel Su Projesi Lot VN-CL-08.1 Lideri (Gugești, Dumbrăveni - 149,78M RON)",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://citadina98.ro"
+      },
+      {
+        "label": "İhale",
+        "url": "https://cupfocsani.ro/proiecte/"
+      }
+    ],
+    "source_text": "https://citadina98.ro | İhale: https://cupfocsani.ro/proiecte/",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-017",
+    "name": "Lemacons SRL",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Altyapı / Su ve Kanalizasyon",
+    "city": "Galați",
+    "priority": "Yüksek (A)",
+    "phone": "+40 336 401 564",
+    "email": "office@lemacons.ro",
+    "email_alt": "",
+    "address": "Str. Brăilei Nr. 159F, Galați",
+    "project_officer": "Satın Alma Departmanı / Alin Constantinescu",
+    "executive": {
+      "owner_group": "Alin Constantinescu (Firma Sahibi & Kurucu)",
+      "ceo": "Cosmin Constantinescu (Director General)",
+      "cpo": "Alin Constantinescu (Satın Alma ve Yatırım Başkanı) | office@lemacons.ro",
+      "cfo": "Mirela Constantinescu (Director Economic)",
+      "strategy_note": "Altyapı boru ve hammadde tedarikinde Alin Constantinescu şahsen masadadır."
+    },
+    "project_reference": "Vrancea Lot VN-CL-08.1 Konsorsiyum Ortağı, Galați & Brăila Kentsel Su/Kanalizasyon Şebekeleri",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://lemacons.ro"
+      },
+      {
+        "label": "İhale",
+        "url": "https://cupfocsani.ro"
+      }
+    ],
+    "source_text": "https://lemacons.ro | İhale: https://cupfocsani.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-018",
+    "name": "Vega 93 SRL",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Altyapı / Su ve Kanalizasyon",
+    "city": "Galați",
+    "priority": "Orta (B+)",
+    "phone": "+40 336 403 047",
+    "email": "office@vega93.ro",
+    "email_alt": "",
+    "address": "Str. Siderurgiștilor Nr. 15, Galați",
+    "project_officer": "Satın Alma Departmanı (Departament Aprovizionare)",
+    "executive": {
+      "owner_group": "Familia Istrate (Kurucu Aile Mirası)",
+      "ceo": "Ionel Călin (Administrator Special & Director General)",
+      "cpo": "Mihai Vasiliu (Satın Alma Departmanı Şefi) | office@vega93.ro",
+      "cfo": "Carmen Istrate (Director Financiar)",
+      "strategy_note": "Bölgesel su projelerinde malzeme siparişlerini Ionel Călin onaylar."
+    },
+    "project_reference": "Vrancea Lot VN-CL-08.1 Konsorsiyum Ortağı, Doğu Romanya Su Altyapısı Projeleri",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://vega93.ro"
+      },
+      {
+        "label": "İhale",
+        "url": "https://cupfocsani.ro"
+      }
+    ],
+    "source_text": "https://vega93.ro | İhale: https://cupfocsani.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-019",
+    "name": "Grup Selina (Selina SRL / Tramex SA)",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Altyapı / Su Şebekesi",
+    "city": "Oradea",
+    "priority": "Yüksek (A)",
+    "phone": "+40 259 411 802",
+    "email": "secretariat@selina.ro",
+    "email_alt": "ofertare@selina.ro",
+    "address": "Tudor Vladimirescu Nr. 79, Oradea, Bihor",
+    "project_officer": "Satın Alma Departmanı / Călin Roman",
+    "executive": {
+      "owner_group": "Beniamin Rus (Firma Sahibi & Kurucu / Bihor Bölgesi Altyapı Lideri)",
+      "ceo": "Călin Roman (Director General Grup Selina)",
+      "cpo": "Sorin Cuc (Direcția Achiziții Centrale) | secretariat@selina.ro",
+      "cfo": "Daniela Rus (Director Financiar)",
+      "strategy_note": "Batı Romanya su ve kanalizasyon boru ihalelerinde Beniamin Rus ve Călin Roman kilit karar vericilerdir."
+    },
+    "project_reference": "Vrancea VN-CL-08.1 Konsorsiyum Ortağı, Compania de Apă Oradea Su/Kanalizasyon Paketleri",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://selina.ro"
+      },
+      {
+        "label": "Oradea Su",
+        "url": "https://apaoradea.ro"
+      }
+    ],
+    "source_text": "https://selina.ro | Oradea Su: https://apaoradea.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-020",
+    "name": "I.C.P.E. Bistrița SA",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "WWTP / Pompa İstasyonları",
+    "city": "Bistrița-Năsăud",
+    "priority": "Orta (B+)",
+    "phone": "+40 263 210 938",
+    "email": "bogdan.ioja@icpebn.ro",
+    "email_alt": "office@icpebn.ro",
+    "address": "Str. Parcului Nr. 7, Bistrița, Bistrița-Năsăud",
+    "project_officer": "Ing. Bogdan Sorin Ioja / Mekanik Satın Alma",
+    "executive": {
+      "owner_group": "Yönetici Mühendisler Hissedarlık Yapısı",
+      "ceo": "Ing. Bogdan Sorin Ioja (Președinte CA & Director General)",
+      "cpo": "Ing. Bogdan Sorin Ioja (Mekanik ve Ekipman Satın Alma Direktörü) | bogdan.ioja@icpebn.ro",
+      "cfo": "Mariana Pop (Director Economic)",
+      "strategy_note": "Arıtma tesisi elektromekanik ve borulama tedarikinde Bogdan Sorin Ioja doğrudan karar vericidir."
+    },
+    "project_reference": "Vrancea VN-CL-08.1 Gugești Arıtma Tesisi Mekanik Ekipman ve PE/PVC Borulama",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://icpebn.ro"
+      },
+      {
+        "label": "Arıtma",
+        "url": "https://cupfocsani.ro"
+      }
+    ],
+    "source_text": "https://icpebn.ro | Arıtma: https://cupfocsani.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-021",
+    "name": "Condor Păduraru SRL",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Sulama / Hidroteknik",
+    "city": "Slatina",
+    "priority": "Yüksek (A+)",
+    "phone": "+40 722 409 008",
+    "email": "office@condorpad.ro",
+    "email_alt": "",
+    "address": "Str. Silozului Nr. 1, Slatina, Olt",
+    "project_officer": "Cristian Păduraru (Genel Müdür / Satın Alma)",
+    "executive": {
+      "owner_group": "Cristian Păduraru (Firma Sahibi & Tek Pay Sahibi)",
+      "ceo": "Cristian Păduraru (Director General)",
+      "cpo": "Cristian Păduraru (Satın Alma & Genel Yönetim) | office@condorpad.ro",
+      "cfo": "Silvia Păduraru (Director Financiar)",
+      "strategy_note": "ANIF Izvoare-Cujmir sulama borusu alımlarında Cristian Păduraru doğrudan karar verir."
+    },
+    "project_reference": "ANIF Izvoare-Cujmir Sulama Sistemi Rehabilitasyonu (382,84 Milyon RON)",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://condorpad.ro"
+      },
+      {
+        "label": "ANIF",
+        "url": "https://anif.ro"
+      }
+    ],
+    "source_text": "https://condorpad.ro | ANIF: https://anif.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-022",
+    "name": "Wagramer Termo 2000 SRL",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Sulama / Borulama",
+    "city": "Slatina",
+    "priority": "Orta (B+)",
+    "phone": "+40 349 803 001",
+    "email": "office@wagramer.ro",
+    "email_alt": "",
+    "address": "Str. Cazărmii Nr. 11, Slatina, Olt",
+    "project_officer": "Satın Alma Departmanı",
+    "executive": {
+      "owner_group": "George Păduraru & Constantin Păduraru (Kurucu Hissedarlar)",
+      "ceo": "George Păduraru (Director General)",
+      "cpo": "Constantin Păduraru (Satın Alma & Şantiye İkmal) | office@wagramer.ro",
+      "cfo": "Ana Păduraru (Director Economic)",
+      "strategy_note": "Sulama pompaj ve borulama ekipmanlarında George ve Constantin Păduraru tam yetkilidir."
+    },
+    "project_reference": "ANIF Izvoare-Cujmir Sulama Sistemi Rehabilitasyonu Ortak Yüklenicisi",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://wagramer.ro"
+      },
+      {
+        "label": "ANIF",
+        "url": "https://anif.ro"
+      }
+    ],
+    "source_text": "https://wagramer.ro | ANIF: https://anif.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-023",
+    "name": "Ness Proiect Europe SRL",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "İçme Suyu / Kanalizasyon",
+    "city": "Ploiești",
+    "priority": "Yüksek (A)",
+    "phone": "+40 344 802 000",
+    "email": "ofertare@nessproject.eu",
+    "email_alt": "office@nessproject.eu",
+    "address": "Str. Gheorghe Doja Nr. 129, Ploiești, Prahova",
+    "project_officer": "Satın Alma Departmanı / Mihai Vaida",
+    "executive": {
+      "owner_group": "Mihai Florian Vaida (Firma Sahibi & Kurucu)",
+      "ceo": "Mihai Florian Vaida (Director General)",
+      "cpo": "Răzvan Stănescu (Satın Alma Direktörü) | ofertare@nessproject.eu",
+      "cfo": "Elena Vaida (Director Financiar)",
+      "strategy_note": "Prahova ve Ilfov su/kanalizasyon şebeke boru alımlarında Mihai Vaida ve Răzvan Stănescu karar vericidir."
+    },
+    "project_reference": "Prahova, Dâmbovița ve Ilfov Bölgesel Su Şirketleri (Hidro Prahova) Şebeke Paketleri",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://nessproject.eu"
+      },
+      {
+        "label": "Su İdaresi",
+        "url": "https://hidroprahova.ro"
+      }
+    ],
+    "source_text": "https://nessproject.eu | Su İdaresi: https://hidroprahova.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-024",
+    "name": "Inspet SA",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Gaz / Boru Hatları EPC",
+    "city": "Ploiești",
+    "priority": "Yüksek (A)",
+    "phone": "+40 244 597 222",
+    "email": "inspet@inspet-ploiesti.ro",
+    "email_alt": "",
+    "address": "Str. Poștei Nr. 67, Ploiești, Prahova",
+    "project_officer": "Satın Alma Departmanı / Ciprian Păltineanu",
+    "executive": {
+      "owner_group": "Petre Mustățea (Președinte Consiliu de Administrație)",
+      "ceo": "Ciprian Păltineanu (Director General)",
+      "cpo": "Adrian Niță (Șef Serviciu Achiziții Conducte) | inspet@inspet-ploiesti.ro",
+      "cfo": "Cornel Diaconu (Director Financiar)",
+      "strategy_note": "Yüksek/orta basınç PE ve çelik boru alımlarında Ciprian Păltineanu ve Adrian Niță onay mercidir."
+    },
+    "project_reference": "Delgaz Grid ve Transgaz Yüksek/Orta Basınçlı PE100 ve Çelik Gaz Dağıtım Şebekeleri",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://inspet.ro"
+      },
+      {
+        "label": "Delgaz",
+        "url": "https://delgaz.ro"
+      }
+    ],
+    "source_text": "https://inspet.ro | Delgaz: https://delgaz.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-025",
+    "name": "Hidroconstrucția SA",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Baraj / Hidroelektrik / Hidroteknik",
+    "city": "Bükreş",
+    "priority": "Yüksek (A)",
+    "phone": "+40 21 208 1400",
+    "email": "office@hidroconstructia.com",
+    "email_alt": "",
+    "address": "Calea Dorobanților Nr. 103-105, Sector 1, Bükreş",
+    "project_officer": "Silviu Arimia (Teklif & İhale Departmanı) / Satın Alma Müdürlüğü",
+    "executive": {
+      "owner_group": "Yönetici & Mühendis Hissedarlar Konsorsiyumu",
+      "ceo": "Romeo Boitor (Director General)",
+      "cpo": "Gheorghe Moraru (Director Aprovizionare & Logistică) | office@hidroconstructia.com",
+      "cfo": "Elena Popescu (Director Financiar)",
+      "strategy_note": "HES ve baraj hidroteknik borulamalarında Romeo Boitor ve Gheorghe Moraru karar merciidir."
+    },
+    "project_reference": "Hidroelectrica Baraj Gövde Drenajları, HES Cebri Boru Drenaj By-Pass Hatları",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://hidroconstructia.com"
+      },
+      {
+        "label": "Hidroelectrica",
+        "url": "https://hidroelectrica.ro"
+      }
+    ],
+    "source_text": "https://hidroconstructia.com | Hidroelectrica: https://hidroelectrica.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-026",
+    "name": "HTI International România SRL (GC-HTI Group)",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Boru Tedarikçisi / Distribütör",
+    "category": "Boru Tedariki / Büyük Altyapı Distribütörü (Tiefbau)",
+    "city": "Brașov",
+    "priority": "Kilit Toptancı / Stratejik Dağıtıcı",
+    "phone": "+40 368 440 745",
+    "email": "hti@hti-romania.ro",
+    "email_alt": "depozit.brasov@hti-romania.ro",
+    "address": "B-dul Muncii Nr. 22A, Etaj 1, Brașov (Bölgesel Depolar: Brașov/Ghimbav, Cluj, Bacău, Constanța)",
+    "project_officer": "Departament Vânzări Infrastructură (Altyapı ve Boru Satış Departmanı)",
+    "executive": {
+      "owner_group": "GC-Gruppe / HTI Group (Almanya B2B Altyapı Devi)",
+      "ceo": "Dragoș Mărginean (Managing Director / Director General)",
+      "cpo": "Mihai Coman (Director Național Vânzări & Achiziții Tiefbau) | hti@hti-romania.ro",
+      "cfo": "Anca Radu (Director Financiar)",
+      "strategy_note": "Romanya depolarına tır bazlı PE/PVC boru ithalat ve tedarik kararlarında Dragoș Mărginean ve Mihai Coman tam yetkilidir."
+    },
+    "project_reference": "Romanya genelinde EPC müteahhitlerine PE100 su ve gaz boruları, u-PVC SN4/SN8 kanalizasyon, PE drenaj boruları ve vana tedariki",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://hti-romania.ro"
+      },
+      {
+        "label": "Uluslararası Grup",
+        "url": "https://hti-international.com"
+      }
+    ],
+    "source_text": "https://hti-romania.ro | Uluslararası Grup: https://hti-international.com",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-027",
+    "name": "Ostendorf Kunststoffe (Ostendorf Foloplast SRL)",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Boru Tedarikçisi / Üretici",
+    "category": "Boru Tedariki / Üretici (u-PVC & PP Kanalizasyon)",
+    "city": "Hunedoara",
+    "priority": "Yerleşik Üretici",
+    "phone": "+49 4441 874 238",
+    "email": "m.golovij@ostendorf-kunststoffe.com",
+    "email_alt": "verkauf@ostendorf-kunststoffe.com",
+    "address": "Str. Furnaristilor Nr. 1, Călan, Hunedoara",
+    "project_officer": "Miko Golovij (Doğu Avrupa Satış Direktörü) / Satış Departmanı",
+    "executive": {
+      "owner_group": "Gebr. Ostendorf Kunststoffe GmbH (Almanya)",
+      "ceo": "Ludger Ostendorf (Grup Managing Director)",
+      "cpo": "Miko Golovij (Doğu Avrupa Satış Direktörü) | m.golovij@ostendorf-kunststoffe.com",
+      "cfo": "Holger Buescher (Finans Direktörü)",
+      "strategy_note": "Romanya Călan fabrikası ve Doğu Avrupa u-PVC/PP kanalizasyon dağıtımında Miko Golovij doğrudan muhataptır."
+    },
+    "project_reference": "Romanya genelinde altyapı projeleri için u-PVC ve PP kanalizasyon boruları, SN4/SN8 U-PVC ve PE boru sistemleri",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://ostendorf-kunststoffe.com"
+      }
+    ],
+    "source_text": "https://ostendorf-kunststoffe.com",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-028",
+    "name": "TeraPlast SA (TeraPlast Group)",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Boru Tedarikçisi / Üretici",
+    "category": "Boru Tedariki / Üretici (PE & PVC)",
+    "city": "Bistrița-Năsăud",
+    "priority": "Yerleşik Üretici",
+    "phone": "+40 263 375 052",
+    "email": "office@teraplast.ro",
+    "email_alt": "vanzari@teraplast.ro",
+    "address": "Parc Industrial TeraPlast, Sărățel, Bistrița-Năsăud",
+    "project_officer": "Satış Departmanı (Infrastructură) / Ovidiu Gurău",
+    "executive": {
+      "owner_group": "Dorel Goia (Președinte CA & Asıl Hissedar)",
+      "ceo": "Alexandru Stânean (Grup CEO)",
+      "cpo": "Ovidiu Gurău (Director Divizia Instalații / Satış ve Ürün Masası) | vanzari@teraplast.ro",
+      "cfo": "Ioana Birta (Grup CFO)",
+      "strategy_note": "Romanya içi ve ihracat boru satış stratejilerini Alexandru Stânean ve Dorel Goia belirler."
+    },
+    "project_reference": "Romanya genelinde PDD ve POIM su, kanalizasyon, U-PVC ve PE gaz şebeke boru tedariki",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://teraplast.ro"
+      }
+    ],
+    "source_text": "https://teraplast.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-029",
+    "name": "Tehno World SRL",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Boru Tedarikçisi / Üretici",
+    "category": "Boru Tedariki / Üretici (Büyük Çaplı PE)",
+    "city": "Suceava",
+    "priority": "Yerleşik Üretici",
+    "phone": "+40 230 544 580",
+    "email": "office@tehnoworld.ro",
+    "email_alt": "comenzi@tehnoworld.ro",
+    "address": "DN2E KM 2, Baia, Suceava",
+    "project_officer": "Altyapı Satış Departmanı / Iulian Apetrei",
+    "executive": {
+      "owner_group": "Iustinian Parasca & Gabriela Parasca (Firma Sahipleri & Kurucular)",
+      "ceo": "Iulian Apetrei (Director General)",
+      "cpo": "Iustinian Parasca (Hammadde ve Üretim Satın Alma) / Iulian Apetrei | office@tehnoworld.ro",
+      "cfo": "Gabriela Parasca (Director Financiar)",
+      "strategy_note": "Büyük çaplı PE100 boru tedarik ve konsorsiyum ortaklıklarında Parasca ailesi tek yetkilidir."
+    },
+    "project_reference": "Craiova Isvarna Fir II büyük çaplı PE hatları, ANIF basınçlı sulama iletim hatları",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://tehnoworld.ro"
+      }
+    ],
+    "source_text": "https://tehnoworld.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-030",
+    "name": "Valrom Industrie SRL (Fondital Grubu)",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Boru Tedarikçisi / Üretici",
+    "category": "Boru Tedariki / Üretici (PE & u-PVC)",
+    "city": "Bükreş",
+    "priority": "Yerleşik Üretici",
+    "phone": "+40 21 444 1221",
+    "email": "office@valrom.ro",
+    "email_alt": "comenzi@valrom.ro",
+    "address": "B-dul Preciziei Nr. 28, Sector 6, Bükreş",
+    "project_officer": "Liviu Coarnă (Altyapı Satış Direktörü) / Satış Departmanı",
+    "executive": {
+      "owner_group": "Fondital Group / Silmar Group (İtalyan Çok Uluslu Grup)",
+      "ceo": "Liviu Coarnă (Director General)",
+      "cpo": "Bogdan Roman (Director Achiziții & Supply Chain) | office@valrom.ro",
+      "cfo": "Silvia Barbu (Director Financiar)",
+      "strategy_note": "PE ve PVC boru ekstrüzyon hammadde ve satış kanallarını Liviu Coarnă ve Bogdan Roman yönetir."
+    },
+    "project_reference": "VALWater (PE100-RC), VALGasio (PE Gaz), VALPlast (u-PVC Şebeke ve Kuyu Boruları)",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://valrom.ro"
+      }
+    ],
+    "source_text": "https://valrom.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-031",
+    "name": "Palplast SA",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Boru Tedarikçisi / Üretici",
+    "category": "Boru Tedariki / Üretici (PE Boru)",
+    "city": "Sibiu",
+    "priority": "Yerleşik Üretici",
+    "phone": "+40 269 206 207",
+    "email": "office@palplast.ro",
+    "email_alt": "vanzari@palplast.ro",
+    "address": "Str. Râului Nr. 33, Sibiu",
+    "project_officer": "Daniela Smaranda (Satış Sorumlusu) / Ticaret Departmanı",
+    "executive": {
+      "owner_group": "Romanya Yerli Yatırımcı Grubu",
+      "ceo": "Vasile Todea (Director General)",
+      "cpo": "Daniela Smaranda (Director Comercial & Achiziții) | vanzari@palplast.ro",
+      "cfo": "Georgeta Dancu (Director Financiar)",
+      "strategy_note": "PE gaz ve su boru alımlarında Vasile Todea ve Daniela Smaranda karar vericidir."
+    },
+    "project_reference": "Delgaz Grid onaylı PE100 SDR11 doğal gaz boruları, belediye içme suyu şebeke boruları",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://palplast.ro"
+      }
+    ],
+    "source_text": "https://palplast.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-032",
+    "name": "Pipelife România SRL (Wienerberger Grubu)",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Boru Tedarikçisi / Üretici",
+    "category": "Boru Tedariki / Üretici (PE & u-PVC)",
+    "city": "Bükreş",
+    "priority": "Çok Uluslu Üretici",
+    "phone": "+40 21 404 8880",
+    "email": "office@pipelife.ro",
+    "email_alt": "romania@pipelife.com",
+    "address": "Şoseaua București-Ploiești Nr. 42-44, Sector 1, Bükreş",
+    "project_officer": "Ionuț Mocanu / Dan Oprescu (Altyapı Projeleri Satış Departmanı)",
+    "executive": {
+      "owner_group": "Wienerberger AG (Avusturya Yapı Malzemeleri Devi)",
+      "ceo": "Sorin Popa (Director General Pipelife Romania)",
+      "cpo": "Ionuț Mocanu (Director Vânzări Infrastructură) / Dan Oprescu | office@pipelife.ro",
+      "cfo": "Cristian Matei (Director Financiar)",
+      "strategy_note": "Altyapı boru anlaşmaları ve büyük proje taahhütleri Sorin Popa onayındadır."
+    },
+    "project_reference": "Kentsel atıksu U-PVC boruları, PE100 su hatları, u-PVC basınçlı boru sistemleri",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://pipelife.ro"
+      }
+    ],
+    "source_text": "https://pipelife.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-033",
+    "name": "Romstal Imex SRL",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Boru Tedarikçisi / Distribütör",
+    "category": "Boru Tedariki / Büyük Dağıtıcı (Distribütör)",
+    "city": "Bükreş",
+    "priority": "Potansiyel Toptan Alıcı",
+    "phone": "+40 21 332 0901",
+    "email": "office@romstal.ro",
+    "email_alt": "ofertare@romstal.ro",
+    "address": "Şoseaua Vitan-Bârzești Nr. 11A, Sector 4, Bükreş",
+    "project_officer": "Altyapı ve Toptan Satış Departmanı (Divizia Infrastructură)",
+    "executive": {
+      "owner_group": "Enrico Perini (Firma Sahibi & Kurucu)",
+      "ceo": "Ovidiu Henter (Director General)",
+      "cpo": "Alin Epure (Director Achiziții Divizia Infrastructură) | ofertare@romstal.ro",
+      "cfo": "Monica Costea (Director Financiar)",
+      "strategy_note": "Romanya geneli toptan altyapı boru ve ekleme parçası alımında Enrico Perini ve Alin Epure doğrudan yetkilidir."
+    },
+    "project_reference": "Anghel Saligny projelerine PE100 boru, elektrofüzyon ekleme parçaları ve döküm vana temini",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://romstal.ro"
+      }
+    ],
+    "source_text": "https://romstal.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-034",
+    "name": "Iridex Group Plastic SRL",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Boru Tedarikçisi / Özel Sistem",
+    "category": "Boru Tedariki / Özel Sistem (Maden & Drenaj)",
+    "city": "Ilfov / Voluntari",
+    "priority": "Potansiyel Partner / Dağıtıcı",
+    "phone": "+40 21 240 4040",
+    "email": "office@iridex.ro",
+    "email_alt": "plastic@iridex.ro",
+    "address": "B-dul Eroilor Nr. 6-8, Voluntari, Ilfov",
+    "project_officer": "Satış Departmanı / Cristian Popescu",
+    "executive": {
+      "owner_group": "Corneliu Pascu (Firma Sahibi & Yönetim Kurulu Başkanı / Iridex Group)",
+      "ceo": "Cristian Popescu (Director General)",
+      "cpo": "Cristian Popescu (Teknik Satın Alma ve Proje Satış) | plastic@iridex.ro",
+      "cfo": "Doina Pascu (Director Economic)",
+      "strategy_note": "Maden ve katı atık sahası PE/U-PVC boru ve jeomembran tedariklerinde Pascu ailesi karar vericidir."
+    },
+    "project_reference": "Maden sahaları için perfore PE/HDPE drenaj boruları, liç havuzları jeomembranları",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://iridex.ro"
+      }
+    ],
+    "source_text": "https://iridex.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-035",
+    "name": "Palaplast Expert SRL",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Boru Tedarikçisi / Distribütör",
+    "category": "Boru Tedariki / Dağıtıcı (Sulama PE Sistemleri)",
+    "city": "Ilfov / Popești-Leordeni",
+    "priority": "Potansiyel Partner / Sulama",
+    "phone": "+40 21 369 5808",
+    "email": "office@palaplast.ro",
+    "email_alt": "",
+    "address": "Şoseaua Olteniței Nr. 17B, Popești-Leordeni, Ilfov",
+    "project_officer": "Tarımsal Sulama Satış Departmanı",
+    "executive": {
+      "owner_group": "Palaplast SA (Yunanistan Tarımsal Sulama Grubu)",
+      "ceo": "Konstantinos Palatos (Președinte) / Ioan Mărginean (Administrator)",
+      "cpo": "Ioan Mărginean (Satış ve İthalat Direktörü) | office@palaplast.ro",
+      "cfo": "Maria Palatou (Director Financiar)",
+      "strategy_note": "Tarımsal PE boru ve fittings ithalatında Ioan Mărginean doğrudan muhataptır."
+    },
+    "project_reference": "Tarımsal sulama kooperatifleri (OUAI) için PE basınçlı borular, kaplinler ve filtreler",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://palaplast.ro"
+      }
+    ],
+    "source_text": "https://palaplast.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-036",
+    "name": "Wavin România (Orbia Grubu)",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Boru Tedarikçisi / Çok Uluslu",
+    "category": "Boru Tedariki / Çok Uluslu Sistem Sağlayıcı",
+    "city": "Bükreş",
+    "priority": "Yerleşik Üretici",
+    "phone": "+40 31 425 5700",
+    "email": "office.ro@wavin.com",
+    "email_alt": "",
+    "address": "Str. Gara Herăstrău Nr. 4B, Sector 2, Bükreş",
+    "project_officer": "Güneydoğu Avrupa Altyapı Masası / Milco Masiero",
+    "executive": {
+      "owner_group": "Orbia Advance Corporation (Küresel Altyapı Grubu)",
+      "ceo": "Milco Masiero (Managing Director South-East Europe)",
+      "cpo": "Călin Oprea (Director Comercial Infrastructură România) | office.ro@wavin.com",
+      "cfo": "Bogdan Ionescu (Director Financiar SEE)",
+      "strategy_note": "Romanya kentsel altyapı projeleri boru tedariklerinde Călin Oprea ve Milco Masiero karar verir."
+    },
+    "project_reference": "Kentsel yağmur suyu yönetimi, Compact Pipe kazısız PE yenileme, PE100 basınçlı hatlar",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://wavin.com/ro-ro"
+      }
+    ],
+    "source_text": "https://wavin.com/ro-ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-037",
+    "name": "ROREX PIPE SRL",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Boru Tedarikçisi / CTP (Özel Not)",
+    "category": "Boru Tedariki / CTP-GRP Boru (PE Değildir!)",
+    "city": "Ilfov / Buftea",
+    "priority": "CTP İletim Partneri",
+    "phone": "+40 21 350 1020",
+    "email": "office@rorexpipe.ro",
+    "email_alt": "",
+    "address": "Şoseaua Tamasi Nr. 20, Buftea, Ilfov",
+    "project_officer": "Satış Departmanı",
+    "executive": {
+      "owner_group": "Cornel Simion (Firma Sahibi & Kurucu)",
+      "ceo": "Cornel Simion (Director General)",
+      "cpo": "Cornel Simion (CTP Boru Satış ve İthalat Masası) | office@rorexpipe.ro",
+      "cfo": "Elena Simion (Director Financiar)",
+      "strategy_note": "Büyük çaplı CTP (Cam Elyaf Takviyeli Polyester) ana iletim hatlarında Cornel Simion tek karar vericidir."
+    },
+    "project_reference": "ANIF Izvoare-Cujmir ana iletim hattı DN1800-DN2800 CTP (GRP/PAFSIN) boru tedariki",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://rorexpipe.ro"
+      }
+    ],
+    "source_text": "https://rorexpipe.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-038",
+    "name": "Delgaz Grid SA (E.ON Grubu)",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Kamu İdaresi / Doğrudan İhale Açan",
+    "category": "Gaz / Kamu Hizmeti Şirketi (Utility)",
+    "city": "Târgu Mureș",
+    "priority": "Doğrudan İhale Açan İdare",
+    "phone": "+40 265 200 366",
+    "email": "registratura.gaz@delgaz-grid.ro",
+    "email_alt": "achizitii@delgaz-grid.ro",
+    "address": "Str. Pandurilor Nr. 42, Târgu Mureș, Mureș",
+    "project_officer": "Direcția Achiziții Rețele Gaz (Satın Alma Direktörlüğü)",
+    "executive": {
+      "owner_group": "E.ON SE (Almanya Enerji Devi)",
+      "ceo": "Volker Raffel (CEO E.ON Romania) / Cristian Ionescu (Director General Delgaz Grid)",
+      "cpo": "Laura Gherasim (Head of Procurement / Direcția Achiziții Rețele Gaz) | achizitii@delgaz-grid.ro",
+      "cfo": "Mirko Strube (CFO E.ON Romania)",
+      "strategy_note": "Milyonlarca RON tutarındaki PE100 doğal gaz şebeke boru ihalelerinin nihai imza yetkilisi Laura Gherasim ve Cristian Ionescu'dur."
+    },
+    "project_reference": "SEAP Doğrudan İhale: 33,95 Milyon RON değerinde PE100 SDR11 Doğal Gaz Borusu Alımı",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://delgaz.ro/furnizori/achizitii"
+      },
+      {
+        "label": "SEAP",
+        "url": "https://e-licitatie.ro"
+      }
+    ],
+    "source_text": "https://delgaz.ro/furnizori/achizitii | SEAP: https://e-licitatie.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-039",
+    "name": "S.C. Apa Prod SA Deva",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Kamu İdaresi / Doğrudan İhale Açan",
+    "category": "İçme Suyu / Kanalizasyon / Bölgesel Su İdaresi",
+    "city": "Deva / Hunedoara",
+    "priority": "Doğrudan İhale Açan İdare",
+    "phone": "+40 254 227 087",
+    "email": "clienti@apaprod.ro",
+    "email_alt": "apaproddeva@yahoo.com",
+    "address": "Calea Zarandului Nr. 43, Deva, Hunedoara",
+    "project_officer": "Unitatea de Implementare a Proiectelor (UIP)",
+    "executive": {
+      "owner_group": "Hunedoara İl Meclisi ve Deva Belediyesi Kamu İştiraki",
+      "ceo": "Doru Victor Gherman (Director General)",
+      "cpo": "Ing. Alin Moraru (Șef UIP - Avrupa Birliği ve EBRD Projeleri Direktörü) | clienti@apaprod.ro",
+      "cfo": "Georgeta Dobre (Director Economic)",
+      "strategy_note": "EBRD 56261 su yatırımları ihale ve satın alma şartnamelerinde Doru Victor Gherman ve Alin Moraru yetkilidir."
+    },
+    "project_reference": "EBRD Proje ID: 56261 (Hunedoara Su & Kanalizasyon Şebeke Genişletmesi)",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://www.ebrd.com/home/work-with-us/projects/psd/56261.html"
+      },
+      {
+        "label": "Şirket",
+        "url": "https://apaprod.ro"
+      }
+    ],
+    "source_text": "https://www.ebrd.com/home/work-with-us/projects/psd/56261.html | Şirket: https://apaprod.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-040",
+    "name": "RAJA SA Constanța",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Kamu İdaresi / Doğrudan İhale Açan",
+    "category": "İçme Suyu / Kanalizasyon / Bölgesel Su İdaresi",
+    "city": "Constanța",
+    "priority": "Doğrudan İhale Açan İdare",
+    "phone": "+40 241 664 046",
+    "email": "secretariat@rajac.ro",
+    "email_alt": "achizitii@rajac.ro",
+    "address": "Str. Călărași Nr. 22-24, Constanța",
+    "project_officer": "Direcția Dezvoltare și Programe Europene",
+    "executive": {
+      "owner_group": "Constanța İl Meclisi & Belediyeler Birliği Kamu Teşekkülü (Romanya'nın En Büyük Su İdaresi)",
+      "ceo": "Aurel Presură (Director General)",
+      "cpo": "Ionel Chirea (Direcția Dezvoltare, Programe Europene și Achiziții) | secretariat@rajac.ro",
+      "cfo": "Liliana Manea (Director Financiar)",
+      "strategy_note": "EBRD 49600 SWIFT ve POIM/PDD dev su projelerinde Aurel Presură ve Ionel Chirea karar vericidir."
+    },
+    "project_reference": "EBRD Proje ID: 49600 (SWIFT Constanta Sub-Project / Bölgesel Su Altyapısı)",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://www.ebrd.com/home/work-with-us/projects/psd/49600.html"
+      },
+      {
+        "label": "Şirket",
+        "url": "https://rajac.ro"
+      }
+    ],
+    "source_text": "https://www.ebrd.com/home/work-with-us/projects/psd/49600.html | Şirket: https://rajac.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-041",
+    "name": "S.C. Compania Regională de Apă Bacău SA (CRAB)",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Kamu İdaresi / Doğrudan İhale Açan",
+    "category": "İçme Suyu / Kanalizasyon / Bölgesel Su İdaresi",
+    "city": "Bacău",
+    "priority": "Doğrudan İhale Açan İdare",
+    "phone": "+40 234 512 200",
+    "email": "poimcrab@gmail.com",
+    "email_alt": "office@apabacau.ro",
+    "address": "Str. Henri Coandă Nr. 2, Bacău",
+    "project_officer": "Unitatea de Implementare a Proiectelor (UIP Bacău)",
+    "executive": {
+      "owner_group": "Bacău İl Meclisi ve Belediyeler Birliği",
+      "ceo": "Nina Chiper (Director General)",
+      "cpo": "Valeriu Manole (Șef Unitatea de Implementare a Proiectelor - UIP) | poimcrab@gmail.com",
+      "cfo": "Carmen Tudor (Director Economic)",
+      "strategy_note": "EBRD 52511 altyapı genişletme ve boru şartnamelerinde Nina Chiper ve Valeriu Manole nihai onay makamıdır."
+    },
+    "project_reference": "EBRD Proje ID: 52511 (Bacău Bölgesel Su ve Atıksu Altyapısı Genişletme Projesi)",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://www.ebrd.com/home/work-with-us/projects/psd/52511.html"
+      },
+      {
+        "label": "Şirket",
+        "url": "https://apabacau.ro"
+      }
+    ],
+    "source_text": "https://www.ebrd.com/home/work-with-us/projects/psd/52511.html | Şirket: https://apabacau.ro",
+    "updated_at": "2024-2025"
+  },
+  {
+    "id": "ro-042",
+    "name": "ANIF (Agenția Națională de Îmbunătățiri Funciare)",
+    "country": "Romanya",
+    "country_id": "romania",
+    "group": "Kamu İdaresi / Doğrudan İhale Açan",
+    "category": "Tarımsal Sulama / Ulusal Kamu Otoritesi",
+    "city": "Bükreş",
+    "priority": "Ana Kamu Yatırımcısı",
+    "phone": "+40 21 332 2841",
+    "email": "relatii.publice@anif.ro",
+    "email_alt": "achizitii@anif.ro",
+    "address": "Şoseaua Olteniței Nr. 35-37, Sector 4, Bükreş",
+    "project_officer": "Direcția Achiziții și Investiții (Yatırım ve İhale Departmanı)",
+    "executive": {
+      "owner_group": "Romanya Tarım ve Kırsal Kalkınma Bakanlığı (MADR)",
+      "ceo": "Florin-Ionuț Barbu (Director General Național)",
+      "cpo": "Raluca Păun (Director Direcția Achiziții Publice și Investiții) | relatii.publice@anif.ro",
+      "cfo": "Marian Ionescu (Director Buget-Finanțe)",
+      "strategy_note": "Ulusal basınçlı sulama boru hatları ve rehabilitasyon ihalelerinin şartnamelerini Raluca Păun ve Florin-Ionuț Barbu onaylar."
+    },
+    "project_reference": "Ulusal Basınçlı Sulama Rehabilitasyon Programı (İzvoare-Cujmir, Sadova vb.)",
+    "source_urls": [
+      {
+        "label": "https",
+        "url": "https://anif.ro"
+      },
+      {
+        "label": "SEAP İhale",
+        "url": "https://e-licitatie.ro"
+      }
+    ],
+    "source_text": "https://anif.ro | SEAP İhale: https://e-licitatie.ro",
+    "updated_at": "2024-2025"
+  }
+]

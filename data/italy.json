@@ -1,0 +1,1528 @@
+[
+  {
+    "id": "italy-001",
+    "name": "Webuild S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Müteahhitlik (EPC)",
+    "category": "İçme Suyu / Kanalizasyon / WWTP / Büyük Altyapı",
+    "city": "Roma",
+    "priority": "Kritik (A++)",
+    "phone": "+39 06 417661",
+    "email": "info@webuildgroup.com",
+    "email_alt": "procurement@webuildgroup.com",
+    "address": "Centro Direzionale Milanofiori, Strada 6 - Palazzo L, 20089 Rozzano (MI), İtalya",
+    "project_officer": "Direzione Grandi Opere Idrauliche",
+    "executive": {
+      "owner_group": "Salini Costruttori S.p.A. & CDP Equity",
+      "ceo": "Pietro Salini (Chief Executive Officer)",
+      "cpo": "Gian Luca Grondona (Direttore Risorse Umane, Organizzazione e Procurement)",
+      "cfo": "Massimo Ferrari (Direttore Generale Corporate e CFO)",
+      "strategy_note": "Merkezi vendor-list onayı ve fabrika denetimi şarttır; PNRR su iletim ve demiryolu deplase projelerinde doğrudan fabrika bazlı çerçeve anlaşmalar yapar."
+    },
+    "project_reference": "Sicilya su iletim hatları rehabilitasyonu ve yüksek hızlı demiryolu güzergahlarında PE100 (DN 400–DN 1200) yüksek basınçlı deplasman hatları taahhütleri.",
+    "source_urls": [
+      {
+        "label": "Webuild",
+        "url": "https://www.webuildgroup.com"
+      },
+      {
+        "label": "Tedarikçi Portalı",
+        "url": "https://supplier.webuildgroup.com"
+      }
+    ],
+    "source_text": "Webuild S.p.A. – Milano Monza Brianza Registro Imprese 00830660155",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-002",
+    "name": "Impresa Pizzarotti & C. S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Müteahhitlik (EPC)",
+    "category": "İçme Suyu / Kanalizasyon / Tiefbau / Büyük Altyapı",
+    "city": "Parma",
+    "priority": "Kritik (A++)",
+    "phone": "+39 0521 2021",
+    "email": "public@pizzarotti.it",
+    "email_alt": "acquisti@pizzarotti.it",
+    "address": "Via Anna Maria Adorni, 1, 43121 Parma (PR), İtalya",
+    "project_officer": "Ufficio Gare e Appalti Idraulici",
+    "executive": {
+      "owner_group": "Mipien S.p.A. (Pizzarotti Grubu)",
+      "ceo": "Carlo Luzzatto (CEO)",
+      "cpo": "Michele Greci (Direzione Acquisti e Subappalti)",
+      "cfo": "Ferruccio Bazzini (CFO)",
+      "strategy_note": "Arıtma tesisleri ve altyapı deplaselerinde IIP sertifikalı PE100 ve U-PVC boru üreticilerini doğrudan sisteme bağlar."
+    },
+    "project_reference": "Milano ve Napoli kentsel metro çevre altyapı deplaseleri kapsamında PE100 içme suyu iletim hatları ve U-PVC atıksu kollektörleri taahhüdü.",
+    "source_urls": [
+      {
+        "label": "Pizzarotti",
+        "url": "https://www.pizzarotti.it"
+      },
+      {
+        "label": "Acquisti",
+        "url": "https://www.pizzarotti.it/fornitori"
+      }
+    ],
+    "source_text": "Impresa Pizzarotti & C. S.p.A. – Registro Imprese Parma 00153240349",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-003",
+    "name": "Bonatti S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Doğal Gaz & Su İletim Hatları / Enerji & Altyapı EPC",
+    "city": "Parma",
+    "priority": "Yüksek (A+)",
+    "phone": "+39 0521 6091",
+    "email": "bonatti@bonatti.it",
+    "email_alt": "bonatti.procurement@bonatti.it",
+    "address": "Via Alfred Nobel, 2/A, 43122 Parma (PR), İtalya",
+    "project_officer": "Ufficio Appalti e Metanizzazioni",
+    "executive": {
+      "owner_group": "Bonatti S.p.A.",
+      "ceo": "Andrea Colombo (Amministratore Delegato)",
+      "cpo": "Gianpaolo Rinaldi (Direttore Procurement)",
+      "cfo": "Roberto Castelli (CFO)",
+      "strategy_note": "Basınçlı akışkan hatlarında uzmanlaşmış olup boru et kalınlığı sınıfları (SDR) ve mekanik dayanım sertifikalarını zorunlu tutar."
+    },
+    "project_reference": "Bölgesel gaz dağıtım şebekeleri metanizasyonu ve basınçlı içme suyu iletim projelerinde PE100-RC hat döşeme işleri.",
+    "source_urls": [
+      {
+        "label": "Bonatti",
+        "url": "https://www.bonattinternational.com"
+      }
+    ],
+    "source_text": "Bonatti S.p.A. – Busseto (Parma) Business Registry No. 02188130153",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-004",
+    "name": "Rizzani de Eccher S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Büyük Altyapı / Köprü & Viyadük Drenajı / Su Mühendisliği",
+    "city": "Cargnacco (UD)",
+    "priority": "Yüksek (A+)",
+    "phone": "+39 0432 6071",
+    "email": "info@rde.it",
+    "email_alt": "procurement@rde.it",
+    "address": "Via R. Schumann, snc, 33050 Pozzuolo del Friuli (UD), İtalya",
+    "project_officer": "Direzione Tecnica Opere Civili",
+    "executive": {
+      "owner_group": "Rizzani de Eccher Grubu",
+      "ceo": "Claudio de Eccher (Presidente & CEO)",
+      "cpo": "Marco Rossi (Direttore Acquisti)",
+      "cfo": "Fabio Toneatto (CFO)",
+      "strategy_note": "Tünel içi basınçlı yangın söndürme ve ana drenaj altyapılarında yüksek mukavemetli PE100 boruları şartnameye göre doğrudan bağlar."
+    },
+    "project_reference": "Alp geçiş tünelleri ve otoyol viyadükleri hidrolik tahliye şebekelerinde PE100 PN16 boru iletim hatları taahhüdü.",
+    "source_urls": [
+      {
+        "label": "Rizzani de Eccher",
+        "url": "https://www.rde.it"
+      }
+    ],
+    "source_text": "Rizzani de Eccher S.p.A. – Registro Imprese Udine 00167440306",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-005",
+    "name": "Itinera S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Otoyol & Altyapı Drenajı / Tünel / Kentsel Su Şebekeleri",
+    "city": "Tortona",
+    "priority": "Kritik (A++)",
+    "phone": "+39 0131 8691",
+    "email": "itinera@itinera-spa.it",
+    "email_alt": "acquisti@itinera-spa.it",
+    "address": "Ex S.S. 10 per Alessandria 6/A, 15057 Tortona (AL), İtalya",
+    "project_officer": "Direzione Acquisti & Subappalti ASTM",
+    "executive": {
+      "owner_group": "ASTM S.p.A. (Gavio Grubu)",
+      "ceo": "Gianfranco Catrini (Amministratore Delegato)",
+      "cpo": "Direzione Acquisti & Subappalti ASTM | acquisti@itinera-spa.it",
+      "cfo": "Alberto Riboni (CFO)",
+      "strategy_note": "Gavio Grubu (ASTM) bünyesinde otoyol drenajı, tünel ve su altyapısı projelerinde devasa tonajlarda PE100 ve rijit U-PVC boru satın alır. Satın almalar Tortona merkezli alım masası üzerinden yürütülür."
+    },
+    "project_reference": "A4 Torino-Milano ve A33 Asti-Cuneo Otoyolu Yağmursuyu Drenaj Hatları, Po Ovası Kentsel Altyapı Şebekeleri (PE100 & PVC-U)",
+    "source_urls": [
+      {
+        "label": "Itinera",
+        "url": "https://www.itinera-spa.it"
+      }
+    ],
+    "source_text": "Itinera S.p.A. – Registro Imprese Alessandria REA 176511",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "italy-006",
+    "name": "Ghella S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Tünel / Kentsel Su Deplasmanı / Derin Altyapı / WWTP",
+    "city": "Roma",
+    "priority": "Yüksek (A+)",
+    "phone": "+39 06 456031",
+    "email": "roma@ghella.com",
+    "email_alt": "acquisti@ghella.com",
+    "address": "Via Pietro Borsieri 2/A, 00195 Roma, İtalya",
+    "project_officer": "Ufficio Acquisti Italia",
+    "executive": {
+      "owner_group": "Ghella Ailesi (1894 Kuruluşlu Altyapı Grubu)",
+      "ceo": "Enrico Ghella (Presidente) & Federico Ghella (Vice Presidente)",
+      "cpo": "Ufficio Acquisti Italia | acquisti@ghella.com",
+      "cfo": "Marco Stampa (CFO)",
+      "strategy_note": "Tünel açma (TBM) ve derin altyapıda dünya liderlerindendir. Yeraltı su tahliyesi, deşarj ve kentsel şebeke deplasmanlarında yüksek mukavemetli PE100 ve PVC boru sistemleri kullanır."
+    },
+    "project_reference": "Roma Metro C Hattı Altyapı Deplasmanları, Napoli-Bari Hızlı Tren Hattı Su/Drenaj Kollektörleri (PE100 & PVC-U)",
+    "source_urls": [
+      {
+        "label": "Ghella",
+        "url": "https://www.ghella.com"
+      }
+    ],
+    "source_text": "Ghella S.p.A. – Via Pietro Borsieri 2/A, Roma; P.IVA 00898971007",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "italy-007",
+    "name": "Società Italiana per le Condotte d’Acqua 1880 S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Su İletim Hatları (Acquedotti) / Baraj / Hidrolik Altyapı",
+    "city": "Roma",
+    "priority": "Yüksek (A+)",
+    "phone": "+39 06 85271",
+    "email": "condotte1880@condotte1880.com",
+    "email_alt": "appalti@condotte1880.com",
+    "address": "Via Salaria 1039, 00138 Roma, İtalya",
+    "project_officer": "Direzione Appalti e Fornitori",
+    "executive": {
+      "owner_group": "Tiberiade Holding",
+      "ceo": "Francesco Bellucci (Amministratore Delegato)",
+      "cpo": "Direzione Appalti e Fornitori | appalti@condotte1880.com",
+      "cfo": "Valerio Tiberiade (Tiberiade Holding Finans Masası)",
+      "strategy_note": "İtalya'nın en tarihi su mühendisliği (Condotte d'Acqua) ve hidrolik altyapı şirketidir. Baraj, su kemeri ve kentsel içme suyu isale hatlarında ana boru alıcısıdır."
+    },
+    "project_reference": "Tiber Nehri Havzası Su İletim Şebekeleri, Orta İtalya Baraj ve Sulama Kanalizasyon Altyapıları (PE100 & PVC-U)",
+    "source_urls": [
+      {
+        "label": "Condotte 1880",
+        "url": "https://www.condotte1880.com"
+      }
+    ],
+    "source_text": "Condotte 1880 S.p.A. – Via Salaria 1039, Roma; P.IVA 16218331003",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "italy-008",
+    "name": "CMB Cooperativa Muratori e Braccianti di Carpi",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Kentsel Altyapı / Su & Kanalizasyon / Sağlık Kampüsleri",
+    "city": "Carpi",
+    "priority": "Yüksek (A+)",
+    "phone": "+39 059 6322111",
+    "email": "cmb@cmbcarpi.it",
+    "email_alt": "acquisti@cmbcarpi.it",
+    "address": "Via Carlo Marx 101, 41012 Carpi (MO), İtalya",
+    "project_officer": "Direzione Acquisti & Forniture",
+    "executive": {
+      "owner_group": "CMB Grubu (Kooperatif Dev)",
+      "ceo": "Mauro Ferrari (Presidente & CEO)",
+      "cpo": "Direzione Acquisti & Forniture | acquisti@cmbcarpi.it",
+      "cfo": "Roberto Davoli (Direttore Finanziario)",
+      "strategy_note": "İtalya'nın en büyük inşaat kooperatiflerindendir. Büyük hastane, kampüs ve kentsel altyapı projelerinde yüksek metrajlı sıhhi U-PVC ve PE100 basınçlı su borusu alımı yapar."
+    },
+    "project_reference": "Emilia-Romagna Bölgesel Hastane Kompleksleri Altyapı Şebekeleri, Bologna Kentsel Atıksu Kollektörleri (PE100 & PVC-U)",
+    "source_urls": [
+      {
+        "label": "CMB Carpi",
+        "url": "https://www.cmbcarpi.com"
+      }
+    ],
+    "source_text": "CMB Cooperativa – Via Carlo Marx 101, Carpi (MO); P.IVA 00154410369",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "italy-009",
+    "name": "MD Italia S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Boru Tedarikçisi",
+    "category": "B2B Altyapı Boru Toptancısı / Tiefbau Dağıtıcı",
+    "city": "Zagarolo",
+    "priority": "Dağıtıcı (DAĞITICI)",
+    "phone": "+39 06 95200001",
+    "email": "infozagarolo@mditaliaspa.it",
+    "email_alt": "infosancesareo@mditaliaspa.it",
+    "address": "Via Colle Gentile 91, 00039 Zagarolo (RM), İtalya",
+    "project_officer": "Ufficio Acquisti e Logistica",
+    "executive": {
+      "owner_group": "MD Holding",
+      "ceo": "Lorenzo Caruso (Amministratore Unico)",
+      "cpo": "Ufficio Acquisti e Logistica | infozagarolo@mditaliaspa.it",
+      "cfo": "Amministrazione MD Italia",
+      "strategy_note": "Merkezi İtalya'da gaz, içme suyu ve kanalizasyon müteahhitlerine tır bazında boru tedarik eden bölgesel B2B altyapı distribütörüdür."
+    },
+    "project_reference": "Lazio ve Orta İtalya Kentsel Gaz ve Su Müteahhitlerine Toptan PE100 ve PVC-U Boru Tedariki ve Şantiye Teslimi",
+    "source_urls": [
+      {
+        "label": "MD Italia",
+        "url": "https://mditaliaspa.it"
+      }
+    ],
+    "source_text": "MD Italia S.p.A. – Zagarolo (RM); P.IVA 16455001004",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "italy-010",
+    "name": "Centraltubi S.p.A. (System Group)",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Boru Tedarikçisi",
+    "category": "Boru İmalatı / Yerleşik Üretici (PE100 & U-PVC)",
+    "city": "Lunano",
+    "priority": "Üretici (ÜRETİCİ)",
+    "phone": "+39 0722 70011",
+    "email": "centraltubi@tubi.net",
+    "email_alt": "info@tubi.net",
+    "address": "Via Foglia 11, 61026 Lunano (PU), İtalya",
+    "project_officer": "Direzione Commerciale & Acquisti Materie Prime",
+    "executive": {
+      "owner_group": "HB Boscarini S.p.A. (System Group)",
+      "ceo": "Carlo Boscarini & Alvaro Boscarini (Kurucular / System Group)",
+      "cpo": "Direzione Commerciale & Acquisti | centraltubi@tubi.net",
+      "cfo": "Massimo Mancini (Direttore Finanziario)",
+      "strategy_note": "System Group'un amiral gemisi fabrikasıdır. PE100 basınçlı içme suyu, gaz boruları ve U-PVC altyapı borularında İtalya'nın en büyük yerli üreticilerindendir."
+    },
+    "project_reference": "İtalya ve Akdeniz Çanağında Kentsel Su Şebekeleri, Doğal Gaz ve Basınçlı Sulama Hatları İçin PE100 Boru İmalatı",
+    "source_urls": [
+      {
+        "label": "Centraltubi",
+        "url": "https://centraltubi.com"
+      }
+    ],
+    "source_text": "Centraltubi S.p.A. – Via Foglia 11, Lunano (PU); P.IVA 00446590416",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "italy-011",
+    "name": "SICIM S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Doğal Gaz & Su İletim Hatları / Pipeline EPC",
+    "city": "Busseto",
+    "priority": "Yüksek (A+)",
+    "phone": "+39 0524 930211",
+    "email": "info@sicim.net",
+    "email_alt": "procurement@sicim.net",
+    "address": "Via Del Lavoro, 23, 43011 Busseto (PR), İtalya",
+    "project_officer": "Dipartimento Ingegneria Pipeline",
+    "executive": {
+      "owner_group": "SICIM Grubu (Cagnani Ailesi)",
+      "ceo": "Guido Cagnani (Presidente & CEO)",
+      "cpo": "Ufficio Procurement Esterno",
+      "cfo": "Stefano Cera (CFO)",
+      "strategy_note": "Gaz ve su ana iletim hatlarında doğrudan şantiye teslimi yüksek tonajlı PE100 alımı gerçekleştirir."
+    },
+    "project_reference": "Bölgesel doğal gaz iletim şebekesi modernizasyonu ve yüksek basınçlı PE100 boru montaj taahhütleri.",
+    "source_urls": [
+      {
+        "label": "SICIM",
+        "url": "https://www.sicim.eu"
+      }
+    ],
+    "source_text": "SICIM S.p.A. – Via Consolatico Superiore 96/98, Busseto (PR)",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-012",
+    "name": "D’Orazio S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Boru Tedarikçisi",
+    "category": "B2B Altyapı Boru ve Su Teknolojileri Distribütörü",
+    "city": "Arpino",
+    "priority": "Dağıtıcı (DAĞITICI)",
+    "phone": "+39 0776 882352",
+    "email": "segreteria@dorazioweb.it",
+    "email_alt": "commerciale@dorazioweb.it",
+    "address": "Loc. Scaffa Vecchia, 03033 Arpino (FR), İtalya",
+    "project_officer": "Ufficio Acquisti e Logistica",
+    "executive": {
+      "owner_group": "D’Orazio Grubu",
+      "ceo": "Giuseppe D’Orazio (Presidente)",
+      "cpo": "Ufficio Acquisti e Logistica | segreteria@dorazioweb.it",
+      "cfo": "Amministrazione D'Orazio",
+      "strategy_note": "Geniş lojistik depolarında sürekli boru stoğu tutarak Lazio, Campania ve Molise bölgelerindeki altyapı şantiyelerine doğrudan boru temin eden ihtisas dağıtıcısıdır."
+    },
+    "project_reference": "Güney ve Orta İtalya Kamu Su İdareleri ve Müteahhitlerine Toptan PE100 İçme Suyu ve PVC-U Kanalizasyon Boru Dağıtımı",
+    "source_urls": [
+      {
+        "label": "D’Orazio",
+        "url": "https://www.dorazioweb.it"
+      }
+    ],
+    "source_text": "D’Orazio S.p.A. – Loc. Scaffa Vecchia, Arpino (FR); P.IVA 01916830605",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "italy-013",
+    "name": "Wavin Italia S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Boru Tedarikçisi",
+    "category": "Boru İmalatı / Çok Uluslu Üretici (PE100 & U-PVC)",
+    "city": "Santa Maria Maddalena",
+    "priority": "Üretici (ÜRETİCİ)",
+    "phone": "+39 0425 758811",
+    "email": "info.it@wavin.com",
+    "email_alt": "wavinitalia@legalmail.it",
+    "address": "Via Boccalara, 24, 45030 Santa Maria Maddalena (RO), İtalya",
+    "project_officer": "Product Management Civils",
+    "executive": {
+      "owner_group": "Orbia (Wavin Grubu)",
+      "ceo": "Emilio Rigiroli (Direttore Generale Wavin Italia)",
+      "cpo": "Procurement Manager Italy",
+      "cfo": "Marco Candiani (Finance Director)",
+      "strategy_note": "Su şebekesi kaçaklarını önlemeye dönük PE100 ve kentsel altyapıya yönelik sertleştirilmiş U-PVC boru sistemleri üretir."
+    },
+    "project_reference": "Şehir içi içme suyu dağıtım şebekelerinde PE100 PN16 borular ve U-PVC yerçekimli kentsel atıksu boru sistemleri üretimi.",
+    "source_urls": [
+      {
+        "label": "Wavin Italia",
+        "url": "https://www.wavin.com"
+      }
+    ],
+    "source_text": "Wavin Italia S.p.A. – Via Boccalara 24, Santa Maria Maddalena (RO); Tel. +39 0425 758811",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-014",
+    "name": "Sa.Mi Plastic S.p.A. (System Group)",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Boru Tedarikçisi",
+    "category": "Boru İmalatı / Yerleşik Üretici (Polietilen Basınçlı Borular)",
+    "city": "Urbania",
+    "priority": "Üretici (ÜRETİCİ)",
+    "phone": "+39 0722 318011",
+    "email": "samiplastic@tubi.net",
+    "email_alt": "info@tubi.net",
+    "address": "Via Garibaldi 1, 61049 Urbania (PU), İtalya",
+    "project_officer": "Ufficio Acquisti & Produzione",
+    "executive": {
+      "owner_group": "System Group",
+      "ceo": "Giuseppe Crisostomi (Direttore Generale) & Alvaro Boscarini",
+      "cpo": "Ufficio Acquisti & Produzione | samiplastic@tubi.net",
+      "cfo": "System Group Corporate Finance",
+      "strategy_note": "System Group'un tarımsal basınçlı sulama ve kentsel içme suyu PE boruları alanında uzmanlaşmış üretim tesisidir."
+    },
+    "project_reference": "İtalya Tarımsal Sulama Şebekeleri ve Kentsel Su Hatları İçin Yüksek Yoğunluklu PE100 Boru İmalatı",
+    "source_urls": [
+      {
+        "label": "Sa.Mi Plastic",
+        "url": "https://www.samiplastic.com"
+      }
+    ],
+    "source_text": "Sa.Mi Plastic S.p.A. – Via Garibaldi 1, Urbania (PU)",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "italy-015",
+    "name": "Futura S.p.A. (System Group)",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Boru Tedarikçisi",
+    "category": "Boru İmalatı / Yerleşik Üretici (U-PVC ve Polietilen Fittings)",
+    "city": "Belforte all'Isauro",
+    "priority": "Üretici (ÜRETİCİ)",
+    "phone": "+39 0722 721075",
+    "email": "futura@tubi.net",
+    "email_alt": "info@futuraplast.it",
+    "address": "Via Mattei 15, 61020 Belforte all’Isauro (PU), İtalya",
+    "project_officer": "Direzione Acquisti & Vendite",
+    "executive": {
+      "owner_group": "System Group",
+      "ceo": "Fabio Casati (Amministratore Delegato)",
+      "cpo": "Direzione Acquisti & Vendite | futura@tubi.net",
+      "cfo": "System Group Finans Masası",
+      "strategy_note": "System Group bünyesinde U-PVC kanalizasyon boruları ve büyük çaplı PE fittings üretiminde uzmanlaşmış entegre sanayi tesisidir."
+    },
+    "project_reference": "İtalya ve Avrupa Geneli U-PVC Kanalizasyon Boruları ve Elektrofüzyon PE Ek Parçaları İmalatı",
+    "source_urls": [
+      {
+        "label": "Futura Plast",
+        "url": "https://www.futuraplast.it"
+      }
+    ],
+    "source_text": "Futura S.p.A. – Via Mattei 15, Belforte all’Isauro (PU); P.IVA 01177290416",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "italy-016",
+    "name": "Acquedotto Pugliese S.p.A. (AQP)",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Kamu İdaresi",
+    "category": "Bölgesel İçme Suyu & Kanalizasyon İdaresi / Avrupa'nın En Büyük Su Şebekesi",
+    "city": "Bari",
+    "priority": "Kamu (KAMU)",
+    "phone": "+39 080 5723111",
+    "email": "protocollo@pec.aqp.it",
+    "email_alt": "direzione.acquisti@aqp.it",
+    "address": "Via Salvatore Cognetti, 36, 70121 Bari (BA), İtalya",
+    "project_officer": "Albo Fornitori AQP Telematico",
+    "executive": {
+      "owner_group": "Regione Puglia (Puglia Bölge Yönetimi Kamu Kuruluşu)",
+      "ceo": "Francesca Portincasa (Direttrice Generale) & Domenico Laforgia (Presidente)",
+      "cpo": "Direzione Appalti e Acquisti",
+      "cfo": "Antonio Donatelli (Direttore Finanziario)",
+      "strategy_note": "PNRR fonlarıyla binlerce kilometrelik ana isale ve dağıtım ağında PE100 boru ihalesi yürüten dev kamu işletmecisidir."
+    },
+    "project_reference": "Puglia bölgesi genelinde su kayıplarının azaltılması projesi kapsamında yüksek bütçeli PE100 içme suyu ve U-PVC atıksu ihaleleri.",
+    "source_urls": [
+      {
+        "label": "AQP",
+        "url": "https://www.aqp.it"
+      },
+      {
+        "label": "Portale Acquisti",
+        "url": "https://albofornitori.aqp.it"
+      }
+    ],
+    "source_text": "Acquedotto Pugliese S.p.A. – Bari; P.IVA 00347000721",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-017",
+    "name": "Acea Ato 2 S.p.A. (Gruppo ACEA)",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Kamu İdaresi",
+    "category": "Kentsel Su & Kanalizasyon İdaresi / Kamu İhalesi Açan Kurum",
+    "city": "Roma",
+    "priority": "Kamu (KAMU)",
+    "phone": "+39 06 57991",
+    "email": "aceaato2@pec.aceaspa.it",
+    "email_alt": "acquisti@aceaspa.it",
+    "address": "Piazzale Ostiense, 2, 00154 Roma (RM), İtalya",
+    "project_officer": "Unità Gare Servizio Idrico",
+    "executive": {
+      "owner_group": "Roma Capitale (%51) & Halka Açık (Gruppo ACEA)",
+      "ceo": "Fabrizio Palermo (CEO Gruppo ACEA) & Claudio Cosentino (Presidente ATO 2)",
+      "cpo": "Direzione Procurement Acea",
+      "cfo": "Sabrina Di Bartolomeo (CFO Gruppo ACEA)",
+      "strategy_note": "Roma metropolündeki kayıp-kaçak rehabilitasyonunda dev çerçeve ihaleler açar; IIP onaylı PE100 boruları şart koşar."
+    },
+    "project_reference": "Roma metropol alanı genelinde asbestli hatların iptali ve PE100 (DN 110–DN 630) boru şebekesi döşenmesi kamu ihaleleri.",
+    "source_urls": [
+      {
+        "label": "Gruppo ACEA",
+        "url": "https://www.gruppo.acea.it"
+      },
+      {
+        "label": "Portale Acquisti",
+        "url": "https://portaleacquisti.gruppo.acea.it"
+      }
+    ],
+    "source_text": "Acea Ato 2 S.p.A. – Roma; P.IVA 06148891004",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-018",
+    "name": "CAP Holding S.p.A. (Gruppo CAP)",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Kamu İdaresi",
+    "category": "Bölgesel Su & Kanalizasyon İdaresi / Kamu Altyapı Yatırımcısı",
+    "city": "Milano",
+    "priority": "Kamu (KAMU)",
+    "phone": "+39 02 825141",
+    "email": "info@gruppocap.it",
+    "email_alt": "capholding@legalmail.it",
+    "address": "Via Rimini, 38, 20142 Milano (MI), İtalya",
+    "project_officer": "Ufficio Bandi e Gare Rete",
+    "executive": {
+      "owner_group": "Città Metropolitana di Milano ve Belediyeler Ortaklığı",
+      "ceo": "Alessandro Russo (Presidente & AD Gruppo CAP)",
+      "cpo": "Direzione Appalti e Logistica",
+      "cfo": "Pierluigi Arrara (Direttore Finanziario)",
+      "strategy_note": "CAM kriterlerine tam uyum arar; kanalizasyon kolektörlerinde U-PVC, içme suyunda PE100-RC şartnamesi uygular."
+    },
+    "project_reference": "Milano hinterlandındaki 130'dan fazla belediyede su şebekesi yenileme, PE100 boru tedariki ve U-PVC kanalizasyon ihaleleri.",
+    "source_urls": [
+      {
+        "label": "Gruppo CAP",
+        "url": "https://www.gruppocap.it"
+      }
+    ],
+    "source_text": "CAP Holding S.p.A. – Milano; P.IVA 13197590159",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-019",
+    "name": "SMAT S.p.A. (Società Metropolitana Acque Torino)",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Kamu İdaresi",
+    "category": "Kentsel Su & Kanalizasyon İdaresi / Kamu İhalesi Açan Kurum",
+    "city": "Torino",
+    "priority": "Kamu (KAMU)",
+    "phone": "+39 011 4645111",
+    "email": "info@smatorino.it",
+    "email_alt": "appalti@smatorino.it",
+    "address": "Corso XI Febbraio 14, 10152 Torino, İtalya",
+    "project_officer": "Direzione Appalti e Fornitori (Portale Acquisti SMAT)",
+    "executive": {
+      "owner_group": "Torino Büyükşehir Belediyesi ve 290 İlçe Belediyesi",
+      "ceo": "Paolo Romano (Presidente) & Armando Quazzo (AD)",
+      "cpo": "Direzione Appalti e Fornitori | appalti@smatorino.it",
+      "cfo": "Direzione Amministrativa SMAT",
+      "strategy_note": "Torino metropolü ve 290 belediyede 2.2 milyon nüfusa su ve kanalizasyon hizmeti verir. Po Nehri havzası ve Alp eteklerinde yüksek mukavemetli PE100 ve PVC-U boru alımları yapar."
+    },
+    "project_reference": "Torino Kentsel Su Şebekesi Rehabilitasyonu, Castiglione Torinese Arıtma Tesisi Kollektör Hatları (PE100 & PVC-U)",
+    "source_urls": [
+      {
+        "label": "SMAT Torino",
+        "url": "https://www.smatorino.it"
+      }
+    ],
+    "source_text": "SMAT S.p.A. – Torino; P.IVA 07937840015",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "italy-020",
+    "name": "Gruppo HERA S.p.A. (Inrete Distribuzione Energia)",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Kamu İdaresi",
+    "category": "Bölgesel Su, Gaz & Kanalizasyon Şebeke İdaresi",
+    "city": "Bologna",
+    "priority": "Kamu (KAMU)",
+    "phone": "+39 051 287111",
+    "email": "heraspa@pec.gruppohera.it",
+    "email_alt": "acquisti@gruppohera.it",
+    "address": "Viale Carlo Berti Pichat 2/4, 40127 Bologna, İtalya",
+    "project_officer": "Direzione Centrale Acquisti e Appalti",
+    "executive": {
+      "owner_group": "Emilia-Romagna Belediyeleri Ortaklığı (Halka Açık - FTSE MIB)",
+      "ceo": "Orazio Iacono (Amministratore Delegato) & Cristian Fabbri (Presidente)",
+      "cpo": "Direzione Centrale Acquisti e Appalti | acquisti@gruppohera.it",
+      "cfo": "Jens Klint Hansen (CFO)",
+      "strategy_note": "Emilia-Romagna, Triveneto ve Marche bölgelerinde 35.000 km su ve kanalizasyon ile 15.000 km gaz dağıtım şebekesini yönetir. İtalya'nın en büyük çoklu kamu hizmeti (multi-utility) şirketlerindendir."
+    },
+    "project_reference": "Bologna, Modena ve Ferrara Kentsel Su Dağıtım Şebekesi Yenileme ve Dijitalleştirme Projeleri (PE100 & PVC-U)",
+    "source_urls": [
+      {
+        "label": "Gruppo HERA",
+        "url": "https://www.gruppohera.it"
+      }
+    ],
+    "source_text": "Gruppo HERA S.p.A. – Bologna; P.IVA 04245520376",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "italy-021",
+    "name": "Pipelife Italia S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Boru Tedarikçisi",
+    "category": "Boru İmalatı / Çok Uluslu Üretici (PE100 & U-PVC Altyapı Sistemleri)",
+    "city": "Milano",
+    "priority": "Üretici (ÜRETİCİ)",
+    "phone": "+39 02 6620581",
+    "email": "info.it@pipelife.com",
+    "email_alt": "vendite@pipelife.it",
+    "address": "Via Bellerio 30, 20161 Milano, İtalya",
+    "project_officer": "Ufficio Acquisti & Supply Chain",
+    "executive": {
+      "owner_group": "Wienerberger AG (Avusturya Çok Uluslu Grup)",
+      "ceo": "Wienerberger Piping Solutions Italy",
+      "cpo": "Ufficio Acquisti & Supply Chain | info.it@pipelife.com",
+      "cfo": "Wienerberger Corporate Finance",
+      "strategy_note": "Wienerberger Piping Solutions bünyesinde İtalya pazarına PE100 basınçlı içme suyu boruları ve U-PVC kanalizasyon boru sistemleri sunan çok uluslu üreticidir."
+    },
+    "project_reference": "Kuzey ve Orta İtalya Kentsel Su Dağıtım Projeleri, Tarımsal Drenaj ve Kanalizasyon Şebekesi Boru Tedariki (PE100 & PVC-U)",
+    "source_urls": [
+      {
+        "label": "Pipelife Italia",
+        "url": "https://www.pipelife.it"
+      }
+    ],
+    "source_text": "Pipelife Italia S.p.A. – Milano; P.IVA 01235670154",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "italy-022",
+    "name": "Valsir S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Boru Tedarikçisi",
+    "category": "Boru İmalatı / Yerleşik Üretici (Polietilen & U-PVC Boru Sistemleri)",
+    "city": "Vobarno",
+    "priority": "Üretici (ÜRETİCİ)",
+    "phone": "+39 0365 877011",
+    "email": "valsir@valsir.it",
+    "email_alt": "commerciale@valsir.it",
+    "address": "Via Merlaro 2, 25079 Vobarno (BS), İtalya",
+    "project_officer": "Direzione Acquisti e Approvvigionamenti",
+    "executive": {
+      "owner_group": "Silvestro Niboli Grubu (Fondital & Valsir)",
+      "ceo": "Federica Niboli & Andrea Niboli",
+      "cpo": "Direzione Acquisti e Approvvigionamenti | valsir@valsir.it",
+      "cfo": "Direzione Finanziaria Silvestro Niboli Grubu",
+      "strategy_note": "İtalya'nın en büyük plastik sıhhi ve altyapı boru üreticilerindendir. Silvestro Niboli Grubu bünyesinde Vobarno fabrikasında devasa PE ve PVC ekstrüzyon kapasitesine sahiptir."
+    },
+    "project_reference": "İtalya ve Avrupa Genelinde Altyapı Drenaj, Polietilen Basınçlı Su ve Ses Yalıtımlı Atıksu Boru Sistemleri Üretimi",
+    "source_urls": [
+      {
+        "label": "Valsir",
+        "url": "https://www.valsir.it"
+      }
+    ],
+    "source_text": "Valsir S.p.A. – Vobarno (BS); P.IVA 00624020986",
+    "updated_at": "2025-2026"
+  },
+  {
+    "id": "italy-023",
+    "name": "Unidelta S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Boru Tedarikçisi",
+    "category": "Boru İmalatı / Yerleşik Üretici (PE100 & PE100-RC Basınçlı Su/Gaz Boruları)",
+    "city": "Vobarno",
+    "priority": "Üretici (ÜRETİCİ)",
+    "phone": "+39 0365 878011",
+    "email": "unidelta@unidelta.com",
+    "email_alt": "acquisti@unidelta.com",
+    "address": "Via Cavour, 2, 25079 Vobarno (BS), İtalya",
+    "project_officer": "Direzione Commerciale & Appalti",
+    "executive": {
+      "owner_group": "Gruppo Vestone Partecipazioni",
+      "ceo": "Leandro Venezian (Presidente & CEO)",
+      "cpo": "Ufficio Acquisti Polimeri e Metalli",
+      "cfo": "Marco Freddi (Direttore Amministrativo)",
+      "strategy_note": "İtalya ve 100'den fazla ülkede içme suyu ve gaz dağıtımı için yüksek yoğunluklu PE100 ve PE100-RC basınçlı boru üretir; IIP ve DM 174/2004 onaylıdır."
+    },
+    "project_reference": "İtalya genelinde kentsel içme suyu ana iletim hatları ve gaz şebekeleri için DN 20 - DN 630 PE100 PN16/25 boru ekstrüzyonu.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.unidelta.com"
+      },
+      {
+        "label": "Ürün Kataloğu",
+        "url": "https://www.unidelta.com/it/prodotti"
+      }
+    ],
+    "source_text": "Unidelta S.p.A. - Brescia Ticaret Sicili ve IIP Kalite Markası Kütüğü",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-024",
+    "name": "Consorzio Stabile Grifone",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Boru Tedarikçisi",
+    "category": "B2B Altyapı Konsorsiyumu / Kentsel Su & Kanalizasyon Şebeke Dağıtımı",
+    "city": "Roma",
+    "priority": "Dağıtıcı (DAĞITICI)",
+    "phone": "+39 06 4122071",
+    "email": "info@consorziogrifone.com",
+    "email_alt": "acquisti@consorziogrifone.com",
+    "address": "Via Zoe Fontana, 220 - Tecnocittà Ed. B1, 00131 Roma (RM), İtalya",
+    "project_officer": "Ufficio Acquisti e Capitolati Reti Idriche",
+    "executive": {
+      "owner_group": "Consorzio Stabile Grifone (18 Ortaklı Ulusal Tiefbau Dağıtım Ağı)",
+      "ceo": "Direzione Generale Consorzio Grifone",
+      "cpo": "Ufficio Acquisti e Capitolati Reti Idriche",
+      "cfo": "Direzione Amministrazione e Finanza",
+      "strategy_note": "İtalya genelinde 18 ihtisas üye firması ve Moncalieri merkezi lojistik sahasıyla su idareleri ve yüklenicilere doğrudan PE100 içme suyu ve PVC-U kanalizasyon borusu ve fitting paketleri sağlar."
+    },
+    "project_reference": "İtalya genelinde kentsel içme suyu şebekeleri ve atıksu kollektörleri için yıllık on binlerce ton PE100 ve PVC-U boru konsorsiyum stok sevkiyatı.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.consorziogrifone.com"
+      },
+      {
+        "label": "Reti Idriche",
+        "url": "https://www.consorziogrifone.com/ciclo-delle-acque"
+      }
+    ],
+    "source_text": "Consorzio Stabile Grifone - Roma Ticaret Sicili ve Sottoservizi Dağıtım Kütüğü",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-025",
+    "name": "Lareter S.p.A. (Gruppo Aliaxis)",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Boru Tedarikçisi",
+    "category": "Boru İmalatı / Yerleşik Üretici (Sert U-PVC & PE100 Basınçlı/Atıksu Boruları)",
+    "city": "Fiesso Umbertiano",
+    "priority": "Üretici (ÜRETİCİ)",
+    "phone": "+39 0425 754011",
+    "email": "info@lareter.it",
+    "email_alt": "acquisti@lareter.it",
+    "address": "Via Occhiobello, 732, 45024 Fiesso Umbertiano (RO), İtalya",
+    "project_officer": "Ufficio Tecnico e Qualità IIP",
+    "executive": {
+      "owner_group": "Aliaxis Group S.A.",
+      "ceo": "Gianluca Zanforlin (Amministratore Delegato)",
+      "cpo": "Direzione Acquisti e Approvvigionamenti Lareter",
+      "cfo": "Direzione Finanziaria Aliaxis Italia",
+      "strategy_note": "60 yılı aşkın süredir yalnızca kompakt sert U-PVC (UNI EN 1401, EN ISO 1452) ve PE100 içme suyu/atıksu boruları imal eder; DM 174/2004 ve IIP onaylıdır."
+    },
+    "project_reference": "İtalya ve Avrupa genelinde kentsel atıksu tahliyesi ve içme suyu dağıtımı için yıllık 40 milyon Euro değerinde U-PVC ve PE100 boru ekstrüzyonu.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.lareter.it"
+      }
+    ],
+    "source_text": "Lareter S.p.A. - Rovigo Sanayi Kütüğü ve IIP Kalite Markası",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-026",
+    "name": "Cambielli S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Boru Tedarikçisi",
+    "category": "B2B Dağıtıcı / Ulusal Tiefbau, Su & Kanalizasyon Ağı",
+    "city": "Milano",
+    "priority": "Dağıtıcı (DAĞITICI)",
+    "phone": "+39 02 660501",
+    "email": "cambielli@legalmail.it",
+    "email_alt": "ufficiomarketing@cambielliedilfriuli.it",
+    "address": "Viale Achille Papa, 30, 20149 Milano (MI), İtalya",
+    "project_officer": "Ufficio Acquisti Acquedottistica",
+    "executive": {
+      "owner_group": "Gruppo Cambielli Edilfriuli",
+      "ceo": "Franco Cambielli (Presidente)",
+      "cpo": "Paolo Di Giulio (Direttore Acquisti Acquedotti)",
+      "cfo": "Andrea Bordin (Direttore Finanziario)",
+      "strategy_note": "250'den fazla lojistik noktasıyla İtalya'nın en büyük altyapı stokçusudur; su idareleri yüklenicilerine tır bazlı PE100 ve U-PVC tedariki sağlar."
+    },
+    "project_reference": "Su idareleri müteahhitlerine yıllık yüksek tonajlı PE100 içme suyu ve U-PVC kanalizasyon borusu tedariki ve konsinye lojistiği.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.cambielliedilfriuli.it"
+      },
+      {
+        "label": "Altyapı Bölümü",
+        "url": "https://www.cambielliedilfriuli.it/infrastrutture"
+      }
+    ],
+    "source_text": "Cambielli S.p.A. - İtalya Altyapı ve Tiefbau Malzeme Distribütörleri Birliği (ANGAISA)",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-027",
+    "name": "Idrocentro S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Boru Tedarikçisi",
+    "category": "B2B Dağıtıcı / Bölgesel Altyapı & Şebeke Boruları",
+    "city": "Torre San Giorgio",
+    "priority": "Dağıtıcı (DAĞITICI)",
+    "phone": "+39 0172 9121",
+    "email": "info@idrocentroedilizia.com",
+    "email_alt": "idrocentro@legalmail.it",
+    "address": "Via Circonvallazione Giovanni Giolitti, 100, 12030 Torre San Giorgio (CN), İtalya",
+    "project_officer": "Direzione Merci e Appalti",
+    "executive": {
+      "owner_group": "Gruppo Idrocentro",
+      "ceo": "Antonio Cussino (Presidente & CEO)",
+      "cpo": "Ufficio Acquisti Fognature e Acquedotti",
+      "cfo": "Marco Allasia (Direttore Finanziario)",
+      "strategy_note": "Kuzeybatı İtalya ve Sardinya'da altyapı stoğunda liderdir; kamu su projelerine boru ve fitting paketleri sağlar."
+    },
+    "project_reference": "Piyemonte ve Ligurya su idareleri yüklenicilerine PE100 PN16 içme suyu ve PVC-U SN8 kanalizasyon borusu stok sevkiyatı.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.idrocentro.com"
+      },
+      {
+        "label": "Altyapı Kataloğu",
+        "url": "https://www.idrocentro.com/settori/infrastrutture"
+      }
+    ],
+    "source_text": "Idrocentro S.p.A. - Cuneo Ticaret Odası Sicil Kaydı RI-0056987",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-028",
+    "name": "Gruppo Clerici S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Boru Tedarikçisi",
+    "category": "B2B Dağıtıcı / Kentsel Altyapı & Drenaj Ağları",
+    "city": "Brescia",
+    "priority": "Dağıtıcı (DAĞITICI)",
+    "phone": "+39 030 31961",
+    "email": "info@gruppoclerici.it",
+    "email_alt": "acquisti@gruppoclerici.it",
+    "address": "Via Caduti del Lavoro, 1, 25127 Brescia (BS), İtalya",
+    "project_officer": "Ufficio Merci Grandi Cantieri",
+    "executive": {
+      "owner_group": "Clerici Holding S.p.A.",
+      "ceo": "Fabio Clerici (CEO) & Paolo Clerici (Presidente)",
+      "cpo": "Direzione Acquisti Infrastrutture Civili",
+      "cfo": "Stefano Moretti (CFO)",
+      "strategy_note": "Genişleyen şube ağıyla inşaat şirketlerine proje bazlı U-PVC atıksu ve PE100 temiz su borusu temin eder."
+    },
+    "project_reference": "Kuzey İtalya konut ve sanayi bölgesi kentsel altyapı şantiyelerine U-PVC SN4/SN8 boru stok dağıtımı.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.gruppoclerici.it"
+      },
+      {
+        "label": "Tedarik",
+        "url": "https://www.gruppoclerici.it/fornitori"
+      }
+    ],
+    "source_text": "Gruppo Clerici S.p.A. - Brescia Ticaret Odası Sicil Kaydı",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-029",
+    "name": "FITT S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Boru Tedarikçisi",
+    "category": "Boru İmalatı / Yüksek Performanslı PVC-U & Basınçlı Boru",
+    "city": "Sandrigo",
+    "priority": "Üretici (ÜRETİCİ)",
+    "phone": "+39 0444 461000",
+    "email": "info@fitt.com",
+    "email_alt": "fitt@legalmail.it",
+    "address": "Via Piave, 8, 36066 Sandrigo (VI), İtalya",
+    "project_officer": "Divisione FITT Bluforce",
+    "executive": {
+      "owner_group": "FITT Group S.p.A.",
+      "ceo": "Alessandro Mezzalira (CEO)",
+      "cpo": "Nicola Scremin (Procurement Director)",
+      "cfo": "Roberto Boscolo (Chief Financial Officer)",
+      "strategy_note": "Patentli polimerik alaşımlı PVC-A ve U-PVC basınçlı içme suyu borusu (Bluforce) teknolojisiyle kamu su şebekelerinde yer edinmektedir."
+    },
+    "project_reference": "İtalya genelindeki su idarelerinin ana isale hatlarında kullanılan FITT Bluforce PVC-U / PVC-A PN16 basınçlı temiz su borusu ekstrüzyonu.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.fitt.com"
+      },
+      {
+        "label": "Bluforce Altyapı",
+        "url": "https://fitt.com/it/prodotti/infrastrutture"
+      }
+    ],
+    "source_text": "FITT S.p.A. - Vicenza Sanayi Sicili ve IIP Kalite Markası Kütüğü",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-030",
+    "name": "Nupi Industrie Italiane S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Boru Tedarikçisi",
+    "category": "Boru İmalatı / PE100 & PE100-RC Yüksek Basınç Hatları",
+    "city": "Busto Arsizio",
+    "priority": "Üretici (ÜRETİCİ)",
+    "phone": "+39 0331 344211",
+    "email": "info@nupinet.com",
+    "email_alt": "nupi.industrieit@legalmail.it",
+    "address": "Via Stefano Ferrario, 8 - Z.I. Sud-Ovest, 21052 Busto Arsizio (VA), İtalya",
+    "project_officer": "Laboratorio R&D e Certificazioni IIP",
+    "executive": {
+      "owner_group": "Nupi Group S.p.A.",
+      "ceo": "Marco Genoni (CEO) & Luigi Genoni (Presidente)",
+      "cpo": "Direzione Acquisti Polimeri",
+      "cfo": "Paolo Colombo (Chief Financial Officer)",
+      "strategy_note": "Çatlama direnci yüksek PE100-RC reçinelerle hendeksiz kazısız boru üretiminde sektörün öncülerindendir; IIP onaylı imalat yapar."
+    },
+    "project_reference": "İçme suyu, gaz dağıtımı ve endüstriyel akışkanlar için PE100 ve PE100-RC (DN 20–DN 1000) basınçlı boru üretimi ve ihracatı.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.nupinet.com"
+      },
+      {
+        "label": "Basınçlı Borular",
+        "url": "https://www.nupinet.com/polietilene"
+      }
+    ],
+    "source_text": "Nupi Industrie Italiane S.p.A. - Varese Ticaret Sicili No: 02517860124",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-031",
+    "name": "Aliaxis Italia S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Boru Tedarikçisi",
+    "category": "Boru İmalatı / Çok Uluslu Üretici (U-PVC Atıksu & PE100 Basınç Sistemleri)",
+    "city": "Calderara di Reno",
+    "priority": "Üretici (ÜRETİCİ)",
+    "phone": "+39 051 6469511",
+    "email": "info.it@aliaxis.com",
+    "email_alt": "acquisti.it@aliaxis.com",
+    "address": "Via Pradazzo, 2/4, 40012 Calderara di Reno (BO), İtalya",
+    "project_officer": "Ufficio Tecnico Infrastrutture",
+    "executive": {
+      "owner_group": "Aliaxis Group S.A.",
+      "ceo": "Maurizio Vianello (Direttore Generale Italia)",
+      "cpo": "Direzione Acquisti Italia",
+      "cfo": "Luca Zucchelli (Finance Director)",
+      "strategy_note": "Redi ve FIP üretim tesisleriyle U-PVC kentsel atıksu boruları ve PE100 elektrofüzyon altyapı sistemlerinde geniş pazar payına sahiptir."
+    },
+    "project_reference": "Kentsel kanalizasyon ağları için kompakt sert U-PVC (UNI EN 1401) atıksu boruları ve PE100 basınçlı fittings ve boru üretimi.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.aliaxis.it"
+      },
+      {
+        "label": "Altyapı",
+        "url": "https://www.aliaxis.it/infrastrutture"
+      }
+    ],
+    "source_text": "Aliaxis Italia S.p.A. - Bologna Ticaret Odası Sicil Kaydı",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-032",
+    "name": "Idrotherm 2000 S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Boru Tedarikçisi",
+    "category": "Boru İmalatı / Yerleşik Üretici (PE100 & PE100-RC Çok Katmanlı Borular)",
+    "city": "Castelnuovo di Garfagnana",
+    "priority": "Üretici (ÜRETİCİ)",
+    "phone": "+39 0583 644511",
+    "email": "info@idrotherm2000.com",
+    "email_alt": "acquisti@idrotherm2000.com",
+    "address": "Via Fondovalle, 3, 55032 Castelnuovo di Garfagnana (LU), İtalya",
+    "project_officer": "Centro Tecnologico e Collaudi",
+    "executive": {
+      "owner_group": "Idrotherm Group S.p.A.",
+      "ceo": "Laura Citti (CEO) & Raffaella Sartini (Presidente)",
+      "cpo": "Ufficio Pianificazione Materie Prime e Acquisti",
+      "cfo": "Marco Franchi (CFO)",
+      "strategy_note": "Kazısız montaja uygun polipropilen koruyucu katmanlı PE100-RC borularda su idarelerinin ana şartname üreticisidir."
+    },
+    "project_reference": "Yüksek basınçlı su iletim hatları, deniz deşarjı ve gaz şebekeleri için DN 1200 çapa kadar PE100-RC boru ekstrüzyonu.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.idrotherm2000.com"
+      },
+      {
+        "label": "Ürün Kataloğu",
+        "url": "https://www.idrotherm2000.com/tubi-polietilene"
+      }
+    ],
+    "source_text": "Idrotherm 2000 S.p.A. - Lucca Sanayi Kütüğü ve IIP Sertifikası No: 154",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-033",
+    "name": "MM S.p.A. (Metropolitana Milanese)",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Kamu İdaresi",
+    "category": "Kamu Su İdaresi / Milano Kenti Entegre Su Hizmeti Operatörü",
+    "city": "Milano",
+    "priority": "Kamu (KAMU)",
+    "phone": "+39 02 77471",
+    "email": "info@mmspa.eu",
+    "email_alt": "acquisti@mmspa.eu",
+    "address": "Via Solferino, 16, 20121 Milano (MI), İtalya",
+    "project_officer": "Servizio Idrico Gare Materiali",
+    "executive": {
+      "owner_group": "Comune di Milano (Kamu Sermayeli)",
+      "ceo": "Francesco Mascolo (Amministratore Delegato) & Simone Dragone (Presidente)",
+      "cpo": "Direzione Acquisti e Contratti",
+      "cfo": "Stefano Cetti (CFO)",
+      "strategy_note": "Milano kentsel yapısında hendeksiz kazılara ve yüksek darbe dayanımlı PE100-RC borulara öncelik verir; telematik portal üzerinden ihaleler açar."
+    },
+    "project_reference": "Milano kentsel alanında içme suyu dağıtım şebekesinin hidrolik rehabilitasyonu ve PE100 borular ile parsel bağlantı yenilemeleri.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.mmspa.eu"
+      },
+      {
+        "label": "İhale Portalı",
+        "url": "https://acquisti.mmspa.eu"
+      }
+    ],
+    "source_text": "MM S.p.A. - Milano Belediyesi İhale ve Tedarik Kütüğü",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-034",
+    "name": "Publiacqua S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Kamu İdaresi",
+    "category": "Kamu Su İdaresi / Floransa, Prato, Pistoia Su Şebekesi",
+    "city": "Floransa",
+    "priority": "Kamu (KAMU)",
+    "phone": "+39 055 6862001",
+    "email": "protocollo@cert.publiacqua.it",
+    "email_alt": "acquisti@publiacqua.it",
+    "address": "Via Villamagna, 90/C, 50126 Floransa (FI), İtalya",
+    "project_officer": "Settore Reti Idriche e Fognarie",
+    "executive": {
+      "owner_group": "Comuni della Toscana & Gruppo ACEA",
+      "ceo": "Paolo Saccani (AD) & Nicola Perini (Presidente)",
+      "cpo": "Ufficio Gare e Acquisti Materiali",
+      "cfo": "Lorenzo Franchini (Direttore Finanziario)",
+      "strategy_note": "Toskana'da PNRR kaynaklı su arıtma ve ana iletim yatırımlarını yönetir; merkezi tedarikçi sicili (Albo Fornitori) işletir."
+    },
+    "project_reference": "Floransa metropol alanı ana iletim koridorlarında eskiyen hatların PE100 PN16/25 borularla ikamesi ihaleleri.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.publiacqua.it"
+      },
+      {
+        "label": "İhale Duyuruları",
+        "url": "https://www.publiacqua.it/fornitori/gare"
+      }
+    ],
+    "source_text": "Publiacqua S.p.A. - Floransa Su İdaresi Resmi Portalı",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-035",
+    "name": "ICOP S.p.A. Società Benefit",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Müteahhitlik (EPC) / NO-DIG Altyapı, Mikrotünel & Deniz Deşarjı",
+    "city": "Basiliano",
+    "priority": "Kritik (A++)",
+    "phone": "+39 0432 838411",
+    "email": "icop@icop.it",
+    "email_alt": "acquisti@icop.it",
+    "address": "Via Silvio Pellico, 2, 33031 Basiliano (UD), İtalya",
+    "project_officer": "Divisione Microtunnelling e Trenchless",
+    "executive": {
+      "owner_group": "Petrucco Ailesi Yatırımları",
+      "ceo": "Piero Petrucco (AD) & Vittorio Petrucco (Presidente)",
+      "cpo": "Direzione Acquisti e Mezzi Speciali",
+      "cfo": "Gabriele Petrucco (CFO)",
+      "strategy_note": "Kazısız boru döşeme ve mikrotünel projelerinde yüksek çekme mukavemetli PE100-RC boruları doğrudan onaylar; deniz deşarjı projelerinde uzmanlaşmıştır."
+    },
+    "project_reference": "Kıyı bölgelerinde deniz deşarj hatları (sea outfall) ve nehir altı geçişlerinde mikrotünel ile çekilen PE100 basınçlı iletim hatları.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.icop.it"
+      },
+      {
+        "label": "Mikrotünel Projeleri",
+        "url": "https://www.icop.it/microtunnelling"
+      }
+    ],
+    "source_text": "ICOP S.p.A. Benefit - Udine Ticaret Odası Sicili",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-036",
+    "name": "Consorzio Integra Soc. Coop.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Müteahhitlik (EPC)",
+    "category": "EPC Konsorsiyumu / Kentsel Boru Şebekeleri & Su Dağıtımı",
+    "city": "Bologna",
+    "priority": "Kritik (A++)",
+    "phone": "+39 051 3161300",
+    "email": "integra@consorziointegra.it",
+    "email_alt": "gare_integra@pec.it",
+    "address": "Via Marco Emilio Lepido, 182/2, 40132 Bologna (BO), İtalya",
+    "project_officer": "Ufficio Tecnico Gare Pubbliche",
+    "executive": {
+      "owner_group": "İtalyan Kooperatifler Birliği (Legacoop)",
+      "ceo": "Vincenzo Onorato (Presidente)",
+      "cpo": "Direzione Gestione Appalti e Forniture",
+      "cfo": "Luca Bosi (Direttore Finanziario)",
+      "strategy_note": "Üye kooperatifler üzerinden merkezi satın alma çerçevesi kurar; kamu su idarelerinin büyük çerçeve ihalelerinde ana yüklenicidir."
+    },
+    "project_reference": "Floransa ve Emilia-Romagna genelinde içme suyu şebekesi rehabilitasyonu ve PE100 boru montaj sözleşmeleri.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.consorziointegra.it"
+      },
+      {
+        "label": "İhaleler",
+        "url": "https://www.consorziointegra.it/appalti"
+      }
+    ],
+    "source_text": "Consorzio Integra - Bologna Kooperatif Sicil Kaydı",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-037",
+    "name": "ICM S.p.A. (Gruppo ICM - Maltauro)",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Müteahhitlik (EPC) / Arıtma Tesisleri & Hidrolik Ağlar",
+    "city": "Vicenza",
+    "priority": "Yüksek (A+)",
+    "phone": "+39 0444 336111",
+    "email": "icm@gruppoicm.com",
+    "email_alt": "fornitori@gruppoicm.com",
+    "address": "Viale dell'Industria, 42, 36100 Vicenza (VI), İtalya",
+    "project_officer": "Ufficio Gare Infrastrutture",
+    "executive": {
+      "owner_group": "Gruppo ICM Holding",
+      "ceo": "Francesco Simonetto (Amministratore Delegato)",
+      "cpo": "Direzione Acquisti e Subappalti",
+      "cfo": "Alberto Betteto (CFO)",
+      "strategy_note": "Şantiye teslim sürelerine ve UNI EN 1401 normlarına odaklanır; konsorsiyum bazlı kamu altyapı işlerinde sertifikalı üreticileri kabul eder."
+    },
+    "project_reference": "Kuzey İtalya atıksu arıtma tesisleri (WWTP) kolektör hatları ve U-PVC yerçekimli tahliye şebekesi inşası.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.gruppoicm.com"
+      },
+      {
+        "label": "Tedarik Portalı",
+        "url": "https://www.gruppoicm.com/fornitori"
+      }
+    ],
+    "source_text": "ICM S.p.A. - Vicenza Ticaret Sicili No: 00215780244",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-038",
+    "name": "Vianini Lavori S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Müteahhitlik (EPC) / Kentsel Altyapı & Su Yapıları",
+    "city": "Roma",
+    "priority": "Yüksek (A+)",
+    "phone": "+39 06 374921",
+    "email": "info@vianinilavori.it",
+    "email_alt": "vianinilavori_societario@legalmail.it",
+    "address": "Via Barberini, 11, 00187 Roma (RM), İtalya",
+    "project_officer": "Area Tecnica Idraulica Roma",
+    "executive": {
+      "owner_group": "Caltagirone Group",
+      "ceo": "Alessandro Caltagirone (Amministratore Delegato) & F. G. Caltagirone (Grup Başkanı)",
+      "cpo": "Ufficio Appalti e Contratti Fornitori",
+      "cfo": "Massimiliano Capece Minutolo (CFO)",
+      "strategy_note": "Caltagirone Grubu bünyesinde Roma ve çevresindeki hidrolik deplase projelerinde merkezi onay işletir."
+    },
+    "project_reference": "Roma kentsel raylı sistem güzergahlarında mevcut atıksu hatlarının U-PVC borularla deplasmanı ve PE100 içme suyu iletimi.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.vianinilavori.it"
+      },
+      {
+        "label": "Altyapı",
+        "url": "https://www.caltagironegroup.com"
+      }
+    ],
+    "source_text": "Vianini Lavori S.p.A. - Borsa Italiana ve Roma Ticaret Odası Sicili",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-039",
+    "name": "Toto S.p.A. Costruzioni Generali",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Müteahhitlik (EPC) / Otoyol Drenajı & Su Galerileri",
+    "city": "Chieti",
+    "priority": "Yüksek (A)",
+    "phone": "+39 0871 58741",
+    "email": "info@totospa.it",
+    "email_alt": "totocostruzioni@pec.totoholding.it",
+    "address": "Viale Abruzzo, 410, 66100 Chieti (CH), İtalya",
+    "project_officer": "Ufficio Gare Grandi Infrastrutture",
+    "executive": {
+      "owner_group": "Toto Holding S.p.A.",
+      "ceo": "Alfonso Toto (Amministratore Delegato)",
+      "cpo": "Ufficio Acquisti Cantieri",
+      "cfo": "Gianluca Marrocchio (CFO)",
+      "strategy_note": "Otoyol drenaj galerileri ve şantiye su besleme hatlarında U-PVC SN4/SN8 ve PE100 boruları parti bazlı satın alır."
+    },
+    "project_reference": "A24/A25 otoyolu altyapı güçlendirme ve viyadük drenaj sistemlerinde U-PVC gravitasyonel kollektör hatları montajı.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.totospa.it"
+      },
+      {
+        "label": "Holding",
+        "url": "https://www.totoholding.it"
+      }
+    ],
+    "source_text": "Toto S.p.A. Costruzioni Generali - Chieti Sanayi Kütüğü",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-040",
+    "name": "Gruppo Ecotech (Ferb S.r.l.)",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Boru Tedarikçisi",
+    "category": "B2B Dağıtıcı / Su Temini, Gaz & Altyapı Toptancılığı",
+    "city": "Settimo Milanese",
+    "priority": "Dağıtıcı (DAĞITICI)",
+    "phone": "+39 02 3085846",
+    "email": "info@ferb.it",
+    "email_alt": "commerciale@gruppoecotech.it",
+    "address": "Via Charles Darwin, 42, 20019 Settimo Milanese (MI), İtalya",
+    "project_officer": "Ufficio Tecnico Commerciale Infrastrutture",
+    "executive": {
+      "owner_group": "Ecotech Holding S.r.l.",
+      "ceo": "Andrea Rossi (Amministratore)",
+      "cpo": "Responsabile Acquisti Rete Idrica e Gas",
+      "cfo": "Luca Ferri (Direttore Finanziario)",
+      "strategy_note": "Lombardiya genelinde içme suyu ve gaz dağıtım şebekelerine yönelik teknik toptancılık ve depolama yürütür."
+    },
+    "project_reference": "Bölgesel altyapı müteahhitlerine UNI EN 12201 ve UNI EN 1555 standartlarında PE100 boru paket sevkiyatları.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.ferb.it"
+      },
+      {
+        "label": "Grup Portalı",
+        "url": "https://www.gruppoecotech.it"
+      }
+    ],
+    "source_text": "Gruppo Ecotech / Ferb S.r.l. - Milano Ticaret Odası Sicil Kaydı",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-041",
+    "name": "Isidor S.r.l.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Boru Tedarikçisi",
+    "category": "B2B Dağıtıcı / Su İletimi, Sulama & Tiefbau Altyapı Toptancılığı",
+    "city": "Floransa",
+    "priority": "Dağıtıcı (DAĞITICI)",
+    "phone": "+39 055 46271",
+    "email": "info@isidoronline.it",
+    "email_alt": "ordini@isidoronline.it",
+    "address": "Via Duca D'Aosta, 16, 50129 Floransa (FI), İtalya",
+    "project_officer": "Reparto Condotte e Tubazioni",
+    "executive": {
+      "owner_group": "Isidor Distribuzione Idraulica",
+      "ceo": "Simone Isidor (Amministratore Delegato)",
+      "cpo": "Ufficio Forniture Acquedottistiche",
+      "cfo": "Marco Benetti (Direttore Finanziario)",
+      "strategy_note": "Toskana ve Merkez İtalya'daki su idareleri ihalelerine boru tedarik eden konsorsiyumların ana Tiefbau toptancısıdır."
+    },
+    "project_reference": "Merkez İtalya tarımsal sulama birlikleri basınçlı hatlarına ve Publiacqua altyapı yüklenicilerine PE100 boru ve ek parça tedariki.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.isidoronline.it"
+      }
+    ],
+    "source_text": "Isidor S.r.l. - Floransa Ticaret Odası Sicil Kaydı",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-042",
+    "name": "Plastica Alfa S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Boru Tedarikçisi",
+    "category": "Boru İmalatı / Yerleşik Üretici (PE100 Basınçlı İçme Suyu & Sulama Sistemleri)",
+    "city": "Caltagirone",
+    "priority": "Üretici (ÜRETİCİ)",
+    "phone": "+39 0933 51999",
+    "email": "info@plasticalfa.it",
+    "email_alt": "acquisti@plasticalfa.it",
+    "address": "Via S. S. 417 km 68, Z.I., 95041 Caltagirone (CT), İtalya",
+    "project_officer": "Ufficio Tecnico Grandi Opere Idrauliche",
+    "executive": {
+      "owner_group": "Gruppo Alfa Tecnologie",
+      "ceo": "Mario Pace (Amministratore Delegato)",
+      "cpo": "Direzione Acquisti Materie Prime e Impianti",
+      "cfo": "Miriam Pace (Chief Financial Officer)",
+      "strategy_note": "Güney İtalya ve Akdeniz havzasında PNRR su kayıp-kaçak projelerine ve tarımsal basınçlı sulama ağlarına doğrudan PE100 boru ve elektrofüzyon sistemleri sağlar."
+    },
+    "project_reference": "Sicilya ve Puglia bölgesel su iletimi ve baraj derivasyon hatlarında PE100 PN16/25 yüksek basınçlı içme suyu borusu imalatı.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.plasticalfa.it"
+      },
+      {
+        "label": "Altyapı Kataloğu",
+        "url": "https://www.plasticalfa.it/catalogo"
+      }
+    ],
+    "source_text": "Plastica Alfa S.p.A. - Catania Ticaret Odası Sicili ve IIP Kalite Belgesi",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-043",
+    "name": "Abbanoa S.p.A.",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Kamu İdaresi",
+    "category": "Bölgesel Kamu Su İdaresi / Sardinya Tek Entegre Su ve Kanalizasyon Operatörü",
+    "city": "Nuoro",
+    "priority": "Kamu (KAMU)",
+    "phone": "+39 0784 213600",
+    "email": "protocollo@pec.abbanoa.it",
+    "email_alt": "gare@abbanoa.it",
+    "address": "Via Franco Straullu, 35, 08100 Nuoro (NU), İtalya",
+    "project_officer": "Settore Ingegneria e Nuove Reti",
+    "executive": {
+      "owner_group": "Regione Autonoma della Sardegna & Comuni Sardi (Kamu Sermayeli)",
+      "ceo": "Franco Piga (Presidente del CdA)",
+      "cpo": "Direzione Appalti e Contratti Fornitori",
+      "cfo": "Direzione Amministrazione, Finanza e Controllo",
+      "strategy_note": "Sardinya'nın 377 belediyesinin su ve atıksu altyapısını yönetir; PNRR kaynaklarıyla su kaçaklarını azaltmak için devasa PE100 ve PVC-U boru ihaleleri açar."
+    },
+    "project_reference": "Sardinya Bölgesi içme suyu isale hatları rehabilitasyonu ve kentsel şebekelerde PE100 (DN 90–DN 800) boru yenileme ihaleleri.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.abbanoa.it"
+      },
+      {
+        "label": "İhale Portalı",
+        "url": "https://portaleappalti.abbanoa.it"
+      }
+    ],
+    "source_text": "Abbanoa S.p.A. - Nuoro Ticaret Odası Sicili ve ARERA Su İdaresi Kütüğü",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-044",
+    "name": "IRETI S.p.A. (Gruppo Iren - Iren Acqua)",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Kamu İdaresi",
+    "category": "Bölgesel Kamu Su & Altyapı İdaresi / Ligurya & Emilia-Romagna Su Şebekesi",
+    "city": "Genova",
+    "priority": "Kamu (KAMU)",
+    "phone": "+39 010 558111",
+    "email": "ireti@pec.ireti.it",
+    "email_alt": "acquisti@gruppoiren.it",
+    "address": "Via Piacenza, 54, 16138 Genova (GE), İtalya",
+    "project_officer": "Unità Ingegneria Reti Acqua",
+    "executive": {
+      "owner_group": "Iren S.p.A. (Borsa Italiana: IRE)",
+      "ceo": "Gianluca Bufo (AD Gruppo Iren) & Fabio Giuseppini (AD IRETI)",
+      "cpo": "Direzione Appalti e Logistica Gruppo Iren",
+      "cfo": "Giovanni Gazza (CFO Gruppo Iren)",
+      "strategy_note": "Cenova, Parma, Piacenza ve Reggio Emilia'da 2,8 milyon vatandaşa su hizmeti sunar; tedarikçi portalı üzerinden çerçeve boru alım ihaleleri yürütür."
+    },
+    "project_reference": "Cenova metropol alanı ve Emilia havzasında içme suyu kayıp azaltma projelerinde PE100 PN16 boru iletim ve U-PVC kanalizasyon şebekesi ihaleleri.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.ireti.it"
+      },
+      {
+        "label": "İhale Portalı",
+        "url": "https://acquisti.gruppoiren.it"
+      }
+    ],
+    "source_text": "IRETI S.p.A. - Cenova Ticaret Odası Sicil Kaydı RI-01791490994",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-045",
+    "name": "A2A Ciclo Idrico S.p.A. (Gruppo A2A)",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Kamu İdaresi",
+    "category": "Bölgesel Kamu Su İdaresi / Lombardiya Entegre Su Hizmeti Operatörü",
+    "city": "Brescia",
+    "priority": "Kamu (KAMU)",
+    "phone": "+39 030 35531",
+    "email": "a2acicloidrico@pec.a2a.it",
+    "email_alt": "acquisti@a2a.it",
+    "address": "Via Alessandro Lamarmora, 230, 25124 Brescia (BS), İtalya",
+    "project_officer": "Servizio Progettazione Reti Idriche",
+    "executive": {
+      "owner_group": "A2A S.p.A. (Borsa Italiana: A2A)",
+      "ceo": "Renato Mazzoncini (CEO Gruppo A2A) & Tullio Montagnoli (AD A2A Ciclo Idrico)",
+      "cpo": "Direzione Procurement & Supply Chain A2A",
+      "cfo": "Luca Moroni (CFO Gruppo A2A)",
+      "strategy_note": "Brescia ve Lombardiya bölgesinde su dağıtımı ve atıksu arıtma ağını yönetir; UNI EN 12201 ve CAM kriterlerine uyumlu PE100 boruları şartnameye koyar."
+    },
+    "project_reference": "Lombardiya içme suyu iletim hatlarının yenilenmesi ve kentsel atıksu kollektörlerinde PE100 ve PVC-U boru tedarik sözleşmeleri.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.a2acicloidrico.it"
+      },
+      {
+        "label": "Tedarikçi Portalı",
+        "url": "https://www.gruppoa2a.it/it/fornitori"
+      }
+    ],
+    "source_text": "A2A Ciclo Idrico S.p.A. - Brescia Ticaret Odası Sicil No: 02863920982",
+    "updated_at": "2026-09-11"
+  },
+  {
+    "id": "italy-046",
+    "name": "Ar.Co. Lavori Soc. Coop. Consortile",
+    "country": "İtalya",
+    "country_id": "italy",
+    "group": "Müteahhitlik (EPC)",
+    "category": "Müteahhitlik (EPC) / Büyük Altyapı, Su Şebekeleri & WWTP Genel Yüklenicisi",
+    "city": "Ravenna",
+    "priority": "Kritik (A++)",
+    "phone": "+39 0544 456811",
+    "email": "arcolavori@arcolavori.com",
+    "email_alt": "acquisti@arcolavori.com",
+    "address": "Via Argirocastro, 15, 48122 Ravenna (RA), İtalya",
+    "project_officer": "Ufficio Gare Grandi Opere Idrauliche",
+    "executive": {
+      "owner_group": "Ar.Co. Lavori Consorzio Nazionale",
+      "ceo": "Emiliano Rossi (Presidente e Direttore Generale)",
+      "cpo": "Direzione Acquisti e Subappalti Cantieri",
+      "cfo": "Direzione Amministrativa e Finanziaria",
+      "strategy_note": "587 milyon Euro yıllık üretim değerine sahip General Contractor'dır; İtalya genelinde su isale hatları, arıtma tesisleri ve atıksu kolektörlerinde ana yüklenicidir."
+    },
+    "project_reference": "İtalya genelinde kamu su idarelerinin büyük kentsel şebeke deplase projelerinde PE100 yüksek basınçlı iletim ve U-PVC gravitasyonel kollektör montaj taahhütleri.",
+    "source_urls": [
+      {
+        "label": "Kurumsal",
+        "url": "https://www.arcolavori.com"
+      }
+    ],
+    "source_text": "Ar.Co. Lavori Soc. Coop. - Ravenna Ticaret Sicili No: 01452890391",
+    "updated_at": "2026-09-11"
+  }
+]

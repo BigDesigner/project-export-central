@@ -1,0 +1,26 @@
+[
+  {
+    "id": "romania",
+    "name": "Romanya",
+    "file": "data/romania.json",
+    "flag": "🇷🇴",
+    "count": 42,
+    "active": true
+  },
+  {
+    "id": "germany",
+    "name": "Almanya",
+    "file": "data/germany.json",
+    "flag": "🇩🇪",
+    "count": 25,
+    "active": true
+  },
+  {
+    "id": "italy",
+    "name": "İtalya",
+    "file": "data/italy.json",
+    "flag": "🇮🇹",
+    "count": 46,
+    "active": true
+  }
+]

@@ -1,0 +1,86 @@
+{
+  "title": "TenderPulse B2B İstihbarat & Metodoloji Rehberi",
+  "subtitle": "Akansu Boru uluslararası altyapı hedef pazar önceliklendirme matrisi ve ekosistem rolleri.",
+  "version": "1.0.0",
+  "last_updated": "2026-09",
+  "sections": [
+    {
+      "id": "priorities",
+      "title": "1. Öncelik & Boru Satış Potansiyeli Puanlaması",
+      "icon": "award_star",
+      "description": "Firmalar; doğrudan boru tüketim kapasitelerine, ihale büyüklüklerine ve Akansu Boru için ticari getiri potansiyellerine göre sınıflandırılmıştır.",
+      "items": [
+        {
+          "tag": "A++",
+          "badge_class": "bg-emerald-50 border-emerald-300 text-emerald-800 font-bold",
+          "title": "Mega Altyapı & Tier-1 EPC Devleri",
+          "example": "Webuild, STRABAG, Pizzarotti, VINCI, PORR vb.",
+          "description": "Uluslararası hedef pazarlarda yüz milyonlarca Euro'luk mega altyapı projeleri yöneten Tier-1 EPC devleridir. Yüzlerce kilometre Polietilen (PE100 / PE100-RC) ve U-PVC altyapı borusunu doğrudan şantiyelerine satın alırlar. Akansu'nun en yüksek tonajlı hedef müşteri grubudur."
+        },
+        {
+          "tag": "A+",
+          "badge_class": "bg-emerald-50/80 border-emerald-200 text-emerald-700 font-bold",
+          "title": "Büyük Sulama & Su Şebekesi EPC'leri",
+          "example": "Ar.Co. Lavori, Bonatti, Consorzio Integra, Rizzani de Eccher vb.",
+          "description": "Ulusal su ve sulama idareleri veya bölgesel kamu kurumlarının büyük çaplı içme suyu, kanalizasyon ve basınçlı sulama ihalelerini kazanan ana müteahhitlerdir. Yüksek metrajda basınçlı PE ve PVC altyapı borusu satın alırlar."
+        },
+        {
+          "tag": "A",
+          "badge_class": "bg-slate-100 border-slate-300 text-slate-800 font-bold",
+          "title": "Kentsel Altyapı & Gaz/Su Ana Müteahhitleri",
+          "example": "ICOP (NO-DIG), Vianini Lavori, SICIM, Toto Costruzioni vb.",
+          "description": "Şehir içi içme suyu, kanalizasyon ve gaz dağıtım şebekelerinde düzenli ihale alan güçlü bölgesel yüklenicilerdir. Sürekli boru tedarik ihtiyacı duyarlar."
+        },
+        {
+          "tag": "B+ / B",
+          "badge_class": "bg-slate-50 border-slate-200 text-slate-600 font-medium",
+          "title": "Orta Ölçek & Niş Altyapı Projeleri",
+          "example": "Uzman Mühendislik & Niş Altyapı Yüklenicileri",
+          "description": "Maden drenajı, atıksu pompa istasyonları, balık çiftliği / akuakültür tesisleri ve yerel branşman projeleri yürüten uzman müteahhitlerdir."
+        }
+      ]
+    },
+    {
+      "id": "roles",
+      "title": "2. Ekosistemdeki Pazar Rolleri & İş Modelleri",
+      "icon": "domain",
+      "description": "Her bir kurumun değer zincirindeki konumu ve Akansu Boru ile olan potansiyel temas noktası tanımlanmıştır.",
+      "items": [
+        {
+          "tag": "KAMU",
+          "badge_class": "bg-sky-50 border-sky-200 text-sky-800 font-bold",
+          "title": "Doğrudan İhale Açan İdareler",
+          "example": "ACEA ATO 2, AQP Puglia, CAP Milano, Abbanoa, Berliner Wasser vb.",
+          "description": "İhaleleri açan ve teknik şartnameleri hazırlayan kamu otoriteleridir. Akansu Boru kalitesinin (DIN/EN/ISO standartları) şartnamelerde onaylatılması gereken en kritik karar mercileridir."
+        },
+        {
+          "tag": "DAĞITICI",
+          "badge_class": "bg-amber-50 border-amber-200 text-amber-800 font-semibold",
+          "title": "Kilit Toptancı & Distribütör",
+          "example": "Cambielli, Idrocentro, Consorzio Grifone, HTI, Clerici vb.",
+          "description": "Bölgesel lojistik depolarında stok tutan, müteahhitlere doğrudan şantiye teslimi boru ve ek parça satan B2B dağıtım ağlarıdır. Akansu'nun toptan ihracat ve distribütörlük partnerleridir."
+        },
+        {
+          "tag": "ÜRETİCİ",
+          "badge_class": "bg-purple-50 border-purple-200 text-purple-700 font-semibold",
+          "title": "Yerleşik Boru Üreticileri",
+          "example": "FITT, Nupi, Aliaxis, Lareter, Unidelta, Centraltubi, Wavin vb.",
+          "description": "Hedef pazarlarda PE/PVC boru ekstrüzyon fabrikası veya yerel üretim tesisi bulunan sanayi kuruluşlarıdır. Pazar kapasitesi, fiyat seviyeleri ve ürün çeşitliliği analizi için havuzda tutulmaktadır."
+        },
+        {
+          "tag": "PARTNER",
+          "badge_class": "bg-indigo-50 border-indigo-200 text-indigo-700 font-semibold",
+          "title": "Tamamlayıcı Çözüm Ortakları",
+          "example": "Tamamlayıcı Çözüm Ortakları (CTP, Vana, Otomasyon)",
+          "description": "CTP/GRP kompozit boru iletimi, armatür veya özel tarımsal sulama otomasyonunda Akansu'nun ürün gamıyla sinerji yaratan tamamlayıcı tedarikçilerdir."
+        }
+      ]
+    },
+    {
+      "id": "verification",
+      "title": "3. Veri Güvenilirliği & Resmi Doğrulama Standartları",
+      "icon": "verified_user",
+      "description": "Portaldaki tüm veriler Avrupa Birliği Resmi Gazetesi (TED Europa), hedef ülke resmi kamu ihale bültenleri, ticaret sicilleri ve uluslararası kalkınma bankaları (Dünya Bankası, EBRD, EIB) resmi kayıtlarıyla çapraz sorgulanarak doğrulanmıştır. C-Level karar verici iletişimleri, satın alma masaları ve aktif proje referansları sürekli güncellenmektedir."
+    }
+  ]
+}
