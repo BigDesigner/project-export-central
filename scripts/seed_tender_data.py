@@ -35,7 +35,7 @@ def main():
         c_count = c.get("count", 0)
         c_active = 1 if c.get("active", True) else 0
         sql_statements.append(
-            f"INSERT OR REPLACE INTO tender_countries (id, name, flag, count, active) "
+            f"INSERT OR IGNORE INTO tender_countries (id, name, flag, count, active) "
             f"VALUES ({c_id}, {c_name}, {c_flag}, {c_count}, {c_active});"
         )
 
@@ -77,7 +77,7 @@ def main():
             source_text = escape_sql_string(comp.get("source_text"))
 
             sql_statements.append(
-                f"INSERT OR REPLACE INTO tender_companies ("
+                f"INSERT OR IGNORE INTO tender_companies ("
                 f"id, country_id, name, group_name, category, city, priority, "
                 f"phone, email, email_alt, address, project_officer, "
                 f"owner_group, ceo, cpo, cfo, strategy_note, project_reference, source_text"
