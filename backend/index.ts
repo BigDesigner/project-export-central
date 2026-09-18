@@ -23,6 +23,8 @@ function getAllowedOrigins(env: Env): string[] {
   const defaults = [
     'http://localhost:5173',
     'http://127.0.0.1:5173',
+    'https://tenderpulse.akansu.com',
+    'https://tenderpulse.pages.dev',
     'https://map.akansu.com',
     'https://mapassign.pages.dev'
   ];

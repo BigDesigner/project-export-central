@@ -2,7 +2,9 @@ import { COUNTRY_NAMES } from './countryNames';
 
 const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
   ? ''
-  : 'https://map-api.akansu.com';
+  : (window.location.hostname.includes('tenderpulse')
+      ? 'https://tenderpulse-api.akansu.com'
+      : 'https://map-api.akansu.com');
 
 function apiFetch(path: string, init: RequestInit = {}): Promise<Response> {
   const url = `${API_BASE}${path}`;
