@@ -2,7 +2,7 @@ import os
 import re
 
 def verify():
-    base_dir = "/Users/muratgonen/Documents/Antigravity/DeepResearch/project-export-central"
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     print("=== VERIFYING MODULAR INTEGRITY ===")
 
     # 1. Check wrangler.toml vars preservation
