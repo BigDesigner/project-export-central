@@ -67,7 +67,7 @@ export class TenderViewController {
       <div class="w-full flex items-center justify-center p-12 text-slate-400 font-sans">
         <div class="flex items-center gap-3">
           <div class="w-5 h-5 border-2 border-slate-900 border-t-transparent rounded-full animate-spin"></div>
-          <span class="text-sm font-medium">İhale & Pazar İstihbaratı yükleniyor...</span>
+          <span class="text-sm font-medium">Ülke Raporu yükleniyor...</span>
         </div>
       </div>
     `;

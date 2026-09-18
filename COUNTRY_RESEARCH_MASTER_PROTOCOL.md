@@ -138,7 +138,7 @@ git push origin main
 1. `tender_seed.sql` dosyasını Cloudflare D1 veritabanına (`tenderpulse-db`) işler.
 2. Cloudflare Worker (`tenderpulse-api.akansu.com`) backend'ini günceller.
 3. Cloudflare Pages (`tenderpulse.akansu.com`) frontend'ini derler ve yayınlar.
-Yeni eklenen ülke anında haritada ve İhale & İstihbarat modülünde filtrelenebilir hale gelir.
+Yeni eklenen ülke anında haritada ve Ülke Raporu modülünde filtrelenebilir hale gelir.
 
 ---
 
