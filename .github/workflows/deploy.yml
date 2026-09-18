@@ -31,6 +31,14 @@ jobs:
           workingDirectory: '.'
           command: d1 execute DB --remote --file=./schema.sql
 
+      # --- 1.1 Seed Tender Intelligence Data (D1) ---
+      - name: Seed Tender Module Data (D1)
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: '.'
+          command: d1 execute DB --remote --file=./tender_seed.sql
 
       # --- 2. Deploy Cloudflare Worker (Backend) ---
       - name: Deploy Worker

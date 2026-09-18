@@ -51,10 +51,20 @@ export interface TenderCompany {
   country_flag?: string;
 }
 
+const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+  ? ''
+  : 'https://map-api.akansu.com';
+
+function apiFetch(path: string, init: RequestInit = {}): Promise<Response> {
+  const url = `${API_BASE}${path}`;
+  init.credentials = 'include';
+  return fetch(url, init);
+}
+
 export const TenderApi = {
   async getCountries(): Promise<TenderCountry[]> {
     try {
-      const res = await fetch('/api/tender/countries', { credentials: 'include' });
+      const res = await apiFetch('/api/tender/countries');
       if (res.ok) {
         const data = await res.json();
         return data.countries || [];
@@ -82,9 +92,7 @@ export const TenderApi = {
       if (params.limit) query.set('limit', String(params.limit));
       if (params.offset) query.set('offset', String(params.offset));
 
-      const res = await fetch(`/api/tender/companies?${query.toString()}`, {
-        credentials: 'include'
-      });
+      const res = await apiFetch(`/api/tender/companies?${query.toString()}`);
       if (res.ok) {
         return await res.json();
       }
@@ -100,9 +108,7 @@ export const TenderApi = {
     notes: TenderCrmNote[];
   } | null> {
     try {
-      const res = await fetch(`/api/tender/companies/${encodeURIComponent(id)}`, {
-        credentials: 'include'
-      });
+      const res = await apiFetch(`/api/tender/companies/${encodeURIComponent(id)}`);
       if (res.ok) {
         return await res.json();
       }
@@ -114,10 +120,9 @@ export const TenderApi = {
 
   async createCompany(data: Partial<TenderCompany> & { source_urls?: TenderSourceUrl[] }): Promise<{ success: boolean; id?: string; error?: string }> {
     try {
-      const res = await fetch('/api/tender/companies', {
+      const res = await apiFetch('/api/tender/companies', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        credentials: 'include',
         body: JSON.stringify(data)
       });
       return await res.json();
@@ -128,10 +133,9 @@ export const TenderApi = {
 
   async updateCompany(id: string, data: Partial<TenderCompany>): Promise<{ success: boolean; error?: string }> {
     try {
-      const res = await fetch(`/api/tender/companies/${encodeURIComponent(id)}`, {
+      const res = await apiFetch(`/api/tender/companies/${encodeURIComponent(id)}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        credentials: 'include',
         body: JSON.stringify(data)
       });
       return await res.json();
@@ -142,9 +146,8 @@ export const TenderApi = {
 
   async deleteCompany(id: string): Promise<{ success: boolean; error?: string }> {
     try {
-      const res = await fetch(`/api/tender/companies/${encodeURIComponent(id)}`, {
-        method: 'DELETE',
-        credentials: 'include'
+      const res = await apiFetch(`/api/tender/companies/${encodeURIComponent(id)}`, {
+        method: 'DELETE'
       });
       return await res.json();
     } catch (e: any) {
@@ -154,10 +157,9 @@ export const TenderApi = {
 
   async addNote(companyId: string, note: string): Promise<{ success: boolean; error?: string }> {
     try {
-      const res = await fetch(`/api/tender/companies/${encodeURIComponent(companyId)}/notes`, {
+      const res = await apiFetch(`/api/tender/companies/${encodeURIComponent(companyId)}/notes`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        credentials: 'include',
         body: JSON.stringify({ note })
       });
       return await res.json();
@@ -168,9 +170,8 @@ export const TenderApi = {
 
   async syncBrevo(companyId: string): Promise<{ success: boolean; message?: string; error?: string }> {
     try {
-      const res = await fetch(`/api/tender/companies/${encodeURIComponent(companyId)}/sync-brevo`, {
-        method: 'POST',
-        credentials: 'include'
+      const res = await apiFetch(`/api/tender/companies/${encodeURIComponent(companyId)}/sync-brevo`, {
+        method: 'POST'
       });
       return await res.json();
     } catch (e: any) {

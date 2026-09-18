@@ -41,7 +41,7 @@ function corsHeaders(request: Request, env: Env): Headers {
   if (origin && allowedOrigins.includes(origin)) {
     headers.set('Access-Control-Allow-Origin', origin);
   }
-  headers.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  headers.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   headers.set('Access-Control-Allow-Headers', 'Content-Type, Cookie');
   headers.set('Access-Control-Allow-Credentials', 'true');
   return headers;
