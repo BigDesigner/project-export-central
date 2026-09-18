@@ -79,3 +79,70 @@ CREATE INDEX IF NOT EXISTS idx_quote_customer ON quotes(customer_id);
 CREATE INDEX IF NOT EXISTS idx_customer_deleted ON customers(deleted_at) WHERE deleted_at IS NULL;
 CREATE INDEX IF NOT EXISTS idx_quote_deleted ON quotes(deleted_at) WHERE deleted_at IS NULL;
 CREATE INDEX IF NOT EXISTS idx_jobs_status ON background_jobs(status);
+
+-- ==============================================================================
+-- 7. İHALE & HEDEF PAZAR İSTİHBARAT MODÜLÜ TABLOLARI (DEEPRESEARCH MODULE)
+-- ==============================================================================
+
+CREATE TABLE IF NOT EXISTS tender_countries (
+    id TEXT PRIMARY KEY,
+    name TEXT NOT NULL,
+    flag TEXT NOT NULL,
+    count INTEGER DEFAULT 0,
+    active INTEGER DEFAULT 1,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS tender_companies (
+    id TEXT PRIMARY KEY,
+    country_id TEXT NOT NULL,
+    name TEXT NOT NULL,
+    group_name TEXT NOT NULL,
+    category TEXT NOT NULL,
+    city TEXT NOT NULL,
+    priority TEXT NOT NULL,
+    phone TEXT,
+    email TEXT,
+    email_alt TEXT,
+    address TEXT,
+    project_officer TEXT,
+    owner_group TEXT,
+    ceo TEXT,
+    cpo TEXT,
+    cfo TEXT,
+    strategy_note TEXT,
+    project_reference TEXT,
+    source_text TEXT,
+    brevo_contact_id TEXT,
+    brevo_synced_at DATETIME,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    deleted_at DATETIME DEFAULT NULL,
+    FOREIGN KEY (country_id) REFERENCES tender_countries(id) ON DELETE RESTRICT
+);
+
+CREATE TABLE IF NOT EXISTS tender_source_urls (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    company_id TEXT NOT NULL,
+    label TEXT NOT NULL,
+    url TEXT NOT NULL,
+    FOREIGN KEY (company_id) REFERENCES tender_companies(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS tender_crm_notes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    company_id TEXT NOT NULL,
+    representative_id INTEGER,
+    note TEXT NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (company_id) REFERENCES tender_companies(id) ON DELETE CASCADE,
+    FOREIGN KEY (representative_id) REFERENCES representatives(id) ON DELETE SET NULL
+);
+
+CREATE INDEX IF NOT EXISTS idx_tender_company_country ON tender_companies(country_id);
+CREATE INDEX IF NOT EXISTS idx_tender_company_group ON tender_companies(group_name);
+CREATE INDEX IF NOT EXISTS idx_tender_company_priority ON tender_companies(priority);
+CREATE INDEX IF NOT EXISTS idx_tender_company_deleted ON tender_companies(deleted_at) WHERE deleted_at IS NULL;
+CREATE INDEX IF NOT EXISTS idx_tender_source_company ON tender_source_urls(company_id);
+CREATE INDEX IF NOT EXISTS idx_tender_notes_company ON tender_crm_notes(company_id);
+

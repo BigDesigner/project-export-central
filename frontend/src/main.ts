@@ -1,6 +1,7 @@
 import { MapEngine } from './mapEngine';
 import { exportMapToPNG, LegendItem } from './pdfExport';
 import { COUNTRY_NAMES } from './countryNames';
+import { TenderViewController } from './modules/tender/tenderView';
 
 // State Interfaces
 const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
@@ -43,6 +44,8 @@ class AppController {
   private role: 'admin' | 'representative' | null = null;
   private currentUsernameOrName = '';
   private mapEngine: MapEngine | null = null;
+  private tenderView: TenderViewController | null = null;
+  private activeModule: 'map' | 'tender' = 'map';
   
   // Cache lists
   private representatives: Representative[] = [];
@@ -189,6 +192,15 @@ class AppController {
       this.rightMenuToggle.style.display = 'none';
       this.leftSidebar.classList.remove('hidden-panel');
       this.mapSearchPanel.classList.remove('hidden-panel');
+
+      // Reset App Shell
+      const shellHeader = document.getElementById('app-shell-header');
+      if (shellHeader) shellHeader.style.display = 'none';
+      const mapContainer = document.getElementById('map-module-container');
+      const tenderContainer = document.getElementById('tender-module-container');
+      if (mapContainer) mapContainer.style.display = 'block';
+      if (tenderContainer) tenderContainer.style.display = 'none';
+
       if (typeof (window as any).turnstile !== 'undefined') {
         (window as any).turnstile.reset();
       }
@@ -603,11 +615,72 @@ class AppController {
     });
   }
 
+  private initAppShell(): void {
+    const header = document.getElementById('app-shell-header');
+    const userNameEl = document.getElementById('shell-user-name');
+    const shellLogoutBtn = document.getElementById('shell-logout-btn');
+    const tabBtnMap = document.getElementById('tab-btn-map');
+    const tabBtnTender = document.getElementById('tab-btn-tender');
+    const mapContainer = document.getElementById('map-module-container');
+    const tenderContainer = document.getElementById('tender-module-container');
+
+    if (header) header.style.display = 'flex';
+    if (userNameEl) userNameEl.textContent = this.currentUsernameOrName || (this.role === 'admin' ? 'Yönetici' : 'Temsilci');
+    if (shellLogoutBtn) {
+      shellLogoutBtn.onclick = () => this.logoutBtn.click();
+    }
+
+    const switchModule = async (mod: 'map' | 'tender') => {
+      this.activeModule = mod;
+      if (mod === 'map') {
+        if (mapContainer) mapContainer.style.display = 'block';
+        if (tenderContainer) tenderContainer.style.display = 'none';
+        tabBtnMap?.classList.add('active', 'bg-white', 'text-slate-900', 'shadow-xs');
+        tabBtnMap?.classList.remove('text-slate-600');
+        tabBtnTender?.classList.remove('active', 'bg-white', 'text-slate-900', 'shadow-xs');
+        tabBtnTender?.classList.add('text-slate-600');
+        if (this.leftMenuToggle) this.leftMenuToggle.style.display = 'flex';
+        window.location.hash = '#tab-map';
+      } else if (mod === 'tender') {
+        if (mapContainer) mapContainer.style.display = 'none';
+        if (tenderContainer) tenderContainer.style.display = 'block';
+        tabBtnTender?.classList.add('active', 'bg-white', 'text-slate-900', 'shadow-xs');
+        tabBtnTender?.classList.remove('text-slate-600');
+        tabBtnMap?.classList.remove('active', 'bg-white', 'text-slate-900', 'shadow-xs');
+        tabBtnMap?.classList.add('text-slate-600');
+        if (this.leftMenuToggle) this.leftMenuToggle.style.display = 'none';
+        window.location.hash = '#tab-tender';
+
+        if (!this.tenderView) {
+          this.tenderView = new TenderViewController('tender-module-container');
+        }
+        this.tenderView.setRole(this.role);
+        await this.tenderView.init();
+      }
+    };
+
+    if (tabBtnMap) {
+      tabBtnMap.onclick = () => switchModule('map');
+    }
+    if (tabBtnTender) {
+      tabBtnTender.onclick = () => switchModule('tender');
+    }
+
+    if (window.location.hash === '#tab-tender') {
+      switchModule('tender');
+    } else {
+      switchModule('map');
+    }
+  }
+
   private async bootstrapApp(): Promise<void> {
     // Hide login screen
     this.loginScreen.style.display = 'none';
     this.usernameInput.value = '';
     this.passwordInput.value = '';
+
+    // Initialize unified app shell
+    this.initAppShell();
 
     // Initialize map engine
     const svg = document.querySelector('svg');

@@ -3,6 +3,7 @@ import { createSession, getSession, destroySession, SessionData } from './sessio
 import { isRateLimited } from './rateLimit';
 import { isValidCountryCode, isValidColorHex, sanitizeInput, isValidRepresentativeCode, isValidPassword } from './validation';
 import { enqueueJob, processQueue } from './queue';
+import { handleTenderRoute } from './modules/tender';
 
 const DUMMY_HASH = '600000:73616c7473616c7473616c7473616c74:6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f66';
 
@@ -14,6 +15,8 @@ export interface Env {
   ALLOWED_ORIGIN?: string;
   TURNSTILE_SITE_KEY?: string;
   TURNSTILE_SECRET_KEY?: string;
+  BREVO_API_KEY?: string;
+  BREVO_LIST_ID?: string;
 }
 
 function getAllowedOrigins(env: Env): string[] {
@@ -555,6 +558,12 @@ export default {
         }
 
         return jsonResponse({ error: 'Unsupported action.' }, 400, headers);
+      }
+
+      // Modular Route: Tender Intelligence (DeepResearch Module)
+      if (url.pathname.startsWith('/api/tender')) {
+        const session = await getAuthenticatedSession(request, env);
+        return handleTenderRoute(request, env, session, headers);
       }
 
       return jsonResponse({ error: 'Not Found.' }, 404, headers);
