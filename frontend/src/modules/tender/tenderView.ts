@@ -236,7 +236,6 @@ export class TenderViewController {
       </span>
     ` : '';
 
-    const isBrevoSynced = !!comp.brevo_contact_id;
 
     // Direct phone calling
     const rawPhone = comp.phone ? comp.phone.trim() : '';
