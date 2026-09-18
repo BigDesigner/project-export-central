@@ -609,10 +609,42 @@ class AppController {
       }
     });
 
-    // Menu Toggle Logic
+    // Menu Toggle Logic & Dynamic Positioning
+    const updateToggleBtnPosition = () => {
+      if (!this.leftMenuToggle) return;
+      if (this.activeModule !== 'map') {
+        this.leftMenuToggle.style.display = 'none';
+        return;
+      }
+      const isHidden = this.leftSidebar.classList.contains('hidden-panel');
+      if (window.innerWidth <= 640) {
+        if (isHidden) {
+          this.leftMenuToggle.style.display = 'flex';
+          this.leftMenuToggle.style.left = '14px';
+        } else {
+          this.leftMenuToggle.style.display = 'none';
+        }
+      } else {
+        this.leftMenuToggle.style.display = 'flex';
+        this.leftMenuToggle.style.left = isHidden ? '14px' : '334px';
+      }
+    };
+
     this.leftMenuToggle.addEventListener('click', () => {
       this.leftSidebar.classList.toggle('hidden-panel');
+      updateToggleBtnPosition();
     });
+
+    const sidebarCloseBtn = document.getElementById('sidebar-close-btn');
+    if (sidebarCloseBtn) {
+      sidebarCloseBtn.addEventListener('click', () => {
+        this.leftSidebar.classList.add('hidden-panel');
+        updateToggleBtnPosition();
+      });
+    }
+
+    window.addEventListener('resize', updateToggleBtnPosition);
+    updateToggleBtnPosition();
 
     this.rightMenuToggle.addEventListener('click', () => {
       this.mapSearchPanel.classList.toggle('hidden-panel');
@@ -639,19 +671,24 @@ class AppController {
       if (mod === 'map') {
         if (mapContainer) mapContainer.style.display = 'block';
         if (tenderContainer) tenderContainer.style.display = 'none';
-        tabBtnMap?.classList.add('active', 'bg-white', 'text-slate-900', 'shadow-xs');
-        tabBtnMap?.classList.remove('text-slate-600');
-        tabBtnTender?.classList.remove('active', 'bg-white', 'text-slate-900', 'shadow-xs');
-        tabBtnTender?.classList.add('text-slate-600');
-        if (this.leftMenuToggle) this.leftMenuToggle.style.display = 'flex';
+        tabBtnMap?.classList.add('active');
+        tabBtnTender?.classList.remove('active');
+        if (this.leftMenuToggle) {
+          const isHidden = this.leftSidebar.classList.contains('hidden-panel');
+          if (window.innerWidth <= 640) {
+            this.leftMenuToggle.style.display = isHidden ? 'flex' : 'none';
+            this.leftMenuToggle.style.left = '14px';
+          } else {
+            this.leftMenuToggle.style.display = 'flex';
+            this.leftMenuToggle.style.left = isHidden ? '14px' : '334px';
+          }
+        }
         window.location.hash = '#tab-map';
       } else if (mod === 'tender') {
         if (mapContainer) mapContainer.style.display = 'none';
         if (tenderContainer) tenderContainer.style.display = 'block';
-        tabBtnTender?.classList.add('active', 'bg-white', 'text-slate-900', 'shadow-xs');
-        tabBtnTender?.classList.remove('text-slate-600');
-        tabBtnMap?.classList.remove('active', 'bg-white', 'text-slate-900', 'shadow-xs');
-        tabBtnMap?.classList.add('text-slate-600');
+        tabBtnTender?.classList.add('active');
+        tabBtnMap?.classList.remove('active');
         if (this.leftMenuToggle) this.leftMenuToggle.style.display = 'none';
         window.location.hash = '#tab-tender';
 

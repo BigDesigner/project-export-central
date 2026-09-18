@@ -107,7 +107,7 @@ export class TenderViewController {
               
               <!-- Search Input -->
               <div class="relative flex-1">
-                <svg class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <svg class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none z-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1016.65 16.65z"/>
                 </svg>
                 <input 
@@ -115,16 +115,16 @@ export class TenderViewController {
                   id="tender-search-input" 
                   value="${escapeHtml(this.searchQuery)}"
                   placeholder="Firma, şehir, yetkili veya PE100 / PVC ihale referansı ara..."
-                  class="w-full pl-9 pr-8 h-10 bg-white border border-slate-200 rounded-lg text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-slate-900 focus:border-slate-900 transition shadow-xs"
+                  class="w-full pl-10 pr-10 h-10 bg-white border border-slate-200 rounded-lg text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900 transition shadow-xs"
                 />
                 ${this.searchQuery ? `
-                  <button id="tender-search-clear" class="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-1 text-sm font-bold">✕</button>
+                  <button type="button" id="tender-search-clear" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full flex items-center justify-center text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition text-xs font-bold cursor-pointer z-10" title="Aramayı Temizle">✕</button>
                 ` : ''}
               </div>
 
               <!-- Filter Dropdowns -->
               <div class="flex items-center gap-2 overflow-x-auto no-scrollbar">
-                <select id="tender-group-select" class="h-10 px-3 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 focus:outline-none focus:border-slate-900 shadow-xs cursor-pointer shrink-0">
+                <select id="tender-group-select" class="h-10 pl-3 pr-8 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 hover:border-slate-300 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900 shadow-xs cursor-pointer shrink-0 transition">
                   <option value="all">Tüm Pazar Grupları</option>
                   <option value="Kamu Su İdaresi" ${this.activeGroup.includes('Kamu') ? 'selected' : ''}>🏛️ Kamu Su İdareleri</option>
                   <option value="Müteahhitlik (EPC)" ${this.activeGroup.includes('EPC') ? 'selected' : ''}>🏗️ EPC & Altyapı Müteahhitleri</option>
@@ -132,7 +132,7 @@ export class TenderViewController {
                   <option value="Üretici" ${this.activeGroup.includes('Üretici') ? 'selected' : ''}>🏭 Boru Üreticileri</option>
                 </select>
 
-                <select id="tender-priority-select" class="h-10 px-3 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 focus:outline-none focus:border-slate-900 shadow-xs cursor-pointer shrink-0">
+                <select id="tender-priority-select" class="h-10 pl-3 pr-8 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 hover:border-slate-300 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900 shadow-xs cursor-pointer shrink-0 transition">
                   <option value="all">Tüm Öncelikler</option>
                   <option value="A++" ${this.activePriority === 'A++' ? 'selected' : ''}>⭐ Kritik (A++)</option>
                   <option value="A+" ${this.activePriority === 'A+' ? 'selected' : ''}>🔥 Yüksek (A+)</option>
@@ -140,7 +140,7 @@ export class TenderViewController {
                 </select>
 
                 ${this.currentRole === 'admin' ? `
-                  <button id="tender-add-company-btn" class="h-10 px-3.5 bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold rounded-lg shrink-0 flex items-center gap-1.5 transition shadow-xs cursor-pointer">
+                  <button type="button" id="tender-add-company-btn" class="h-10 px-3.5 bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white text-xs font-semibold rounded-lg shrink-0 flex items-center gap-1.5 transition shadow-xs cursor-pointer">
                     <span>+</span>
                     <span>Yeni Firma</span>
                   </button>
@@ -151,15 +151,17 @@ export class TenderViewController {
             <!-- Country Pills / Chips Row -->
             <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-1">
               <button 
+                type="button"
                 data-country="all" 
-                class="tender-country-pill px-3 py-1.5 rounded-full text-xs font-semibold transition cursor-pointer shrink-0 ${this.activeCountry === 'all' ? 'bg-slate-900 text-white shadow-xs' : 'bg-white text-slate-600 border border-slate-200 hover:bg-slate-100'}"
+                class="tender-country-pill px-3.5 py-1.5 rounded-full text-xs font-semibold transition cursor-pointer shrink-0 border ${this.activeCountry === 'all' ? 'bg-slate-900 text-white border-slate-900 shadow-xs' : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-100 hover:text-slate-900 hover:border-slate-300'}"
               >
                 🌍 Tüm Ülkeler (${totalRecords})
               </button>
               ${this.countries.map(c => `
                 <button 
+                  type="button"
                   data-country="${escapeHtml(c.id)}" 
-                  class="tender-country-pill px-3 py-1.5 rounded-full text-xs font-semibold transition cursor-pointer shrink-0 ${this.activeCountry === c.id ? 'bg-slate-900 text-white shadow-xs' : 'bg-white text-slate-600 border border-slate-200 hover:bg-slate-100'}"
+                  class="tender-country-pill px-3.5 py-1.5 rounded-full text-xs font-semibold transition cursor-pointer shrink-0 border ${this.activeCountry === c.id ? 'bg-slate-900 text-white border-slate-900 shadow-xs' : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-100 hover:text-slate-900 hover:border-slate-300'}"
                 >
                   ${escapeHtml(c.flag)} ${escapeHtml(c.name)} (${c.count})
                 </button>
@@ -223,7 +225,7 @@ export class TenderViewController {
     const isBrevoSynced = !!comp.brevo_contact_id;
 
     return `
-      <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-xs hover:border-slate-300 hover:shadow-sm transition flex flex-col justify-between">
+      <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-xs hover:border-slate-300 hover:shadow-md transition-all duration-200 flex flex-col justify-between">
         
         <div>
           <!-- Header: Badges & City -->
@@ -238,7 +240,7 @@ export class TenderViewController {
           </div>
 
           <!-- Company Name -->
-          <h2 class="text-sm font-bold text-slate-900 leading-snug mb-1.5 line-clamp-1 hover:text-sky-700 cursor-pointer tender-card-title" data-id="${escapeHtml(comp.id)}">
+          <h2 class="text-sm font-bold text-slate-900 leading-snug mb-1.5 line-clamp-1 hover:text-sky-600 transition-colors cursor-pointer tender-card-title" data-id="${escapeHtml(comp.id)}">
             ${escapeHtml(comp.name)}
           </h2>
 
@@ -261,31 +263,33 @@ export class TenderViewController {
         </div>
 
         <!-- Action Footer with 44px touch targets -->
-        <div class="pt-2 border-t border-slate-100 flex items-center justify-between gap-2">
+        <div class="pt-2.5 border-t border-slate-100 flex items-center justify-between gap-2">
           
-          <div class="flex items-center gap-1">
+          <div class="flex items-center gap-1.5">
             ${comp.phone ? `
-              <a href="tel:${escapeHtml(comp.phone)}" class="min-w-[36px] h-9 px-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs rounded-lg flex items-center justify-center transition" title="Telefon: ${escapeHtml(comp.phone)}">
+              <a href="tel:${escapeHtml(comp.phone)}" class="min-w-[36px] h-9 px-2.5 bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200 hover:border-slate-300 text-xs rounded-lg flex items-center justify-center transition shadow-2xs" title="Telefon: ${escapeHtml(comp.phone)}">
                 📞
               </a>
             ` : ''}
             ${comp.email ? `
-              <a href="mailto:${escapeHtml(comp.email)}" class="min-w-[36px] h-9 px-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs rounded-lg flex items-center justify-center transition" title="E-posta: ${escapeHtml(comp.email)}">
+              <a href="mailto:${escapeHtml(comp.email)}" class="min-w-[36px] h-9 px-2.5 bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200 hover:border-slate-300 text-xs rounded-lg flex items-center justify-center transition shadow-2xs" title="E-posta: ${escapeHtml(comp.email)}">
                 ✉️
               </a>
             ` : ''}
             <button 
-              class="tender-sync-brevo-btn h-9 px-2.5 ${isBrevoSynced ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-slate-100 hover:bg-sky-50 hover:text-sky-700 text-slate-700'} text-xs font-semibold rounded-lg flex items-center gap-1 transition cursor-pointer"
+              type="button"
+              class="tender-sync-brevo-btn h-9 px-2.5 ${isBrevoSynced ? 'bg-emerald-50 text-emerald-700 border border-emerald-200 hover:bg-emerald-100' : 'bg-slate-50 hover:bg-sky-50 hover:text-sky-700 hover:border-sky-300 text-slate-700 border border-slate-200'} text-xs font-semibold rounded-lg flex items-center gap-1 transition cursor-pointer shadow-2xs"
               data-id="${escapeHtml(comp.id)}"
               title="${isBrevoSynced ? 'Brevo CRM ile senkronize edildi' : 'Brevo CRM kontaktlarına aktar'}"
             >
               <span>${isBrevoSynced ? '✓' : '⚡'}</span>
-              <span class="hidden sm:inline">Brevo</span>
+              <span class="hidden sm:inline">${isBrevoSynced ? 'Brevo' : 'Brevo\'ya Aktar'}</span>
             </button>
           </div>
 
           <button 
-            class="tender-view-detail-btn h-9 px-3 bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold rounded-lg transition flex items-center gap-1 cursor-pointer"
+            type="button"
+            class="tender-view-detail-btn h-9 px-3.5 bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white text-xs font-semibold rounded-lg transition flex items-center gap-1.5 cursor-pointer shadow-2xs"
             data-id="${escapeHtml(comp.id)}"
           >
             <span>Detay</span>
@@ -418,7 +422,7 @@ export class TenderViewController {
               <h2 class="text-lg font-extrabold text-slate-900 leading-snug">${escapeHtml(company.name)}</h2>
               <p class="text-xs text-slate-500 font-medium">${escapeHtml(company.group_name)}</p>
             </div>
-            <button id="tender-modal-close" class="w-8 h-8 rounded-lg bg-white border border-slate-200 text-slate-400 hover:text-slate-600 flex items-center justify-center font-bold text-base transition">✕</button>
+            <button type="button" id="tender-modal-close" class="w-8 h-8 rounded-lg bg-white border border-slate-200 text-slate-400 hover:text-slate-700 hover:bg-slate-100 hover:border-slate-300 flex items-center justify-center font-bold text-base transition cursor-pointer">✕</button>
           </div>
 
           <!-- Modal Body (Scrollable) -->
@@ -474,7 +478,7 @@ export class TenderViewController {
                 <h3 class="text-[10px] uppercase font-bold text-slate-400 tracking-wider mb-1">Doğrulanmış Kaynaklar & İhale Portalları</h3>
                 <div class="flex flex-wrap gap-1.5">
                   ${sources.map(s => `
-                    <a href="${escapeHtml(s.url)}" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1 bg-white border border-slate-200 hover:border-slate-400 text-sky-700 rounded-md text-[11px] font-medium transition flex items-center gap-1">
+                    <a href="${escapeHtml(s.url)}" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1 bg-white border border-slate-200 hover:bg-sky-50 hover:border-sky-300 hover:text-sky-800 text-sky-700 rounded-md text-[11px] font-medium transition flex items-center gap-1 shadow-2xs">
                       <span>🔗 ${escapeHtml(s.label)}</span>
                       <span>↗</span>
                     </a>
@@ -493,11 +497,12 @@ export class TenderViewController {
                   type="text" 
                   id="tender-new-note-input" 
                   placeholder="Görüşme notu ekleyin (örn: Numune boru istendi)..." 
-                  class="flex-1 h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs placeholder:text-slate-400 focus:outline-none focus:border-slate-900"
+                  class="flex-1 h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900"
                 />
                 <button 
+                  type="button"
                   id="tender-save-note-btn" 
-                  class="h-9 px-3.5 bg-slate-900 hover:bg-slate-800 text-white font-semibold rounded-lg text-xs transition cursor-pointer shrink-0"
+                  class="h-9 px-3.5 bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white font-semibold rounded-lg text-xs transition cursor-pointer shrink-0 shadow-2xs"
                 >
                   Notu Kaydet
                 </button>
@@ -520,16 +525,16 @@ export class TenderViewController {
 
           <!-- Modal Footer -->
           <div class="p-4 border-t border-slate-100 bg-slate-50/50 flex items-center justify-between">
-            <div class="text-[11px] text-slate-500">
+            <div class="text-[11px] text-slate-500 font-medium">
               ${company.brevo_synced_at ? `✓ Brevo Sync: ${new Date(company.brevo_synced_at).toLocaleDateString('tr-TR')}` : 'Brevo: Beklemede'}
             </div>
             <div class="flex items-center gap-2">
               ${this.currentRole === 'admin' ? `
-                <button id="tender-modal-delete-btn" class="px-3 py-1.5 bg-rose-50 text-rose-700 border border-rose-200 hover:bg-rose-100 rounded-lg text-xs font-semibold transition cursor-pointer">
+                <button type="button" id="tender-modal-delete-btn" class="px-3.5 py-2 bg-rose-50 text-rose-700 border border-rose-200 hover:bg-rose-100 hover:border-rose-300 rounded-lg text-xs font-semibold transition cursor-pointer shadow-2xs">
                   Firmayı Sil
                 </button>
               ` : ''}
-              <button id="tender-modal-footer-close" class="px-4 py-1.5 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-xs font-semibold transition cursor-pointer">
+              <button type="button" id="tender-modal-footer-close" class="px-4 py-2 bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white rounded-lg text-xs font-semibold transition cursor-pointer shadow-2xs">
                 Kapat
               </button>
             </div>
@@ -581,26 +586,26 @@ export class TenderViewController {
           
           <div class="p-4 border-b border-slate-100 flex items-center justify-between bg-slate-50/50">
             <h3 class="text-sm font-bold text-slate-900">Yeni İhale / Müşteri Dosyası Ekle</h3>
-            <button id="tender-add-close" class="text-slate-400 hover:text-slate-600 font-bold text-base">✕</button>
+            <button type="button" id="tender-add-close" class="w-8 h-8 rounded-lg bg-white border border-slate-200 text-slate-400 hover:text-slate-700 hover:bg-slate-100 hover:border-slate-300 flex items-center justify-center font-bold text-base transition cursor-pointer">✕</button>
           </div>
 
           <form id="tender-add-form" class="p-4 overflow-y-auto space-y-3 text-xs">
             <div>
               <label class="block text-[11px] font-semibold text-slate-700 mb-1">Ülke Seçin</label>
-              <select id="add-country" required class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs">
+              <select id="add-country" required class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900">
                 ${this.countries.map(c => `<option value="${escapeHtml(c.id)}">${escapeHtml(c.flag)} ${escapeHtml(c.name)}</option>`).join('')}
               </select>
             </div>
 
             <div>
               <label class="block text-[11px] font-semibold text-slate-700 mb-1">Firma / İdare Adı</label>
-              <input type="text" id="add-name" required placeholder="Örn. Webuild S.p.A." class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs" />
+              <input type="text" id="add-name" required placeholder="Örn. Webuild S.p.A." class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900" />
             </div>
 
             <div class="grid grid-cols-2 gap-2">
               <div>
                 <label class="block text-[11px] font-semibold text-slate-700 mb-1">Pazar Grubu</label>
-                <select id="add-group" required class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs">
+                <select id="add-group" required class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900">
                   <option value="Müteahhitlik (EPC)">Müteahhitlik (EPC)</option>
                   <option value="Kamu Su İdaresi (BÖLGESEL)">Kamu Su İdaresi (BÖLGESEL)</option>
                   <option value="Dağıtıcı (TİEFBAU)">Dağıtıcı (TİEFBAU)</option>
@@ -609,34 +614,34 @@ export class TenderViewController {
               </div>
               <div>
                 <label class="block text-[11px] font-semibold text-slate-700 mb-1">Şehir</label>
-                <input type="text" id="add-city" required placeholder="Örn. Milano" class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs" />
+                <input type="text" id="add-city" required placeholder="Örn. Milano" class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900" />
               </div>
             </div>
 
             <div>
               <label class="block text-[11px] font-semibold text-slate-700 mb-1">Boru İhtiyacı / Kategori</label>
-              <input type="text" id="add-category" placeholder="Örn. PE100 / PE100-RC İçme Suyu & Kanalizasyon" class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs" />
+              <input type="text" id="add-category" placeholder="Örn. PE100 / PE100-RC İçme Suyu & Kanalizasyon" class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900" />
             </div>
 
             <div class="grid grid-cols-2 gap-2">
               <div>
                 <label class="block text-[11px] font-semibold text-slate-700 mb-1">Telefon</label>
-                <input type="text" id="add-phone" placeholder="+39 ..." class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs" />
+                <input type="text" id="add-phone" placeholder="+39 ..." class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900" />
               </div>
               <div>
                 <label class="block text-[11px] font-semibold text-slate-700 mb-1">E-Posta</label>
-                <input type="email" id="add-email" placeholder="info@company.com" class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs" />
+                <input type="email" id="add-email" placeholder="info@company.com" class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900" />
               </div>
             </div>
 
             <div>
               <label class="block text-[11px] font-semibold text-slate-700 mb-1">CEO / Karar Verici Adı</label>
-              <input type="text" id="add-ceo" placeholder="Örn. Pietro Salini" class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs" />
+              <input type="text" id="add-ceo" placeholder="Örn. Pietro Salini" class="w-full h-9 px-3 bg-white border border-slate-200 rounded-lg text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900" />
             </div>
 
             <div class="pt-2 flex justify-end gap-2">
-              <button type="button" id="tender-add-cancel" class="px-3.5 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-xs font-semibold">İptal</button>
-              <button type="submit" class="px-4 py-2 bg-slate-900 text-white rounded-lg text-xs font-semibold">Kaydet</button>
+              <button type="button" id="tender-add-cancel" class="px-3.5 py-2 bg-white border border-slate-200 hover:bg-slate-50 hover:border-slate-300 text-slate-700 rounded-lg text-xs font-semibold transition cursor-pointer shadow-2xs">İptal</button>
+              <button type="submit" class="px-4 py-2 bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white rounded-lg text-xs font-semibold transition cursor-pointer shadow-2xs">Kaydet</button>
             </div>
           </form>
 
